@@ -1,15 +1,5 @@
-/* global d3 */
 
-// // this says that you want to wait until the page is loaded before you start to do stuff
-// document.addEventListener('DOMContentLoaded', () => {
-//   // this uses a structure called a promise to asyncronously get the cars data set
-//   fetch('./upper_matmort_data.json')
-//     // this converts the returned readablestream into json, don't worry about it
-//     .then(data => data.json())
-//     // now that the data is actually understood as json we send it to your function
-//     .then(data => myVis(data))
-// });
-
+// citation for building the graph:  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
 
 document.addEventListener('DOMContentLoaded', () => {
   // this uses a structure called a promise to asyncronously get the data set
@@ -27,197 +17,164 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 function myVis(data) {
   const [high_inc_matmort, low_inc_matmort,
          lowermid_inc_matmort, uppermid_inc_matmort] = data;
-  // console.log('HIGH INCOME');
-  // console.log(high_inc_matmort);
-  // console.log('LOW INCOME');
-  // console.log(low_inc_matmort);
-  // console.log('LOWER MID INCOME');
-  // console.log(lowermid_inc_matmort);
-  // console.log('UPPER MID INCOME');
-  // console.log(uppermid_inc_matmort);
-
-  const height = 800;
-  const width = 800;
-  const margin = {top: 50, right: 50, bottom: 50, left: 100};
-  const plotWidth = width - margin.left - margin.right;
-  const plotHeight = height - margin.bottom - margin.top;
+  console.log(high_inc_matmort);
 
 
-  // STEP 0 (http://learnjsdata.com/group_data.html)
-  console.log('STEP 0')
-  const dataNest0 = d3.nest()
-    .key(function(d) { return d.year; })
-    .entries(high_inc_matmort);
-  // console.log(JSON.stringify(dataNest1));
-  console.log(dataNest0);
+  // set the dimensions and margins of the graph
+  var margin = {top: 50, right: 50, bottom: 50, left: 50},
+      width = 800 - margin.left - margin.right,
+      height = 800 - margin.top - margin.bottom;
 
 
-  // STEP 1 (http://learnjsdata.com/group_data.html)
-  console.log('STEP 1')
-  const dataNest1 = d3.nest()
-    .key(function(d) { return d.year; })
-    .key(function(d) { return d.iso; })
-    .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
-    .entries(high_inc_matmort);
-  // console.log(JSON.stringify(dataNest1));
-  console.log(dataNest1);
+  // append the svg object to the body of the page
+  var svg = d3.select(".my_dataviz")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
 
-
-
-  // // Group by country.  All data showing.
-  // console.log('Group by Country')
-  // var dataNest2 = d3.nest()
-  //                     .key(function(d) {return d.iso;})
-  //                     .entries(high_inc_matmort);
-  // console.log(dataNest2)
-
-
-  // // STEP ??? (http://learnjsdata.com/group_data.html)
-  // console.log('STEP 3')
-  // var dataNest3 = d3.nest()
-  //   .key(function(d) { return d.iso; })
-  //   .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
-  //   .object(high_inc_matmort);
-  // console.log(JSON.stringify(dataNest3));
 
 
   // Step 3  (https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
-  console.log('STEP 3')
-  window.byYear = {}
-  d3.nest()
-    .key(function(d) { return d.year; })
+  console.log('prep data')
+  const dataReady2 = d3.nest()
     .key(function(d) { return d.iso; })
-    // .sortValues(function(a,b) { return a.value - b.value;  })
-    // .rollup(function(leaves,i) {
-    //   return leaves[0].value;
-    // })
-    .entries(high_inc_matmort)
-    .forEach(function(year) {
-      byYear[year.key] = {};
-      year.values.forEach(function(iso,i) {
-        byYear[year.key][iso.key] = i + 1;
-      });
-    });
-  console.log(byYear)
+    .key(function(d) { return d.year; })
+    .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
+    .entries(high_inc_matmort);
+  // console.log(JSON.stringify(dataNest1));
+  console.log(dataReady2);
+
+  var dataReady = [
+    {"iso": "USA",
+    "values":[
+      {"year":1, "rank":2},
+      {"year":5, "rank":10},
+      {"year":7, "rank":12}]},
+    {"iso": "POL",
+    "values":[
+      {"year":3, "rank":2},
+      {"year":5, "rank":17},
+      {"year":9, "rank":12}]},
+    {"iso": "GRC",
+    "values":[
+      {"year":1, "rank":8},
+      {"year":4, "rank":8},
+      {"year":7, "rank":2}]},
+    {"iso": "FRA",
+    "values":[
+      {"year":5, "rank":2},
+      {"year":7, "rank":10},
+      {"year":10, "rank":12}]
+    }];
+
+  console.log(dataReady);
 
 
+  // Add X axis, but make invisible;
+  var x = d3.scaleLinear()
+    .domain([0,10])
+    .range([ margin.left, width ]);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")");
+    // .call(d3.axisBottom(x));
 
+  // Add Y axis, but make invisible;
+  var y = d3.scaleLinear()
+    .domain( [0,20])
+    .range([ height, margin.top ]);
+  svg.append("g");
+    // .call(d3.axisLeft(y));
 
-  // dataNest1.forEach(
-  //   function(d) {dataNest1.key = {};
-  //   key.values.forEach(function())
-  //   }
-  // )
-
-
-
-
-
-
-  // const practiceline = d3.svg.line()
-  //                               .x(function(d) { return x(d.year); })
-  //                               .y(function(d) { return y(d.rank); });
-  // dataNest.foreach(function(d) {
-  //   svg.append("path")
-  //       .attr("class", "line")
-  //       .attr("d", practiceline(d.rank))
-  // });
-
-
-
-  // console.log("now here")
-  // console.log(Year_by_Country_Ranking)
-  //
-  // const data_1985 = Year_by_Country_Ranking.filter(function (d) {return d.key === "2015"})
-  // console.log(data_1985)
-
-
-
-  var xScale = d3.scaleLinear()
-                 .domain([1985, 2015])
-                 .range([margin.left, plotWidth]);
-  var yScale = d3.scaleLinear()
-                 .domain([1, 52])
-                 .range([margin.top, plotHeight]);
-  var xAxis = d3.axisBottom()
-                .scale(xScale)
-                .tickValues([1985, 1990, 1995, 2000, 2005, 2010, 2015]);
-  var yAxis = d3.axisLeft()
-                .scale(yScale)
-                .tickValues[1, 10, 20, 30, 40, 50];
-
-  // var xScale = d3.scaleLinear()
-  //                .domain([d3.extent(data, function(d) { return d.year; })])
-  //                .range([0, plotWidth]);
-  // var yScale = d3.scaleLinear()
-  //                .domain([d3.min(data, function(d) { return Math.min(d.rank); }),
-  //                         d3.max(data, function(d) { return Math.max(d.rank); })])
-  //                .range([plotHeight, 0]);
-
-
-
-  // Define line generator
+  // Add the lines
   var line = d3.line()
-      .x(function(d) { d => xScale(d[0]); })
-      .y(function(d) { d => yScale(d[1]); });
+    .x(function(d) { return x(+d.year) })
+    .y(function(d) { return y(+d.rank) });
 
-  // create svg element
-  var svg = d3.select("body")
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height);
 
-  // loop through countries ("iso") and create line
-  byYear.forEach(function(d) {
-
-    svg.append("path")
-        .data(data)
-        .attr("class", "line")
-        .attr("d", line(d.values));
-  });
-
-  svg.append("g")
-     .attr("class", "axis")
-     .attr("transform", "translate(0," + (height-margin.bottom) + ")")
-     .call(xAxis);
-
-  svg.append("g")
-     .attr("class", "axis")
-     .call(yAxis);
+  svg.selectAll("myLines")
+    .data(dataReady)
+    .enter()
+    .append("path")
+      .attr("class", function(d){ return d.iso })
+      .attr("d", function(d){ return line(d.values) } )
+      .style("stroke-width", 4)
+      .style("stroke", "black")
+      .attr("fill", "none");
 
 
 
 
+  // Add the points
+  svg
+    // First we need to enter in a group
+    .selectAll("myDots")
+    .data(dataReady)
+    .enter()
+      .append('g')
+      .attr("class", function(d){ return d.iso })
+    // Second we need to enter in the 'values' part of this group
+    .selectAll("myPoints")
+    .data(function(d){ return d.values })
+    .enter()
+    .append("circle")
+      .attr("cx", function(d) { return x(d.year) } )
+      .attr("cy", function(d) { return y(d.rank) } )
+      .attr("r", 5)
+      .attr("stroke", "white")
 
-  // var xAxis = d3.axisBottom()
-  //         			.scale(xScale)
-  //         			.tickValues([1985,1990,1995,2000,2005,2010,2015]);
-  //
-  // var yAxis = d3.axisLeft()
-  //         			.scale(yScale)
-  //         			.tickValues([1, 10, 20, 30, 40, 50]);
+  // Add a label at the beginning of each line
+  svg
+    .selectAll("myLabels1")
+    .data(dataReady)
+    .enter()
+      .append('g')
+      .append("text")
+        .attr("class", function(d){ return d.iso })
+        .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
+        .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+        .attr("x", -60) // shift the text a bit more right
+        .text(function(d) { return d.iso; })
+        .style("font-size", 15)
 
-  // nest and roll up: year by country by rank (http://learnjsdata.com/group_data.html)
+  // Add a label at the end of each line
+  svg
+    .selectAll("myLabels2")
+    .data(dataReady)
+    .enter()
+      .append('g')
+      .append("text")
+        .attr("class", function(d){ return d.iso })
+        .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
+        .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+        .attr("x", 12) // shift the text a bit more right
+        .text(function(d) { return d.iso; })
+        .style("font-size", 15)
+
+  // Add a legend (interactive)
+  svg
+    .selectAll("myLegend")
+    .data(dataReady)
+    .enter()
+      .append('g')
+      .append("text")
+        .attr('x', function(d,i){ return 30 + i*60})
+        .attr('y', 30)
+        .text(function(d) { return d.iso; })
+        .style("font-size", 15)
+      .on("click", function(d){
+        // is the element currently visible ?
+        currentOpacity = d3.selectAll("." + d.iso).style("opacity")
+        // Change the opacity: from 0 to 1 or from 1 to 0
+        d3.selectAll("." + d.iso).transition().style("opacity", currentOpacity == 1 ? 0:1)
+
+      })
 
 
-  // const svg = d3.select("body")
-  //     						.append("svg")
-  //     						.attr("width", width)
-  //     						.attr("height", height);
-  //
-  // svg.append("g")
-	// 		.attr("class", "axis x-axis")
-	// 		.attr("transform", "translate(0," + plotHeight + ")")
-	// 		.call(xAxis);
-  //
-	// svg.append("g")
-	// 	.attr("class", "axis y-axis")
-	// 	.attr("transform", "translate(" + margin.left + ",0)")
-	// 	.call(yAxis));
-
-
-
-}
+};
