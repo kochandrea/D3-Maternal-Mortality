@@ -1,0 +1,100 @@
+---
+title: "D3_data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+rm(list=ls())
+
+library(tidyverse)
+library(tidyr)
+library(dplyr)
+library(CGPfunctions)
+library(ggplot2)
+library(ggrepel)
+library(kableExtra)
+library(readxl)
+library(sqldf)
+library(scales)
+library(urbnmapr)
+library(extrafont)
+library(waffle)
+library(rasterVis)
+library(httr)
+library(sf)
+library(sp)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(RColorBrewer)
+library(gridExtra)
+library(grid)
+library(ggplot2)
+library(lattice)
+library(jsonlite)
+library(readr)
+```
+
+```{r}
+
+setwd("~/Desktop/Data Visualization/DV Maternal Mortality")
+
+WHO_data <- read.csv("data/WHO_MMR-data-1990-2015 (1)/countryresults_all.csv")
+# New table of mmr point estimates:
+mmr_data <- filter(WHO_data, 
+                     indicator %in% c("mmr", "matdeaths"), 
+                     estimate == "point estimate",
+                     rounded == "FALSE")
+WorldBank_data <- read_excel("data/WB_country_region_income.xlsx")
+WorldBank_data <- WorldBank_data[,-c(3,6,7)]
+# Merge WHO and WB data:
+merge_data <- sqldf("SELECT * from mmr_data 
+                  LEFT OUTER join WorldBank_data 
+                  ON mmr_data.iso = WorldBank_data.Code")
+
+
+skilled_staff <- read.csv("~/Desktop/Data Visualization/DV Maternal Mortality/data/births-attended-by-health-staff-sdgs.csv", na.strings = c(""))
+names(skilled_staff)[4] <- "pct_attended"
+skilled_staff <- na.omit(skilled_staff)
+skilled_staff.agg <- aggregate(Year ~ Code, skilled_staff, max)
+skilled_staff.max <- merge(skilled_staff.agg, skilled_staff)
+skilled_staff.max <- subset(skilled_staff.max, Year >= 2010)
+#Citation for finding most recent year:  https://nsaunders.wordpress.com/2013/02/13/basic-r-rows-that-contain-the-maximum-value-of-a-variable/
+colnames(skilled_staff.max) <- paste("Staff", colnames(skilled_staff.max), sep = "_")
+
+merge_data2 <- left_join(merge_data, skilled_staff.max, c("iso" = "Staff_Code"))
+
+merge_data3 <- subset(merge_data2, select =c("name", "iso", "year", "indicator", "value", "Region", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+# Create subsets by income, then rank countries by maternal mortality ratio (mmr):
+upper_income_countries <- filter(merge_data3, `Income group` == "High income")
+ranked_mmr_of_upper_income <- filter(upper_income_countries, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+ranked_mmr_of_upper_income$year <- as.character(ranked_mmr_of_upper_income$year)
+ranked_mmr_of_upper_income <- subset(ranked_mmr_of_upper_income, year %in% show_years)
+
+
+my_json <- toJSON(ranked_mmr_of_upper_income, pretty=TRUE)
+
+my_json %>% write_lines("~/Desktop/Data Visualization/D3_final_iter1/upper_matmort_data.json")
+
+
+show_years <- c(2015)
+ranked_2015 <- subset(ranked_mmr_of_upper_income, year %in% show_years)
+my_json <- toJSON(ranked_2015, pretty=TRUE)
+
+my_json %>% write_lines("~/Desktop/Data Visualization/D3_final_iter1/matmort_2015.json")
+```
+
+
+```{r}
+
+```
+
