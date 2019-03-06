@@ -27,7 +27,7 @@ function myVis(data) {
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
       width = 900 - margin.left - margin.right,
-      height = 900 - margin.top - margin.bottom;
+      height = 1500 - margin.top - margin.bottom;
 
 
   // append the svg object to the body of the page
@@ -39,28 +39,6 @@ function myVis(data) {
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-
-
-  // Step 1  (https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
-  console.log('prep data');
-  console.log('step 1');
-  const dataReady2 = d3.nest()
-    .key(function(d) { return d.year; })
-    // .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
-    .object(high_inc_matmort);
-  // console.log(JSON.stringify(dataNest1));
-  console.log(dataReady2);
-
-  // Step 2  (https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
-  console.log('step 2');
-  const dataReady3 = d3.nest()
-    .key(function(d) { return d.year; })
-    .key(function(d) { return d.iso; })
-    .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
-    .object(high_inc_matmort);
-  // console.log(JSON.stringify(dataNest1));
-  console.log(dataReady3);
-
   // Step X  (https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
   console.log('step x');
   const dataReadyx = d3.nest()
@@ -68,8 +46,7 @@ function myVis(data) {
     .key(function(d) { return d.year; })
     .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
     .object(high_inc_matmort);
-  // console.log(JSON.stringify(dataNest1));
-  const updatedData = Object.entries(dataReadyx).map(([countryCode, yearDict]) => {
+  const dataReady = Object.entries(dataReadyx).map(([countryCode, yearDict]) => {
     return {
       iso: countryCode,
       values: Object.entries(yearDict).map(([year, rank]) => {
@@ -77,47 +54,26 @@ function myVis(data) {
       })
     };
   });
-  console.log(updatedData);
+  console.log(dataReady);
 
 
-  var dataReady = [
-    {"iso": "USA",
-    "values":[
-      {"year":1, "rank":2},
-      {"year":5, "rank":10},
-      {"year":7, "rank":12}]},
-    {"iso": "POL",
-    "values":[
-      {"year":3, "rank":2},
-      {"year":5, "rank":17},
-      {"year":9, "rank":12}]},
-    {"iso": "GRC",
-    "values":[
-      {"year":1, "rank":8},
-      {"year":4, "rank":8},
-      {"year":7, "rank":2}]},
-    {"iso": "FRA",
-    "values":[
-      {"year":5, "rank":2},
-      {"year":7, "rank":10},
-      {"year":10, "rank":12}]
-    }];
+
 
   // Add X axis, but make invisible;
   // maybe uswe scaleband
-  var x = d3.scaleLinear()
-    .domain([0, 10])
+  var x = d3.scaleBand()
+    .domain([1985, 1990, 1995, 2000, 2005, 2010, 2015])
     .range([ margin.left, width ]);
   svg.append("g")
-    .attr("transform", "translate(0," + height + ")");
-    // .call(d3.axisBottom(x));
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
 
   // Add Y axis, but make invisible;
   var y = d3.scaleLinear()
-    .domain( [0,20])
+    .domain( [1, 52])
     .range([ height, margin.top ]);
-  svg.append("g");
-    // .call(d3.axisLeft(y));
+  svg.append("g")
+    .call(d3.axisLeft(y));
 
   // Add the lines
   var line = d3.line()
@@ -126,7 +82,7 @@ function myVis(data) {
 
 
     // myLines should be a real selector, eg .country-line
-  svg.selectAll("myLines")
+  svg.selectAll(".country-line")
     .data(dataReady)
     .enter()
     .append("path")
@@ -140,13 +96,13 @@ function myVis(data) {
   // Add the points
   svg
     // First we need to enter in a group
-    .selectAll("myDots")
+    .selectAll(".dot")
     .data(dataReady)
     .enter()
       .append('g')
       .attr("class", function(d){ return d.iso })
     // Second we need to enter in the 'values' part of this group
-    .selectAll("myPoints")
+    .selectAll(".point-rect")
     .data(function(d){ return d.values })
     .enter()
     .append("rect")
@@ -155,17 +111,12 @@ function myVis(data) {
       .attr("width", 20)
       .attr("height", 20)
       .attr("stroke", "white")
-
-    // .append("circle")
-    //   .attr("cx", function(d) { return x(d.year) } )
-    //   .attr("cy", function(d) { return y(d.rank) } )
-    //   .attr("r", 5)
-    //   .attr("stroke", "white")
+      .attr("fill", "white")
 
 
   // Add a label at the beginning of each line
   svg
-    .selectAll("myLabels1")
+    .selectAll(".left-label")
     .data(dataReady)
     .enter()
       .append('g')
@@ -179,7 +130,7 @@ function myVis(data) {
 
   // Add a label at the end of each line
   svg
-    .selectAll("myLabels2")
+    .selectAll(".right-label")
     .data(dataReady)
     .enter()
       .append('g')
@@ -193,7 +144,7 @@ function myVis(data) {
 
   // Add a legend (interactive)
   svg
-    .selectAll("myLegend")
+    .selectAll(".legend")
     .data(dataReady)
     .enter()
       .append('g')
