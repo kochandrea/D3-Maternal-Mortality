@@ -1,5 +1,5 @@
 
-// citation for building the graph:  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
+// Citation for building the graph:  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
 
 document.addEventListener('DOMContentLoaded', () => {
   // this uses a structure called a promise to asyncronously get the data set
@@ -71,7 +71,7 @@ function myVis(data) {
   // Add Y axis, but make invisible;
   var y = d3.scaleLinear()
     .domain( [1, 52])
-    .range([ height, margin.top ]);
+    .range([ margin.top, height ]);
   svg.append("g")
     .call(d3.axisLeft(y));
 
@@ -111,7 +111,21 @@ function myVis(data) {
       .attr("width", 20)
       .attr("height", 20)
       .attr("stroke", "white")
-      .attr("fill", "white")
+      .attr("fill", "green")
+
+  // add ranking text on top of the
+  svg
+    .selectAll(".right-label")
+    .data(dataReady)
+    .enter()
+      .append('g')
+      .append("text")
+        .attr("class", function(d){ return d.iso })
+        .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
+        .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+        .attr("x", 12) // shift the text a bit more right
+        .text(function(d) { return d.iso; })
+        .style("font-size", 15)
 
 
   // Add a label at the beginning of each line
