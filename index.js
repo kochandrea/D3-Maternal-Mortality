@@ -113,19 +113,6 @@ function myVis(data) {
       .attr("stroke", "white")
       .attr("fill", "green")
 
-  // add ranking text on top of the
-  svg
-    .selectAll(".right-label")
-    .data(dataReady)
-    .enter()
-      .append('g')
-      .append("text")
-        .attr("class", function(d){ return d.iso })
-        .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
-        .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-        .attr("x", 12) // shift the text a bit more right
-        .text(function(d) { return d.iso; })
-        .style("font-size", 15)
 
 
   // Add a label at the beginning of each line
