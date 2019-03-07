@@ -42,3 +42,24 @@
       {"year":2005, "rank":10},
       {"year":2015, "rank":12}]
     }];
+
+
+
+    const data1 = d3.nest()
+      .key( d => d.iso)
+      .key( d => d.year)
+      .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
+      .rollup(function(v) { return d3.sum(v, function(d) { return d.name; }); })
+      .object(high_income);
+    console.log('data1');
+    console.log(data1);
+    const data2 = Object.entries(data1).map(([countryCode, yearDict]) => {
+      return {
+        iso: countryCode,
+        values: Object.entries(yearDict).map(([year, rank]) => {
+          return {year, rank};
+        })
+      };
+    });
+    console.log('data2');
+    console.log(data2);
