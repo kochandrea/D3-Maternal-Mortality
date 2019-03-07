@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function myVis(data) {
   const [high_inc_matmort, low_inc_matmort,
          lowermid_inc_matmort, uppermid_inc_matmort] = data;
-  console.log(high_inc_matmort);
 
 
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
       width = 900 - margin.left - margin.right,
       height = 1500 - margin.top - margin.bottom;
+
 
 
   // append the svg object to the body of the page
@@ -69,16 +69,22 @@ function myVis(data) {
     .call(d3.axisBottom(x));
 
   // Add Y axis, but make invisible;
+  var size = Object.keys(dataReady).length; // Y-axis as large as selection
+
   var y = d3.scaleLinear()
-    .domain( [1, 52])
+    .domain( [1, size])
     .range([ margin.top, height ]);
   svg.append("g")
     .call(d3.axisLeft(y));
 
-  // Add the lines
-  var line = d3.line()
-    .x(function(d) { return x(+d.year) })
-    .y(function(d) { return y(+d.rank) });
+  // // Add the lines
+  // var line = d3.line()
+  //   .x(function(d) { return x(+d.year) })
+  //   .y(function(d) { return y(+d.rank) });
+
+  var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
+      .x( d => x(+d.year) )
+      .y( d => y(+d.rank) );
 
 
     // myLines should be a real selector, eg .country-line
@@ -86,8 +92,8 @@ function myVis(data) {
     .data(dataReady)
     .enter()
     .append("path")
-      .attr("class", function(d){ return `country-line ${d.iso}` })
-      .attr("d", function(d){ return line(d.values) } )
+      .attr("class", d => `country-line ${d.iso}` )
+      .attr("d", d => lineGenerator(d.values) )
       .style("stroke-width", 4)
       .style("stroke", "black")
       .attr("fill", "none");
@@ -96,37 +102,27 @@ function myVis(data) {
   // Add the points
   svg
     // First we need to enter in a group
-    .selectAll(".dot")
+    .selectAll(".eachCountry")
     .data(dataReady)
     .enter()
       .append('g')
       .attr("class", function(d){ return d.iso })
-    // Second we need to enter in the 'values' part of this group
-    .selectAll(".point-rect")
-    .data(function(d){ return d.values })
-    .enter()
-    .append("rect")
-      .attr("x", function(d) { return x(d.year) - 20 / 2} )
-      .attr("y", function(d) { return y(d.rank) - 20 / 2} )
-      .attr("width", 20)
-      .attr("height", 20)
-      .attr("stroke", "white")
-      .attr("fill", "green")
-    .selectAll(".rank-label")
-      .data(function (d) { return d.iso })
-      .enter()
-      .append("text")
-      .text(function(d) { return d[0] + "," + d[1];
-      })
-      .attr("x", function(d) {
-          return xScale(d[0]);  // Returns scaled location of x
-      })
-      .attr("y", function(d) {
-          return yScale(d[1]);  // Returns scaled circle y
-      })
-      .attr("font_family", "sans-serif")  // Font type
-      .attr("font-size", "11px")  // Font size
-      .attr("fill", "darkgreen");   // Font color
+    // // Second we need to enter in the 'values' part of this group
+    // .selectAll(".point-rect")
+    // .data( d => d.values)
+    // // .data(function(d){ return d.values })
+    // .enter()
+    // .append("rect")
+    //   .attr("x", d => x(d.year) - 20 / 2 )
+    //   .attr("y", d => y(d.rank) - 20 / 2 )
+    //   // .attr("x", function(d) { return x(d.year) - 20 / 2} )
+    //   // .attr("y", function(d) { return y(d.rank) - 20 / 2} )
+    //   .attr("width", 20)
+    //   .attr("height", 20)
+    //   .attr("stroke", "white")
+    //   .attr("fill", "green")
+
+
 
   // Add a label at the beginning of each line
   svg
