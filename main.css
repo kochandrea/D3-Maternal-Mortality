@@ -20,3 +20,9 @@ body {
     pointer-events: none;
     background-color: white;
 }
+.focus circle {
+  fill: #F1F3F3;
+  stroke: #6F257F;
+  stroke-width: 5px;
+}
+  
