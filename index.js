@@ -148,7 +148,7 @@ function myVis(data) {
             .style("display", "none");
 
         focus.append("circle")
-            .attr("r", 5);
+            .attr("r", 7.5);
 
         focus.append("text")
           .attr("x", 15)
