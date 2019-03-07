@@ -129,21 +129,40 @@ function myVis(data) {
     .enter()
       .append('g')
       .attr("class", function(d){ return d.iso })
-    // // Second we need to enter in the 'values' part of this group
-    // .selectAll(".point-rect")
-    // .data( d => d.values)
-    // // .data(function(d){ return d.values })
-    // .enter()
-    // .append("rect")
-    //   .attr("x", d => x(d.year) - 20 / 2 )
-    //   .attr("y", d => y(d.rank) - 20 / 2 )
-    //   // .attr("x", function(d) { return x(d.year) - 20 / 2} )
-    //   // .attr("y", function(d) { return y(d.rank) - 20 / 2} )
-    //   .attr("width", 20)
-    //   .attr("height", 20)
-    //   .attr("stroke", "white")
-    //   .attr("fill", "green")
+    // Second we need to enter in the 'values' part of this group
+    .selectAll(".point-rect")
+    .data( d => d.values)
+    // .data(function(d){ return d.values })
+    .enter()
+    .append("rect")
+      .attr("x", d => x(d.year) - 20 / 2 )
+      .attr("y", d => y(d.rank) - 20 / 2 )
+      // .attr("x", function(d) { return x(d.year) - 20 / 2} )
+      // .attr("y", function(d) { return y(d.rank) - 20 / 2} )
+      .attr("width", 20)
+      .attr("height", 20)
+      .attr("stroke", "white")
+      .attr("fill", "green");
 
+  // svg
+  //   .selectAll(".rank-label")
+  //   .data(dataReady)
+  //   // .data(function(d){ return d.values })
+  //   .enter()
+  //   .append("text")
+  //     .attr("class", function(d){ return d.iso })
+  //     .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
+  //     .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+  //     .attr("x", -50) // shift the text a bit more right
+  //     .text(function(d) { return d.iso; })
+  //     .style("font-size", 15);
+  //
+  //     .attr("cx", d => x(d.year) )
+  //     .attr("cy", d => y(d.rank) )
+  //     // .attr("x", function(d) { return x(d.year) - 20 / 2} )
+  //     // .attr("y", function(d) { return y(d.rank) - 20 / 2} )
+  //     .attr("r", 3)
+  //     .attr("fill", "red")
 
 
   // Add a label at the beginning of each line
@@ -156,9 +175,9 @@ function myVis(data) {
         .attr("class", function(d){ return d.iso })
         .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
         .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-        .attr("x", -40) // shift the text a bit more right
+        .attr("x", -50) // shift the text a bit more right
         .text(function(d) { return d.iso; })
-        .style("font-size", 15)
+        .attr("font-size", 15);
 
   // Add a label at the end of each line
   svg
@@ -172,7 +191,7 @@ function myVis(data) {
         .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
         .attr("x", 12) // shift the text a bit more right
         .text(function(d) { return d.iso; })
-        .style("font-size", 15)
+        .attr("font-size", 15);
 
   // Add a legend (interactive)
   svg
@@ -191,7 +210,7 @@ function myVis(data) {
         // Change the opacity: from 0 to 1 or from 1 to 0
         d3.selectAll("." + d.iso).transition().style("opacity", currentOpacity == 1 ? 0:1)
 
-      })
+      });
 
 
 };
