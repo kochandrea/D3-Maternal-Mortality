@@ -8,10 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // use Promise.all to load in more than one dataset
   Promise.all([
       './data/high_income.json',
-      './data/high_income_matmort.json',
-      './data/low_income_matmort.json',
-      './data/lower_mid_income_matmort.json',
-      './data/upper_mid_income_matmort.json'
+      './data/upper_mid_income.json',
+      './data/lower_mid_income.json',
+      './data/low_income.json'
     ].map(url => fetch(url).then(data => data.json())))
       .then(data => myVis(data))
     .catch(function(error){
@@ -21,8 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function myVis(data) {
-  const [high_income, high_inc_matmort, low_inc_matmort,
-         lowermid_inc_matmort, uppermid_inc_matmort] = data;
+  const [high_income, upper_mid_income, lower_mid_income, low_income] = data;
 
   console.log(high_income);
   // set the dimensions and margins of the graph
