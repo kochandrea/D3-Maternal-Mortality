@@ -26,20 +26,20 @@ function myVis(data) {
   //button
   d3.select("#button_high_income")
     .on("click", function(d,i){
-      choose_dataset(high_income)});
+      generate_bumpchart(high_income)});
 
   d3.select("#button_low_income")
     .on("click", function(d,i){
-      choose_dataset(low_income)});
+      generate_bumpchart(low_income)});
 
   // Format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
-  function choose_dataset(selected_data){
+  function generate_bumpchart(selected_data){
 
         console.log(high_income);
         // set the dimensions and margins of the graph
         var margin = {top: 50, right: 50, bottom: 50, left: 50},
             width = 900 - margin.left - margin.right,
-            height = 1500 - margin.top - margin.bottom;
+            height = 900 - margin.top - margin.bottom;
 
         // Create the svg object and append to the body of the page
         // var svg = d3.select(".my_dataviz")
@@ -101,15 +101,7 @@ function myVis(data) {
             .attr("stroke-width", 3)
             .attr("stroke", "black")
             .attr("fill", "none")
-      //   .on("mouseover", function() { focus.style("display", null); })
-      //   .on("mouseout", function() { focus.style("display", "none"); })
-      //   .on("mousemove", function(d) {
-      //     var xPosition = d3.mouse(this)[0];
-      //     var yPosition = d3.mouse(this)[1];
-      //     focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
-      //     focus.select("text").text(d.iso).attr("fill", "black")
-      //   }
-      // )
+
 
         // Add the points
         svg
@@ -124,22 +116,26 @@ function myVis(data) {
           .data( d => d.values)
           // .data(function(d){ return d.values })
           .enter()
-          .append("rect")
-            .attr("x", d => x(d.year) - 10 / 2 )
-            .attr("y", d => y(d.rank) - 10 / 2 )
-            // .attr("x", function(d) { return x(d.year) - 20 / 2} )
-            // .attr("y", function(d) { return y(d.rank) - 20 / 2} )
-            .attr("width", 10)
-            .attr("height", 10)
+          .append("circle")
+            .attr("cx", d => x(d.year))
+            .attr("cy", d => y(d.rank))
+            // .attr("x", d => x(d.year) - 10 / 2 )
+            // .attr("y", d => y(d.rank) - 10 / 2 )
+
+            .attr("r", 5)
+            // .attr("width", 10)
+            // .attr("height", 10)
             .attr("stroke", "white")
             .attr("fill", "red")
             .on("mouseover", function() { focus.style("display", null); })
-            .on("mouseout", function() { focus.style("display", "none"); })
+            // .on("mouseout", function() { focus.style("display", "none"); })
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
               focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
-              focus.select("text").text("rank: " + d.rank + " year: " + d.year).attr("fill", "black")
+              focus.select("text")
+                    .text("Country: " + d.iso + "rank: " + d.rank + " year: " + d.year)
+                    .attr("fill", "black")
             });
 
       //the focus tooltip (also part of the point generator)
@@ -148,7 +144,7 @@ function myVis(data) {
             .style("display", "none");
 
         focus.append("circle")
-            .attr("r", 7.5);
+            .attr("r", 5);
 
         focus.append("text")
           .attr("x", 15)
@@ -164,9 +160,9 @@ function myVis(data) {
               .attr("class", function(d){ return d.iso })
               .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("x", -50) // shift the text a bit more right
+              .attr("x", -40) // shift the text a bit more right
               .text(function(d) { return d.iso; })
-              .attr("font-size", 15)
+              .attr("font-size", 10)
 
         // Add a label at the end of each line
         svg
@@ -180,7 +176,7 @@ function myVis(data) {
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
               .attr("x", 12) // shift the text a bit more right
               .text(function(d) { return d.iso; })
-              .attr("font-size", 15)
+              .attr("font-size", 10)
 
 
   // // Add a legend (interactive)
