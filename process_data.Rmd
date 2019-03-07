@@ -159,15 +159,24 @@ low_income_all_data <- left_join(ranked_mmr_low_income, matdeaths_low_income, c(
 show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
 upper_income_all_data$year <- as.character(upper_income_all_data$year)
 upper_income_all_data <- subset(upper_income_all_data, year %in% show_years)
+upper_income_all_data$mmr <- round(upper_income_all_data$mmr, 3)
+upper_income_all_data$matdeaths <- round(upper_income_all_data$matdeaths, 3)
+
 
 mid_upper_income_all_data$year <- as.character(mid_upper_income_all_data$year)
 mid_upper_income_all_data <- subset(mid_upper_income_all_data, year %in% show_years)
+mid_upper_income_all_data$mmr <- round(mid_upper_income_all_data$mmr, 3)
+mid_upper_income_all_data$matdeaths <- round(mid_upper_income_all_data$matdeaths, 3)
 
 mid_lower_income_all_data$year <- as.character(mid_lower_income_all_data$year)
 mid_lower_income_all_data <- subset(mid_lower_income_all_data, year %in% show_years)
+mid_lower_income_all_data$mmr <- round(mid_lower_income_all_data$mmr, 3)
+mid_lower_income_all_data$matdeaths <- round(mid_lower_income_all_data$matdeaths, 3)
 
 low_income_all_data$year <- as.character(low_income_all_data$year)
 low_income_all_data <- subset(low_income_all_data, year %in% show_years)
+low_income_all_data$mmr <- round(low_income_all_data$mmr, 3)
+low_income_all_data$matdeaths <- round(low_income_all_data$matdeaths, 3)
 
 
 # #all high income data

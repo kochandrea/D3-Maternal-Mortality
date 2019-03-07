@@ -6,7 +6,7 @@
     "rank": 1,
     "mmr": 47.569,
     "Region": "Europe & Central Asia",
-    "matdeaths": 46.3094
+    "matdeaths": 46.309
   },
   {
     "name": "Ukraine",
@@ -22,18 +22,18 @@
     "iso": "MDA",
     "year": "1985",
     "rank": 3,
-    "mmr": 70.8819,
+    "mmr": 70.882,
     "Region": "Europe & Central Asia",
-    "matdeaths": 65.2985
+    "matdeaths": 65.298
   },
   {
     "name": "Sri Lanka",
     "iso": "LKA",
     "year": "1985",
     "rank": 4,
-    "mmr": 89.8267,
+    "mmr": 89.827,
     "Region": "South Asia",
-    "matdeaths": 346.8641
+    "matdeaths": 346.864
   },
   {
     "name": "Uzbekistan",
@@ -42,25 +42,25 @@
     "rank": 5,
     "mmr": 92.466,
     "Region": "Europe & Central Asia",
-    "matdeaths": 608.6279
+    "matdeaths": 608.628
   },
   {
     "name": "Kyrgyzstan",
     "iso": "KGZ",
     "year": "1985",
     "rank": 6,
-    "mmr": 93.4697,
+    "mmr": 93.47,
     "Region": "Europe & Central Asia",
-    "matdeaths": 122.5864
+    "matdeaths": 122.586
   },
   {
     "name": "Egypt",
     "iso": "EGY",
     "year": "1985",
     "rank": 7,
-    "mmr": 131.5787,
+    "mmr": 131.579,
     "Region": "Middle East & North Africa",
-    "matdeaths": 2502.5143
+    "matdeaths": 2502.514
   },
   {
     "name": "Occupied Palestinian Territory",
@@ -78,68 +78,68 @@
     "rank": 9,
     "mmr": 160.852,
     "Region": "Middle East & North Africa",
-    "matdeaths": 368.3077
+    "matdeaths": 368.308
   },
   {
     "name": "Viet Nam",
     "iso": "VNM",
     "year": "1985",
     "rank": 10,
-    "mmr": 179.3988,
+    "mmr": 179.399,
     "Region": "East Asia & Pacific",
-    "matdeaths": 3374.6194
+    "matdeaths": 3374.619
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "1985",
     "rank": 11,
-    "mmr": 182.5438,
+    "mmr": 182.544,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 275.9186
+    "matdeaths": 275.919
   },
   {
     "name": "El Salvador",
     "iso": "SLV",
     "year": "1985",
     "rank": 12,
-    "mmr": 193.8044,
+    "mmr": 193.804,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 321.8296
+    "matdeaths": 321.83
   },
   {
     "name": "Micronesia",
     "iso": "FSM",
     "year": "1985",
     "rank": 13,
-    "mmr": 198.7033,
+    "mmr": 198.703,
     "Region": "East Asia & Pacific",
-    "matdeaths": 6.3645
+    "matdeaths": 6.364
   },
   {
     "name": "Philippines",
     "iso": "PHL",
     "year": "1985",
     "rank": 14,
-    "mmr": 200.4798,
+    "mmr": 200.48,
     "Region": "East Asia & Pacific",
-    "matdeaths": 3813.3748
+    "matdeaths": 3813.375
   },
   {
     "name": "Mongolia",
     "iso": "MNG",
     "year": "1985",
     "rank": 15,
-    "mmr": 210.6696,
+    "mmr": 210.67,
     "Region": "East Asia & Pacific",
-    "matdeaths": 154.1954
+    "matdeaths": 154.195
   },
   {
     "name": "Vanuatu",
     "iso": "VUT",
     "year": "1985",
     "rank": 16,
-    "mmr": 256.0288,
+    "mmr": 256.029,
     "Region": "East Asia & Pacific",
     "matdeaths": 12.507
   },
@@ -148,72 +148,72 @@
     "iso": "KIR",
     "year": "1985",
     "rank": 17,
-    "mmr": 258.3969,
+    "mmr": 258.397,
     "Region": "East Asia & Pacific",
-    "matdeaths": 6.2455
+    "matdeaths": 6.245
   },
   {
     "name": "Solomon Islands",
     "iso": "SLB",
     "year": "1985",
     "rank": 18,
-    "mmr": 363.6423,
+    "mmr": 363.642,
     "Region": "East Asia & Pacific",
-    "matdeaths": 41.0152
+    "matdeaths": 41.015
   },
   {
     "name": "Sao Tome and Principe",
     "iso": "STP",
     "year": "1985",
     "rank": 19,
-    "mmr": 367.6296,
+    "mmr": 367.63,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 15.3449
+    "matdeaths": 15.345
   },
   {
     "name": "Honduras",
     "iso": "HND",
     "year": "1985",
     "rank": 20,
-    "mmr": 377.1532,
+    "mmr": 377.153,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 654.8662
+    "matdeaths": 654.866
   },
   {
     "name": "Cabo Verde",
     "iso": "CPV",
     "year": "1985",
     "rank": 21,
-    "mmr": 401.2031,
+    "mmr": 401.203,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 53.5205
+    "matdeaths": 53.52
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "1985",
     "rank": 22,
-    "mmr": 440.4388,
+    "mmr": 440.439,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 1037.5152
+    "matdeaths": 1037.515
   },
   {
     "name": "Morocco",
     "iso": "MAR",
     "year": "1985",
     "rank": 23,
-    "mmr": 442.4234,
+    "mmr": 442.423,
     "Region": "Middle East & North Africa",
-    "matdeaths": 3410.3902
+    "matdeaths": 3410.39
   },
   {
     "name": "Pakistan",
     "iso": "PAK",
     "year": "1985",
     "rank": 24,
-    "mmr": 527.4963,
+    "mmr": 527.496,
     "Region": "South Asia",
-    "matdeaths": 20638.4621
+    "matdeaths": 20638.462
   },
   {
     "name": "Papua New Guinea",
@@ -222,34 +222,34 @@
     "rank": 25,
     "mmr": 537.006,
     "Region": "East Asia & Pacific",
-    "matdeaths": 719.9263
+    "matdeaths": 719.926
   },
   {
     "name": "Zambia",
     "iso": "ZMB",
     "year": "1985",
     "rank": 26,
-    "mmr": 552.3516,
+    "mmr": 552.352,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 1827.2398
+    "matdeaths": 1827.24
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "1985",
     "rank": 27,
-    "mmr": 578.5181,
+    "mmr": 578.518,
     "Region": "East Asia & Pacific",
-    "matdeaths": 7078.7588
+    "matdeaths": 7078.759
   },
   {
     "name": "Congo",
     "iso": "COG",
     "year": "1985",
     "rank": 28,
-    "mmr": 621.5884,
+    "mmr": 621.588,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 515.8127
+    "matdeaths": 515.813
   },
   {
     "name": "Djibouti",
@@ -258,14 +258,14 @@
     "rank": 29,
     "mmr": 625.152,
     "Region": "Middle East & North Africa",
-    "matdeaths": 111.7897
+    "matdeaths": 111.79
   },
   {
     "name": "Indonesia",
     "iso": "IDN",
     "year": "1985",
     "rank": 30,
-    "mmr": 631.0363,
+    "mmr": 631.036,
     "Region": "East Asia & Pacific",
     "matdeaths": 30767.325
   },
@@ -274,97 +274,97 @@
     "iso": "IND",
     "year": "1985",
     "rank": 31,
-    "mmr": 658.9314,
+    "mmr": 658.931,
     "Region": "South Asia",
-    "matdeaths": 177176.0534
+    "matdeaths": 177176.053
   },
   {
     "name": "Bangladesh",
     "iso": "BGD",
     "year": "1985",
     "rank": 32,
-    "mmr": 681.2222,
+    "mmr": 681.222,
     "Region": "South Asia",
-    "matdeaths": 25518.0317
+    "matdeaths": 25518.032
   },
   {
     "name": "Cameroon",
     "iso": "CMR",
     "year": "1985",
     "rank": 33,
-    "mmr": 723.1557,
+    "mmr": 723.156,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3477.9955
+    "matdeaths": 3477.996
   },
   {
     "name": "Kenya",
     "iso": "KEN",
     "year": "1985",
     "rank": 34,
-    "mmr": 770.3734,
+    "mmr": 770.373,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 7145.9987
+    "matdeaths": 7145.999
   },
   {
     "name": "Ghana",
     "iso": "GHA",
     "year": "1985",
     "rank": 35,
-    "mmr": 781.2383,
+    "mmr": 781.238,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4084.3841
+    "matdeaths": 4084.384
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "1985",
     "rank": 36,
-    "mmr": 804.4801,
+    "mmr": 804.48,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5899.1638
+    "matdeaths": 5899.164
   },
   {
     "name": "Swaziland",
     "iso": "SWZ",
     "year": "1985",
     "rank": 37,
-    "mmr": 809.6107,
+    "mmr": 809.611,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 275.0329
+    "matdeaths": 275.033
   },
   {
     "name": "Lesotho",
     "iso": "LSO",
     "year": "1985",
     "rank": 38,
-    "mmr": 811.5256,
+    "mmr": 811.526,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 453.8457
+    "matdeaths": 453.846
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "1985",
     "rank": 39,
-    "mmr": 821.2751,
+    "mmr": 821.275,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3753.5803
+    "matdeaths": 3753.58
   },
   {
     "name": "Mauritania",
     "iso": "MRT",
     "year": "1985",
     "rank": 40,
-    "mmr": 962.9949,
+    "mmr": 962.995,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 709.1591
+    "matdeaths": 709.159
   },
   {
     "name": "Lao",
     "iso": "LAO",
     "year": "1985",
     "rank": 41,
-    "mmr": 1084.7534,
+    "mmr": 1084.753,
     "Region": "East Asia & Pacific",
     "matdeaths": 1730.301
   },
@@ -373,61 +373,61 @@
     "iso": "AGO",
     "year": "1985",
     "rank": 42,
-    "mmr": 1226.1016,
+    "mmr": 1226.102,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 6301.4878
+    "matdeaths": 6301.488
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "1985",
     "rank": 43,
-    "mmr": 1318.7166,
+    "mmr": 1318.717,
     "Region": "South Asia",
-    "matdeaths": 262.0817
+    "matdeaths": 262.082
   },
   {
     "name": "Nigeria",
     "iso": "NGA",
     "year": "1985",
     "rank": 44,
-    "mmr": 1359.8723,
+    "mmr": 1359.872,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 52059.7747
+    "matdeaths": 52059.775
   },
   {
     "name": "Timor-Leste",
     "iso": "TLS",
     "year": "1985",
     "rank": 45,
-    "mmr": 1402.6766,
+    "mmr": 1402.677,
     "Region": "East Asia & Pacific",
-    "matdeaths": 398.8932
+    "matdeaths": 398.893
   },
   {
     "name": "Cambodia",
     "iso": "KHM",
     "year": "1985",
     "rank": 46,
-    "mmr": 1406.6646,
+    "mmr": 1406.665,
     "Region": "East Asia & Pacific",
-    "matdeaths": 5387.5394
+    "matdeaths": 5387.539
   },
   {
     "name": "Georgia",
     "iso": "GEO",
     "year": "1990",
     "rank": 1,
-    "mmr": 34.4801,
+    "mmr": 34.48,
     "Region": "Europe & Central Asia",
-    "matdeaths": 31.2686
+    "matdeaths": 31.269
   },
   {
     "name": "Ukraine",
     "iso": "UKR",
     "year": "1990",
     "rank": 2,
-    "mmr": 46.3281,
+    "mmr": 46.328,
     "Region": "Europe & Central Asia",
     "matdeaths": 293.581
   },
@@ -436,27 +436,27 @@
     "iso": "MDA",
     "year": "1990",
     "rank": 3,
-    "mmr": 51.1215,
+    "mmr": 51.122,
     "Region": "Europe & Central Asia",
-    "matdeaths": 41.1753
+    "matdeaths": 41.175
   },
   {
     "name": "Uzbekistan",
     "iso": "UZB",
     "year": "1990",
     "rank": 4,
-    "mmr": 54.0181,
+    "mmr": 54.018,
     "Region": "Europe & Central Asia",
-    "matdeaths": 376.4422
+    "matdeaths": 376.442
   },
   {
     "name": "Sri Lanka",
     "iso": "LKA",
     "year": "1990",
     "rank": 5,
-    "mmr": 74.9355,
+    "mmr": 74.936,
     "Region": "South Asia",
-    "matdeaths": 267.6367
+    "matdeaths": 267.637
   },
   {
     "name": "Kyrgyzstan",
@@ -465,50 +465,50 @@
     "rank": 6,
     "mmr": 79.731,
     "Region": "Europe & Central Asia",
-    "matdeaths": 108.4094
+    "matdeaths": 108.409
   },
   {
     "name": "Egypt",
     "iso": "EGY",
     "year": "1990",
     "rank": 7,
-    "mmr": 106.4546,
+    "mmr": 106.455,
     "Region": "Middle East & North Africa",
-    "matdeaths": 1991.3678
+    "matdeaths": 1991.368
   },
   {
     "name": "Occupied Palestinian Territory",
     "iso": "PSE",
     "year": "1990",
     "rank": 8,
-    "mmr": 118.2462,
+    "mmr": 118.246,
     "Region": "Middle East & North Africa",
-    "matdeaths": 115.3752
+    "matdeaths": 115.375
   },
   {
     "name": "Tunisia",
     "iso": "TUN",
     "year": "1990",
     "rank": 9,
-    "mmr": 131.2732,
+    "mmr": 131.273,
     "Region": "Middle East & North Africa",
-    "matdeaths": 280.5846
+    "matdeaths": 280.585
   },
   {
     "name": "Viet Nam",
     "iso": "VNM",
     "year": "1990",
     "rank": 10,
-    "mmr": 139.4561,
+    "mmr": 139.456,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2734.0266
+    "matdeaths": 2734.027
   },
   {
     "name": "Philippines",
     "iso": "PHL",
     "year": "1990",
     "rank": 11,
-    "mmr": 151.5517,
+    "mmr": 151.552,
     "Region": "East Asia & Pacific",
     "matdeaths": 3100.13
   },
@@ -517,25 +517,25 @@
     "iso": "SLV",
     "year": "1990",
     "rank": 12,
-    "mmr": 156.9138,
+    "mmr": 156.914,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 255.1466
+    "matdeaths": 255.147
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "1990",
     "rank": 13,
-    "mmr": 173.4214,
+    "mmr": 173.421,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 257.9886
+    "matdeaths": 257.989
   },
   {
     "name": "Micronesia",
     "iso": "FSM",
     "year": "1990",
     "rank": 14,
-    "mmr": 183.0807,
+    "mmr": 183.081,
     "Region": "East Asia & Pacific",
     "matdeaths": 6.038
   },
@@ -544,7 +544,7 @@
     "iso": "MNG",
     "year": "1990",
     "rank": 15,
-    "mmr": 185.5409,
+    "mmr": 185.541,
     "Region": "East Asia & Pacific",
     "matdeaths": 128.732
   },
@@ -553,34 +553,34 @@
     "iso": "VUT",
     "year": "1990",
     "rank": 16,
-    "mmr": 225.0123,
+    "mmr": 225.012,
     "Region": "East Asia & Pacific",
-    "matdeaths": 11.9887
+    "matdeaths": 11.989
   },
   {
     "name": "Kiribati",
     "iso": "KIR",
     "year": "1990",
     "rank": 17,
-    "mmr": 234.2992,
+    "mmr": 234.299,
     "Region": "East Asia & Pacific",
-    "matdeaths": 6.1644
+    "matdeaths": 6.164
   },
   {
     "name": "Cabo Verde",
     "iso": "CPV",
     "year": "1990",
     "rank": 18,
-    "mmr": 255.9469,
+    "mmr": 255.947,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 35.4282
+    "matdeaths": 35.428
   },
   {
     "name": "Honduras",
     "iso": "HND",
     "year": "1990",
     "rank": 19,
-    "mmr": 272.1968,
+    "mmr": 272.197,
     "Region": "Latin America & Caribbean",
     "matdeaths": 512.729
   },
@@ -589,18 +589,18 @@
     "iso": "MAR",
     "year": "1990",
     "rank": 20,
-    "mmr": 316.6807,
+    "mmr": 316.681,
     "Region": "Middle East & North Africa",
-    "matdeaths": 2323.0935
+    "matdeaths": 2323.093
   },
   {
     "name": "Sao Tome and Principe",
     "iso": "STP",
     "year": "1990",
     "rank": 21,
-    "mmr": 329.5599,
+    "mmr": 329.56,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 14.8566
+    "matdeaths": 14.857
   },
   {
     "name": "Solomon Islands",
@@ -609,86 +609,86 @@
     "rank": 22,
     "mmr": 363.903,
     "Region": "East Asia & Pacific",
-    "matdeaths": 45.5279
+    "matdeaths": 45.528
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "1990",
     "rank": 23,
-    "mmr": 425.2825,
+    "mmr": 425.283,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 1033.8448
+    "matdeaths": 1033.845
   },
   {
     "name": "Pakistan",
     "iso": "PAK",
     "year": "1990",
     "rank": 24,
-    "mmr": 431.1725,
+    "mmr": 431.172,
     "Region": "South Asia",
-    "matdeaths": 18693.7683
+    "matdeaths": 18693.768
   },
   {
     "name": "Indonesia",
     "iso": "IDN",
     "year": "1990",
     "rank": 25,
-    "mmr": 445.8494,
+    "mmr": 445.849,
     "Region": "East Asia & Pacific",
-    "matdeaths": 20893.5959
+    "matdeaths": 20893.596
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "1990",
     "rank": 26,
-    "mmr": 453.3487,
+    "mmr": 453.349,
     "Region": "East Asia & Pacific",
-    "matdeaths": 5127.2827
+    "matdeaths": 5127.283
   },
   {
     "name": "Papua New Guinea",
     "iso": "PNG",
     "year": "1990",
     "rank": 27,
-    "mmr": 470.3393,
+    "mmr": 470.339,
     "Region": "East Asia & Pacific",
-    "matdeaths": 687.9183
+    "matdeaths": 687.918
   },
   {
     "name": "Djibouti",
     "iso": "DJI",
     "year": "1990",
     "rank": 28,
-    "mmr": 517.4985,
+    "mmr": 517.498,
     "Region": "Middle East & North Africa",
-    "matdeaths": 117.9069
+    "matdeaths": 117.907
   },
   {
     "name": "India",
     "iso": "IND",
     "year": "1990",
     "rank": 29,
-    "mmr": 555.9373,
+    "mmr": 555.937,
     "Region": "South Asia",
-    "matdeaths": 152495.3672
+    "matdeaths": 152495.367
   },
   {
     "name": "Bangladesh",
     "iso": "BGD",
     "year": "1990",
     "rank": 30,
-    "mmr": 569.2238,
+    "mmr": 569.224,
     "Region": "South Asia",
-    "matdeaths": 21321.8982
+    "matdeaths": 21321.898
   },
   {
     "name": "Zambia",
     "iso": "ZMB",
     "year": "1990",
     "rank": 31,
-    "mmr": 577.1428,
+    "mmr": 577.143,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 2175.713
   },
@@ -697,43 +697,43 @@
     "iso": "COG",
     "year": "1990",
     "rank": 32,
-    "mmr": 603.3797,
+    "mmr": 603.38,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 550.7107
+    "matdeaths": 550.711
   },
   {
     "name": "Lesotho",
     "iso": "LSO",
     "year": "1990",
     "rank": 33,
-    "mmr": 628.8936,
+    "mmr": 628.894,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 355.8343
+    "matdeaths": 355.834
   },
   {
     "name": "Ghana",
     "iso": "GHA",
     "year": "1990",
     "rank": 34,
-    "mmr": 634.4041,
+    "mmr": 634.404,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3627.0532
+    "matdeaths": 3627.053
   },
   {
     "name": "Swaziland",
     "iso": "SWZ",
     "year": "1990",
     "rank": 35,
-    "mmr": 635.2623,
+    "mmr": 635.262,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 233.7702
+    "matdeaths": 233.77
   },
   {
     "name": "Kenya",
     "iso": "KEN",
     "year": "1990",
     "rank": 36,
-    "mmr": 686.7118,
+    "mmr": 686.712,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 6783.785
   },
@@ -744,59 +744,59 @@
     "rank": 37,
     "mmr": 727.748,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3928.0632
+    "matdeaths": 3928.063
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "1990",
     "rank": 38,
-    "mmr": 743.8884,
+    "mmr": 743.888,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 6328.9579
+    "matdeaths": 6328.958
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "1990",
     "rank": 39,
-    "mmr": 744.6572,
+    "mmr": 744.657,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3904.3346
+    "matdeaths": 3904.335
   },
   {
     "name": "Mauritania",
     "iso": "MRT",
     "year": "1990",
     "rank": 40,
-    "mmr": 858.7329,
+    "mmr": 858.733,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 709.1759
+    "matdeaths": 709.176
   },
   {
     "name": "Lao",
     "iso": "LAO",
     "year": "1990",
     "rank": 41,
-    "mmr": 905.3376,
+    "mmr": 905.338,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1654.3415
+    "matdeaths": 1654.342
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "1990",
     "rank": 42,
-    "mmr": 944.5415,
+    "mmr": 944.542,
     "Region": "South Asia",
-    "matdeaths": 184.6012
+    "matdeaths": 184.601
   },
   {
     "name": "Cambodia",
     "iso": "KHM",
     "year": "1990",
     "rank": 43,
-    "mmr": 1021.2373,
+    "mmr": 1021.237,
     "Region": "East Asia & Pacific",
     "matdeaths": 3924.237
   },
@@ -805,43 +805,43 @@
     "iso": "TLS",
     "year": "1990",
     "rank": 44,
-    "mmr": 1080.9675,
+    "mmr": 1080.967,
     "Region": "East Asia & Pacific",
-    "matdeaths": 352.3197
+    "matdeaths": 352.32
   },
   {
     "name": "Angola",
     "iso": "AGO",
     "year": "1990",
     "rank": 45,
-    "mmr": 1155.9155,
+    "mmr": 1155.916,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 6834.4661
+    "matdeaths": 6834.466
   },
   {
     "name": "Nigeria",
     "iso": "NGA",
     "year": "1990",
     "rank": 46,
-    "mmr": 1347.2966,
+    "mmr": 1347.297,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 56851.4697
+    "matdeaths": 56851.47
   },
   {
     "name": "Uzbekistan",
     "iso": "UZB",
     "year": "1995",
     "rank": 1,
-    "mmr": 32.3081,
+    "mmr": 32.308,
     "Region": "Europe & Central Asia",
-    "matdeaths": 203.9936
+    "matdeaths": 203.994
   },
   {
     "name": "Georgia",
     "iso": "GEO",
     "year": "1995",
     "rank": 2,
-    "mmr": 34.6684,
+    "mmr": 34.668,
     "Region": "Europe & Central Asia",
     "matdeaths": 24.763
   },
@@ -850,18 +850,18 @@
     "iso": "UKR",
     "year": "1995",
     "rank": 3,
-    "mmr": 51.7331,
+    "mmr": 51.733,
     "Region": "Europe & Central Asia",
-    "matdeaths": 257.5664
+    "matdeaths": 257.566
   },
   {
     "name": "Republic of Moldova",
     "iso": "MDA",
     "year": "1995",
     "rank": 4,
-    "mmr": 65.5046,
+    "mmr": 65.505,
     "Region": "Europe & Central Asia",
-    "matdeaths": 40.1013
+    "matdeaths": 40.101
   },
   {
     "name": "Sri Lanka",
@@ -870,167 +870,167 @@
     "rank": 5,
     "mmr": 70.079,
     "Region": "South Asia",
-    "matdeaths": 241.7745
+    "matdeaths": 241.775
   },
   {
     "name": "Egypt",
     "iso": "EGY",
     "year": "1995",
     "rank": 6,
-    "mmr": 83.2136,
+    "mmr": 83.214,
     "Region": "Middle East & North Africa",
-    "matdeaths": 1410.7877
+    "matdeaths": 1410.788
   },
   {
     "name": "Kyrgyzstan",
     "iso": "KGZ",
     "year": "1995",
     "rank": 7,
-    "mmr": 92.3328,
+    "mmr": 92.333,
     "Region": "Europe & Central Asia",
-    "matdeaths": 114.7254
+    "matdeaths": 114.725
   },
   {
     "name": "Occupied Palestinian Territory",
     "iso": "PSE",
     "year": "1995",
     "rank": 8,
-    "mmr": 95.6883,
+    "mmr": 95.688,
     "Region": "Middle East & North Africa",
-    "matdeaths": 109.8464
+    "matdeaths": 109.846
   },
   {
     "name": "Viet Nam",
     "iso": "VNM",
     "year": "1995",
     "rank": 9,
-    "mmr": 106.8351,
+    "mmr": 106.835,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1832.1495
+    "matdeaths": 1832.15
   },
   {
     "name": "Tunisia",
     "iso": "TUN",
     "year": "1995",
     "rank": 10,
-    "mmr": 112.4345,
+    "mmr": 112.434,
     "Region": "Middle East & North Africa",
-    "matdeaths": 209.1146
+    "matdeaths": 209.115
   },
   {
     "name": "El Salvador",
     "iso": "SLV",
     "year": "1995",
     "rank": 11,
-    "mmr": 118.2024,
+    "mmr": 118.202,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 184.7207
+    "matdeaths": 184.721
   },
   {
     "name": "Philippines",
     "iso": "PHL",
     "year": "1995",
     "rank": 12,
-    "mmr": 122.1762,
+    "mmr": 122.176,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2648.3866
+    "matdeaths": 2648.387
   },
   {
     "name": "Cabo Verde",
     "iso": "CPV",
     "year": "1995",
     "rank": 13,
-    "mmr": 150.2643,
+    "mmr": 150.264,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 20.0903
+    "matdeaths": 20.09
   },
   {
     "name": "Micronesia",
     "iso": "FSM",
     "year": "1995",
     "rank": 14,
-    "mmr": 166.2326,
+    "mmr": 166.233,
     "Region": "East Asia & Pacific",
-    "matdeaths": 5.6486
+    "matdeaths": 5.649
   },
   {
     "name": "Honduras",
     "iso": "HND",
     "year": "1995",
     "rank": 15,
-    "mmr": 166.4758,
+    "mmr": 166.476,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 330.9289
+    "matdeaths": 330.929
   },
   {
     "name": "Vanuatu",
     "iso": "VUT",
     "year": "1995",
     "rank": 16,
-    "mmr": 183.7476,
+    "mmr": 183.748,
     "Region": "East Asia & Pacific",
-    "matdeaths": 10.6757
+    "matdeaths": 10.676
   },
   {
     "name": "Mongolia",
     "iso": "MNG",
     "year": "1995",
     "rank": 17,
-    "mmr": 205.1147,
+    "mmr": 205.115,
     "Region": "East Asia & Pacific",
-    "matdeaths": 112.6941
+    "matdeaths": 112.694
   },
   {
     "name": "Kiribati",
     "iso": "KIR",
     "year": "1995",
     "rank": 18,
-    "mmr": 206.9885,
+    "mmr": 206.989,
     "Region": "East Asia & Pacific",
-    "matdeaths": 5.4417
+    "matdeaths": 5.442
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "1995",
     "rank": 19,
-    "mmr": 211.5032,
+    "mmr": 211.503,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 301.5549
+    "matdeaths": 301.555
   },
   {
     "name": "Morocco",
     "iso": "MAR",
     "year": "1995",
     "rank": 20,
-    "mmr": 256.5042,
+    "mmr": 256.504,
     "Region": "Middle East & North Africa",
-    "matdeaths": 1756.0921
+    "matdeaths": 1756.092
   },
   {
     "name": "Sao Tome and Principe",
     "iso": "STP",
     "year": "1995",
     "rank": 21,
-    "mmr": 263.0164,
+    "mmr": 263.016,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 12.9851
+    "matdeaths": 12.985
   },
   {
     "name": "Solomon Islands",
     "iso": "SLB",
     "year": "1995",
     "rank": 22,
-    "mmr": 273.0688,
+    "mmr": 273.069,
     "Region": "East Asia & Pacific",
-    "matdeaths": 36.8179
+    "matdeaths": 36.818
   },
   {
     "name": "Indonesia",
     "iso": "IDN",
     "year": "1995",
     "rank": 23,
-    "mmr": 325.8373,
+    "mmr": 325.837,
     "Region": "East Asia & Pacific",
     "matdeaths": 14690.264
   },
@@ -1039,52 +1039,52 @@
     "iso": "PAK",
     "year": "1995",
     "rank": 24,
-    "mmr": 363.1504,
+    "mmr": 363.15,
     "Region": "South Asia",
-    "matdeaths": 16184.8838
+    "matdeaths": 16184.884
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "1995",
     "rank": 25,
-    "mmr": 375.6284,
+    "mmr": 375.628,
     "Region": "East Asia & Pacific",
-    "matdeaths": 4164.9599
+    "matdeaths": 4164.96
   },
   {
     "name": "Papua New Guinea",
     "iso": "PNG",
     "year": "1995",
     "rank": 26,
-    "mmr": 377.1682,
+    "mmr": 377.168,
     "Region": "East Asia & Pacific",
-    "matdeaths": 634.4762
+    "matdeaths": 634.476
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "1995",
     "rank": 27,
-    "mmr": 389.6093,
+    "mmr": 389.609,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 983.4947
+    "matdeaths": 983.495
   },
   {
     "name": "Djibouti",
     "iso": "DJI",
     "year": "1995",
     "rank": 28,
-    "mmr": 451.6783,
+    "mmr": 451.678,
     "Region": "Middle East & North Africa",
-    "matdeaths": 107.8879
+    "matdeaths": 107.888
   },
   {
     "name": "India",
     "iso": "IND",
     "year": "1995",
     "rank": 29,
-    "mmr": 471.0079,
+    "mmr": 471.008,
     "Region": "South Asia",
     "matdeaths": 130330.275
   },
@@ -1093,7 +1093,7 @@
     "iso": "BGD",
     "year": "1995",
     "rank": 30,
-    "mmr": 478.7659,
+    "mmr": 478.766,
     "Region": "South Asia",
     "matdeaths": 17650.35
   },
@@ -1102,7 +1102,7 @@
     "iso": "LSO",
     "year": "1995",
     "rank": 31,
-    "mmr": 524.8867,
+    "mmr": 524.887,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 308.245
   },
@@ -1111,27 +1111,27 @@
     "iso": "GHA",
     "year": "1995",
     "rank": 32,
-    "mmr": 532.1359,
+    "mmr": 532.136,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3225.6748
+    "matdeaths": 3225.675
   },
   {
     "name": "Swaziland",
     "iso": "SWZ",
     "year": "1995",
     "rank": 33,
-    "mmr": 536.6391,
+    "mmr": 536.639,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 190.7162
+    "matdeaths": 190.716
   },
   {
     "name": "Zambia",
     "iso": "ZMB",
     "year": "1995",
     "rank": 34,
-    "mmr": 595.9527,
+    "mmr": 595.953,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 2483.2633
+    "matdeaths": 2483.263
   },
   {
     "name": "Congo",
@@ -1140,23 +1140,23 @@
     "rank": 35,
     "mmr": 634.091,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 661.2809
+    "matdeaths": 661.281
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "1995",
     "rank": 36,
-    "mmr": 636.4887,
+    "mmr": 636.489,
     "Region": "South Asia",
-    "matdeaths": 109.2915
+    "matdeaths": 109.291
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "1995",
     "rank": 37,
-    "mmr": 647.8937,
+    "mmr": 647.894,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 6479.177
   },
@@ -1165,27 +1165,27 @@
     "iso": "LAO",
     "year": "1995",
     "rank": 38,
-    "mmr": 694.8882,
+    "mmr": 694.888,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1291.1927
+    "matdeaths": 1291.193
   },
   {
     "name": "Kenya",
     "iso": "KEN",
     "year": "1995",
     "rank": 39,
-    "mmr": 698.2266,
+    "mmr": 698.227,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 7324.2505
+    "matdeaths": 7324.25
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "1995",
     "rank": 40,
-    "mmr": 711.3016,
+    "mmr": 711.302,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4291.8659
+    "matdeaths": 4291.866
   },
   {
     "name": "Cambodia",
@@ -1194,16 +1194,16 @@
     "rank": 41,
     "mmr": 730.356,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2654.2672
+    "matdeaths": 2654.267
   },
   {
     "name": "Cameroon",
     "iso": "CMR",
     "year": "1995",
     "rank": 42,
-    "mmr": 749.3221,
+    "mmr": 749.322,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4435.2298
+    "matdeaths": 4435.23
   },
   {
     "name": "Mauritania",
@@ -1212,79 +1212,79 @@
     "rank": 43,
     "mmr": 823.627,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 761.6984
+    "matdeaths": 761.698
   },
   {
     "name": "Timor-Leste",
     "iso": "TLS",
     "year": "1995",
     "rank": 44,
-    "mmr": 897.1988,
+    "mmr": 897.199,
     "Region": "East Asia & Pacific",
-    "matdeaths": 342.3531
+    "matdeaths": 342.353
   },
   {
     "name": "Angola",
     "iso": "AGO",
     "year": "1995",
     "rank": 45,
-    "mmr": 1148.4858,
+    "mmr": 1148.486,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 7781.6227
+    "matdeaths": 7781.623
   },
   {
     "name": "Nigeria",
     "iso": "NGA",
     "year": "1995",
     "rank": 46,
-    "mmr": 1253.9643,
+    "mmr": 1253.964,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 58932.1103
+    "matdeaths": 58932.11
   },
   {
     "name": "Ukraine",
     "iso": "UKR",
     "year": "2000",
     "rank": 1,
-    "mmr": 34.0749,
+    "mmr": 34.075,
     "Region": "Europe & Central Asia",
-    "matdeaths": 137.4845
+    "matdeaths": 137.484
   },
   {
     "name": "Uzbekistan",
     "iso": "UZB",
     "year": "2000",
     "rank": 2,
-    "mmr": 34.4802,
+    "mmr": 34.48,
     "Region": "Europe & Central Asia",
-    "matdeaths": 189.7844
+    "matdeaths": 189.784
   },
   {
     "name": "Georgia",
     "iso": "GEO",
     "year": "2000",
     "rank": 3,
-    "mmr": 36.9013,
+    "mmr": 36.901,
     "Region": "Europe & Central Asia",
-    "matdeaths": 20.9485
+    "matdeaths": 20.949
   },
   {
     "name": "Republic of Moldova",
     "iso": "MDA",
     "year": "2000",
     "rank": 4,
-    "mmr": 49.3559,
+    "mmr": 49.356,
     "Region": "Europe & Central Asia",
-    "matdeaths": 23.5655
+    "matdeaths": 23.565
   },
   {
     "name": "Sri Lanka",
     "iso": "LKA",
     "year": "2000",
     "rank": 5,
-    "mmr": 57.3874,
+    "mmr": 57.387,
     "Region": "South Asia",
-    "matdeaths": 199.7162
+    "matdeaths": 199.716
   },
   {
     "name": "Egypt",
@@ -1293,41 +1293,41 @@
     "rank": 6,
     "mmr": 62.773,
     "Region": "Middle East & North Africa",
-    "matdeaths": 1076.1511
+    "matdeaths": 1076.151
   },
   {
     "name": "Occupied Palestinian Territory",
     "iso": "PSE",
     "year": "2000",
     "rank": 7,
-    "mmr": 71.7224,
+    "mmr": 71.722,
     "Region": "Middle East & North Africa",
-    "matdeaths": 86.7332
+    "matdeaths": 86.733
   },
   {
     "name": "Kyrgyzstan",
     "iso": "KGZ",
     "year": "2000",
     "rank": 8,
-    "mmr": 73.5469,
+    "mmr": 73.547,
     "Region": "Europe & Central Asia",
-    "matdeaths": 79.4638
+    "matdeaths": 79.464
   },
   {
     "name": "Viet Nam",
     "iso": "VNM",
     "year": "2000",
     "rank": 9,
-    "mmr": 80.7085,
+    "mmr": 80.708,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1136.1121
+    "matdeaths": 1136.112
   },
   {
     "name": "Cabo Verde",
     "iso": "CPV",
     "year": "2000",
     "rank": 10,
-    "mmr": 83.3819,
+    "mmr": 83.382,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 10.271
   },
@@ -1336,16 +1336,16 @@
     "iso": "TUN",
     "year": "2000",
     "rank": 11,
-    "mmr": 84.2422,
+    "mmr": 84.242,
     "Region": "Middle East & North Africa",
-    "matdeaths": 141.3172
+    "matdeaths": 141.317
   },
   {
     "name": "El Salvador",
     "iso": "SLV",
     "year": "2000",
     "rank": 12,
-    "mmr": 84.2646,
+    "mmr": 84.265,
     "Region": "Latin America & Caribbean",
     "matdeaths": 117.775
   },
@@ -1354,25 +1354,25 @@
     "iso": "PHL",
     "year": "2000",
     "rank": 13,
-    "mmr": 123.5504,
+    "mmr": 123.55,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2858.9498
+    "matdeaths": 2858.95
   },
   {
     "name": "Honduras",
     "iso": "HND",
     "year": "2000",
     "rank": 14,
-    "mmr": 132.8994,
+    "mmr": 132.899,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 261.6098
+    "matdeaths": 261.61
   },
   {
     "name": "Vanuatu",
     "iso": "VUT",
     "year": "2000",
     "rank": 15,
-    "mmr": 143.6694,
+    "mmr": 143.669,
     "Region": "East Asia & Pacific",
     "matdeaths": 8.692
   },
@@ -1381,16 +1381,16 @@
     "iso": "FSM",
     "year": "2000",
     "rank": 16,
-    "mmr": 152.8192,
+    "mmr": 152.819,
     "Region": "East Asia & Pacific",
-    "matdeaths": 4.9254
+    "matdeaths": 4.925
   },
   {
     "name": "Mongolia",
     "iso": "MNG",
     "year": "2000",
     "rank": 17,
-    "mmr": 160.6592,
+    "mmr": 160.659,
     "Region": "East Asia & Pacific",
     "matdeaths": 74.533
   },
@@ -1399,34 +1399,34 @@
     "iso": "KIR",
     "year": "2000",
     "rank": 18,
-    "mmr": 166.3392,
+    "mmr": 166.339,
     "Region": "East Asia & Pacific",
-    "matdeaths": 4.2982
+    "matdeaths": 4.298
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "2000",
     "rank": 19,
-    "mmr": 201.9875,
+    "mmr": 201.988,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 272.6225
+    "matdeaths": 272.623
   },
   {
     "name": "Solomon Islands",
     "iso": "SLB",
     "year": "2000",
     "rank": 20,
-    "mmr": 214.3018,
+    "mmr": 214.302,
     "Region": "East Asia & Pacific",
-    "matdeaths": 31.5324
+    "matdeaths": 31.532
   },
   {
     "name": "Morocco",
     "iso": "MAR",
     "year": "2000",
     "rank": 21,
-    "mmr": 220.6736,
+    "mmr": 220.674,
     "Region": "Middle East & North Africa",
     "matdeaths": 1376.063
   },
@@ -1435,9 +1435,9 @@
     "iso": "STP",
     "year": "2000",
     "rank": 22,
-    "mmr": 222.4479,
+    "mmr": 222.448,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 11.9744
+    "matdeaths": 11.974
   },
   {
     "name": "Indonesia",
@@ -1446,34 +1446,34 @@
     "rank": 23,
     "mmr": 264.89,
     "Region": "East Asia & Pacific",
-    "matdeaths": 12072.0066
+    "matdeaths": 12072.007
   },
   {
     "name": "Pakistan",
     "iso": "PAK",
     "year": "2000",
     "rank": 24,
-    "mmr": 306.1607,
+    "mmr": 306.161,
     "Region": "South Asia",
-    "matdeaths": 13523.9493
+    "matdeaths": 13523.949
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "2000",
     "rank": 25,
-    "mmr": 308.3045,
+    "mmr": 308.304,
     "Region": "East Asia & Pacific",
-    "matdeaths": 3569.6325
+    "matdeaths": 3569.633
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "2000",
     "rank": 26,
-    "mmr": 334.4034,
+    "mmr": 334.403,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 862.0753
+    "matdeaths": 862.075
   },
   {
     "name": "Papua New Guinea",
@@ -1482,16 +1482,16 @@
     "rank": 27,
     "mmr": 341.939,
     "Region": "East Asia & Pacific",
-    "matdeaths": 639.6824
+    "matdeaths": 639.682
   },
   {
     "name": "India",
     "iso": "IND",
     "year": "2000",
     "rank": 28,
-    "mmr": 374.2752,
+    "mmr": 374.275,
     "Region": "South Asia",
-    "matdeaths": 104364.6462
+    "matdeaths": 104364.646
   },
   {
     "name": "Bangladesh",
@@ -1500,43 +1500,43 @@
     "rank": 29,
     "mmr": 398.813,
     "Region": "South Asia",
-    "matdeaths": 14463.6052
+    "matdeaths": 14463.605
   },
   {
     "name": "Djibouti",
     "iso": "DJI",
     "year": "2000",
     "rank": 30,
-    "mmr": 400.8728,
+    "mmr": 400.873,
     "Region": "Middle East & North Africa",
-    "matdeaths": 90.4289
+    "matdeaths": 90.429
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "2000",
     "rank": 31,
-    "mmr": 423.1513,
+    "mmr": 423.151,
     "Region": "South Asia",
-    "matdeaths": 66.1174
+    "matdeaths": 66.117
   },
   {
     "name": "Ghana",
     "iso": "GHA",
     "year": "2000",
     "rank": 32,
-    "mmr": 467.3985,
+    "mmr": 467.399,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 3058.4925
+    "matdeaths": 3058.492
   },
   {
     "name": "Cambodia",
     "iso": "KHM",
     "year": "2000",
     "rank": 33,
-    "mmr": 483.9506,
+    "mmr": 483.951,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1650.8379
+    "matdeaths": 1650.838
   },
   {
     "name": "Zambia",
@@ -1545,25 +1545,25 @@
     "rank": 34,
     "mmr": 541.35,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 2530.8977
+    "matdeaths": 2530.898
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "2000",
     "rank": 35,
-    "mmr": 543.6262,
+    "mmr": 543.626,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 6103.2365
+    "matdeaths": 6103.237
   },
   {
     "name": "Lao",
     "iso": "LAO",
     "year": "2000",
     "rank": 36,
-    "mmr": 545.9643,
+    "mmr": 545.964,
     "Region": "East Asia & Pacific",
-    "matdeaths": 928.8599
+    "matdeaths": 928.86
   },
   {
     "name": "Swaziland",
@@ -1572,34 +1572,34 @@
     "rank": 37,
     "mmr": 585.705,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 200.5922
+    "matdeaths": 200.592
   },
   {
     "name": "Lesotho",
     "iso": "LSO",
     "year": "2000",
     "rank": 38,
-    "mmr": 649.4061,
+    "mmr": 649.406,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 378.0518
+    "matdeaths": 378.052
   },
   {
     "name": "Congo",
     "iso": "COG",
     "year": "2000",
     "rank": 39,
-    "mmr": 652.7252,
+    "mmr": 652.725,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 787.2192
+    "matdeaths": 787.219
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "2000",
     "rank": 40,
-    "mmr": 670.7239,
+    "mmr": 670.724,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4498.2903
+    "matdeaths": 4498.29
   },
   {
     "name": "Timor-Leste",
@@ -1608,16 +1608,16 @@
     "rank": 41,
     "mmr": 693.949,
     "Region": "East Asia & Pacific",
-    "matdeaths": 260.1753
+    "matdeaths": 260.175
   },
   {
     "name": "Cameroon",
     "iso": "CMR",
     "year": "2000",
     "rank": 42,
-    "mmr": 749.7543,
+    "mmr": 749.754,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4930.5644
+    "matdeaths": 4930.564
   },
   {
     "name": "Kenya",
@@ -1626,70 +1626,70 @@
     "rank": 43,
     "mmr": 758.774,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 9076.8189
+    "matdeaths": 9076.819
   },
   {
     "name": "Mauritania",
     "iso": "MRT",
     "year": "2000",
     "rank": 44,
-    "mmr": 812.6445,
+    "mmr": 812.644,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 845.4428
+    "matdeaths": 845.443
   },
   {
     "name": "Angola",
     "iso": "AGO",
     "year": "2000",
     "rank": 45,
-    "mmr": 924.4873,
+    "mmr": 924.487,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 7160.1729
+    "matdeaths": 7160.173
   },
   {
     "name": "Nigeria",
     "iso": "NGA",
     "year": "2000",
     "rank": 46,
-    "mmr": 1171.6699,
+    "mmr": 1171.67,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 61985.5788
+    "matdeaths": 61985.579
   },
   {
     "name": "Ukraine",
     "iso": "UKR",
     "year": "2005",
     "rank": 1,
-    "mmr": 29.7337,
+    "mmr": 29.734,
     "Region": "Europe & Central Asia",
-    "matdeaths": 129.6043
+    "matdeaths": 129.604
   },
   {
     "name": "Georgia",
     "iso": "GEO",
     "year": "2005",
     "rank": 2,
-    "mmr": 36.7204,
+    "mmr": 36.72,
     "Region": "Europe & Central Asia",
-    "matdeaths": 21.1032
+    "matdeaths": 21.103
   },
   {
     "name": "Republic of Moldova",
     "iso": "MDA",
     "year": "2005",
     "rank": 3,
-    "mmr": 39.1551,
+    "mmr": 39.155,
     "Region": "Europe & Central Asia",
-    "matdeaths": 16.7854
+    "matdeaths": 16.785
   },
   {
     "name": "Uzbekistan",
     "iso": "UZB",
     "year": "2005",
     "rank": 4,
-    "mmr": 42.0975,
+    "mmr": 42.098,
     "Region": "Europe & Central Asia",
-    "matdeaths": 237.8069
+    "matdeaths": 237.807
   },
   {
     "name": "Sri Lanka",
@@ -1698,25 +1698,25 @@
     "rank": 5,
     "mmr": 42.638,
     "Region": "South Asia",
-    "matdeaths": 155.2554
+    "matdeaths": 155.255
   },
   {
     "name": "Egypt",
     "iso": "EGY",
     "year": "2005",
     "rank": 6,
-    "mmr": 51.8047,
+    "mmr": 51.805,
     "Region": "Middle East & North Africa",
-    "matdeaths": 967.2454
+    "matdeaths": 967.245
   },
   {
     "name": "Cabo Verde",
     "iso": "CPV",
     "year": "2005",
     "rank": 7,
-    "mmr": 54.0971,
+    "mmr": 54.097,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 6.0692
+    "matdeaths": 6.069
   },
   {
     "name": "Viet Nam",
@@ -1725,34 +1725,34 @@
     "rank": 8,
     "mmr": 61.023,
     "Region": "East Asia & Pacific",
-    "matdeaths": 870.9912
+    "matdeaths": 870.991
   },
   {
     "name": "Occupied Palestinian Territory",
     "iso": "PSE",
     "year": "2005",
     "rank": 9,
-    "mmr": 62.3704,
+    "mmr": 62.37,
     "Region": "Middle East & North Africa",
-    "matdeaths": 78.1295
+    "matdeaths": 78.13
   },
   {
     "name": "El Salvador",
     "iso": "SLV",
     "year": "2005",
     "rank": 10,
-    "mmr": 67.9646,
+    "mmr": 67.965,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 82.5288
+    "matdeaths": 82.529
   },
   {
     "name": "Tunisia",
     "iso": "TUN",
     "year": "2005",
     "rank": 11,
-    "mmr": 74.2214,
+    "mmr": 74.221,
     "Region": "Middle East & North Africa",
-    "matdeaths": 124.6771
+    "matdeaths": 124.677
   },
   {
     "name": "Kyrgyzstan",
@@ -1761,32 +1761,32 @@
     "rank": 12,
     "mmr": 85.336,
     "Region": "Europe & Central Asia",
-    "matdeaths": 96.4271
+    "matdeaths": 96.427
   },
   {
     "name": "Mongolia",
     "iso": "MNG",
     "year": "2005",
     "rank": 13,
-    "mmr": 94.5198,
+    "mmr": 94.52,
     "Region": "East Asia & Pacific",
-    "matdeaths": 48.4868
+    "matdeaths": 48.487
   },
   {
     "name": "Vanuatu",
     "iso": "VUT",
     "year": "2005",
     "rank": 14,
-    "mmr": 116.0093,
+    "mmr": 116.009,
     "Region": "East Asia & Pacific",
-    "matdeaths": 7.1508
+    "matdeaths": 7.151
   },
   {
     "name": "Philippines",
     "iso": "PHL",
     "year": "2005",
     "rank": 15,
-    "mmr": 126.6959,
+    "mmr": 126.696,
     "Region": "East Asia & Pacific",
     "matdeaths": 2961.91
   },
@@ -1795,18 +1795,18 @@
     "iso": "FSM",
     "year": "2005",
     "rank": 16,
-    "mmr": 134.0635,
+    "mmr": 134.063,
     "Region": "East Asia & Pacific",
-    "matdeaths": 3.7122
+    "matdeaths": 3.712
   },
   {
     "name": "Kiribati",
     "iso": "KIR",
     "year": "2005",
     "rank": 17,
-    "mmr": 134.7851,
+    "mmr": 134.785,
     "Region": "East Asia & Pacific",
-    "matdeaths": 3.6985
+    "matdeaths": 3.699
   },
   {
     "name": "Honduras",
@@ -1815,70 +1815,70 @@
     "rank": 18,
     "mmr": 150.19,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 280.6526
+    "matdeaths": 280.653
   },
   {
     "name": "Solomon Islands",
     "iso": "SLB",
     "year": "2005",
     "rank": 19,
-    "mmr": 164.0105,
+    "mmr": 164.01,
     "Region": "East Asia & Pacific",
-    "matdeaths": 26.7124
+    "matdeaths": 26.712
   },
   {
     "name": "Sao Tome and Principe",
     "iso": "STP",
     "year": "2005",
     "rank": 20,
-    "mmr": 181.3795,
+    "mmr": 181.379,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 10.4239
+    "matdeaths": 10.424
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "2005",
     "rank": 21,
-    "mmr": 190.0936,
+    "mmr": 190.094,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 248.3079
+    "matdeaths": 248.308
   },
   {
     "name": "Morocco",
     "iso": "MAR",
     "year": "2005",
     "rank": 22,
-    "mmr": 190.1657,
+    "mmr": 190.166,
     "Region": "Middle East & North Africa",
-    "matdeaths": 1184.5233
+    "matdeaths": 1184.523
   },
   {
     "name": "Indonesia",
     "iso": "IDN",
     "year": "2005",
     "rank": 23,
-    "mmr": 211.8914,
+    "mmr": 211.891,
     "Region": "East Asia & Pacific",
-    "matdeaths": 10303.2988
+    "matdeaths": 10303.299
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "2005",
     "rank": 24,
-    "mmr": 247.5071,
+    "mmr": 247.507,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2812.7917
+    "matdeaths": 2812.792
   },
   {
     "name": "Pakistan",
     "iso": "PAK",
     "year": "2005",
     "rank": 25,
-    "mmr": 248.9052,
+    "mmr": 248.905,
     "Region": "South Asia",
-    "matdeaths": 11497.2294
+    "matdeaths": 11497.229
   },
   {
     "name": "Papua New Guinea",
@@ -1887,50 +1887,50 @@
     "rank": 26,
     "mmr": 277.363,
     "Region": "East Asia & Pacific",
-    "matdeaths": 550.6959
+    "matdeaths": 550.696
   },
   {
     "name": "India",
     "iso": "IND",
     "year": "2005",
     "rank": 27,
-    "mmr": 280.2101,
+    "mmr": 280.21,
     "Region": "South Asia",
-    "matdeaths": 77433.9446
+    "matdeaths": 77433.945
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "2005",
     "rank": 28,
-    "mmr": 305.0377,
+    "mmr": 305.038,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 783.3063
+    "matdeaths": 783.306
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "2005",
     "rank": 29,
-    "mmr": 308.0341,
+    "mmr": 308.034,
     "Region": "South Asia",
-    "matdeaths": 46.5162
+    "matdeaths": 46.516
   },
   {
     "name": "Cambodia",
     "iso": "KHM",
     "year": "2005",
     "rank": 30,
-    "mmr": 314.7107,
+    "mmr": 314.711,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1098.3843
+    "matdeaths": 1098.384
   },
   {
     "name": "Bangladesh",
     "iso": "BGD",
     "year": "2005",
     "rank": 31,
-    "mmr": 318.5664,
+    "mmr": 318.566,
     "Region": "South Asia",
     "matdeaths": 10962.999
   },
@@ -1939,45 +1939,45 @@
     "iso": "DJI",
     "year": "2005",
     "rank": 32,
-    "mmr": 341.0264,
+    "mmr": 341.026,
     "Region": "Middle East & North Africa",
-    "matdeaths": 76.0966
+    "matdeaths": 76.097
   },
   {
     "name": "Zambia",
     "iso": "ZMB",
     "year": "2005",
     "rank": 33,
-    "mmr": 372.3393,
+    "mmr": 372.339,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 1968.3567
+    "matdeaths": 1968.357
   },
   {
     "name": "Ghana",
     "iso": "GHA",
     "year": "2005",
     "rank": 34,
-    "mmr": 375.5601,
+    "mmr": 375.56,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 2729.2138
+    "matdeaths": 2729.214
   },
   {
     "name": "Lao",
     "iso": "LAO",
     "year": "2005",
     "rank": 35,
-    "mmr": 418.0008,
+    "mmr": 418.001,
     "Region": "East Asia & Pacific",
-    "matdeaths": 703.6709
+    "matdeaths": 703.671
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "2005",
     "rank": 36,
-    "mmr": 440.4274,
+    "mmr": 440.427,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5297.2138
+    "matdeaths": 5297.214
   },
   {
     "name": "Timor-Leste",
@@ -1986,59 +1986,59 @@
     "rank": 37,
     "mmr": 505.704,
     "Region": "East Asia & Pacific",
-    "matdeaths": 193.0778
+    "matdeaths": 193.078
   },
   {
     "name": "Swaziland",
     "iso": "SWZ",
     "year": "2005",
     "rank": 38,
-    "mmr": 595.1182,
+    "mmr": 595.118,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 209.1483
+    "matdeaths": 209.148
   },
   {
     "name": "Congo",
     "iso": "COG",
     "year": "2005",
     "rank": 39,
-    "mmr": 595.7697,
+    "mmr": 595.77,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 818.1169
+    "matdeaths": 818.117
   },
   {
     "name": "Angola",
     "iso": "AGO",
     "year": "2005",
     "rank": 40,
-    "mmr": 705.2795,
+    "mmr": 705.279,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 6278.4613
+    "matdeaths": 6278.461
   },
   {
     "name": "Kenya",
     "iso": "KEN",
     "year": "2005",
     "rank": 41,
-    "mmr": 727.7133,
+    "mmr": 727.713,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 9929.1676
+    "matdeaths": 9929.168
   },
   {
     "name": "Cameroon",
     "iso": "CMR",
     "year": "2005",
     "rank": 42,
-    "mmr": 728.7323,
+    "mmr": 728.732,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5343.7864
+    "matdeaths": 5343.786
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "2005",
     "rank": 43,
-    "mmr": 742.0795,
+    "mmr": 742.08,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 5289.543
   },
@@ -2047,54 +2047,54 @@
     "iso": "LSO",
     "year": "2005",
     "rank": 44,
-    "mmr": 746.2709,
+    "mmr": 746.271,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 414.8818
+    "matdeaths": 414.882
   },
   {
     "name": "Mauritania",
     "iso": "MRT",
     "year": "2005",
     "rank": 45,
-    "mmr": 750.0141,
+    "mmr": 750.014,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 870.0613
+    "matdeaths": 870.061
   },
   {
     "name": "Nigeria",
     "iso": "NGA",
     "year": "2005",
     "rank": 46,
-    "mmr": 945.9613,
+    "mmr": 945.961,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 56041.8524
+    "matdeaths": 56041.852
   },
   {
     "name": "Ukraine",
     "iso": "UKR",
     "year": "2010",
     "rank": 1,
-    "mmr": 25.9038,
+    "mmr": 25.904,
     "Region": "Europe & Central Asia",
-    "matdeaths": 126.7707
+    "matdeaths": 126.771
   },
   {
     "name": "Republic of Moldova",
     "iso": "MDA",
     "year": "2010",
     "rank": 2,
-    "mmr": 33.6327,
+    "mmr": 33.633,
     "Region": "Europe & Central Asia",
-    "matdeaths": 15.2239
+    "matdeaths": 15.224
   },
   {
     "name": "Sri Lanka",
     "iso": "LKA",
     "year": "2010",
     "rank": 3,
-    "mmr": 35.0169,
+    "mmr": 35.017,
     "Region": "South Asia",
-    "matdeaths": 123.6956
+    "matdeaths": 123.696
   },
   {
     "name": "Uzbekistan",
@@ -2103,25 +2103,25 @@
     "rank": 4,
     "mmr": 39.05,
     "Region": "Europe & Central Asia",
-    "matdeaths": 252.4956
+    "matdeaths": 252.496
   },
   {
     "name": "Georgia",
     "iso": "GEO",
     "year": "2010",
     "rank": 5,
-    "mmr": 39.6045,
+    "mmr": 39.605,
     "Region": "Europe & Central Asia",
-    "matdeaths": 23.4982
+    "matdeaths": 23.498
   },
   {
     "name": "Egypt",
     "iso": "EGY",
     "year": "2010",
     "rank": 6,
-    "mmr": 40.4809,
+    "mmr": 40.481,
     "Region": "Middle East & North Africa",
-    "matdeaths": 909.5156
+    "matdeaths": 909.516
   },
   {
     "name": "Cabo Verde",
@@ -2130,7 +2130,7 @@
     "rank": 7,
     "mmr": 51.274,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5.6263
+    "matdeaths": 5.626
   },
   {
     "name": "Occupied Palestinian Territory",
@@ -2139,14 +2139,14 @@
     "rank": 8,
     "mmr": 54.147,
     "Region": "Middle East & North Africa",
-    "matdeaths": 74.1543
+    "matdeaths": 74.154
   },
   {
     "name": "Viet Nam",
     "iso": "VNM",
     "year": "2010",
     "rank": 9,
-    "mmr": 58.4271,
+    "mmr": 58.427,
     "Region": "East Asia & Pacific",
     "matdeaths": 904.23
   },
@@ -2155,88 +2155,88 @@
     "iso": "SLV",
     "year": "2010",
     "rank": 10,
-    "mmr": 58.8131,
+    "mmr": 58.813,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 64.7385
+    "matdeaths": 64.738
   },
   {
     "name": "Mongolia",
     "iso": "MNG",
     "year": "2010",
     "rank": 11,
-    "mmr": 63.0268,
+    "mmr": 63.027,
     "Region": "East Asia & Pacific",
-    "matdeaths": 41.0632
+    "matdeaths": 41.063
   },
   {
     "name": "Tunisia",
     "iso": "TUN",
     "year": "2010",
     "rank": 12,
-    "mmr": 66.7825,
+    "mmr": 66.782,
     "Region": "Middle East & North Africa",
-    "matdeaths": 127.0383
+    "matdeaths": 127.038
   },
   {
     "name": "Kyrgyzstan",
     "iso": "KGZ",
     "year": "2010",
     "rank": 13,
-    "mmr": 83.9955,
+    "mmr": 83.995,
     "Region": "Europe & Central Asia",
-    "matdeaths": 119.9363
+    "matdeaths": 119.936
   },
   {
     "name": "Vanuatu",
     "iso": "VUT",
     "year": "2010",
     "rank": 14,
-    "mmr": 94.0474,
+    "mmr": 94.047,
     "Region": "East Asia & Pacific",
-    "matdeaths": 6.1187
+    "matdeaths": 6.119
   },
   {
     "name": "Kiribati",
     "iso": "KIR",
     "year": "2010",
     "rank": 15,
-    "mmr": 108.9098,
+    "mmr": 108.91,
     "Region": "East Asia & Pacific",
-    "matdeaths": 3.2902
+    "matdeaths": 3.29
   },
   {
     "name": "Micronesia",
     "iso": "FSM",
     "year": "2010",
     "rank": 16,
-    "mmr": 114.5142,
+    "mmr": 114.514,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2.8319
+    "matdeaths": 2.832
   },
   {
     "name": "Philippines",
     "iso": "PHL",
     "year": "2010",
     "rank": 17,
-    "mmr": 128.7285,
+    "mmr": 128.729,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2958.6175
+    "matdeaths": 2958.618
   },
   {
     "name": "Solomon Islands",
     "iso": "SLB",
     "year": "2010",
     "rank": 18,
-    "mmr": 136.4057,
+    "mmr": 136.406,
     "Region": "East Asia & Pacific",
-    "matdeaths": 23.3677
+    "matdeaths": 23.368
   },
   {
     "name": "Morocco",
     "iso": "MAR",
     "year": "2010",
     "rank": 19,
-    "mmr": 152.6738,
+    "mmr": 152.674,
     "Region": "Middle East & North Africa",
     "matdeaths": 1043.37
   },
@@ -2245,34 +2245,34 @@
     "iso": "HND",
     "year": "2010",
     "rank": 20,
-    "mmr": 154.6945,
+    "mmr": 154.695,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 269.7826
+    "matdeaths": 269.783
   },
   {
     "name": "Sao Tome and Principe",
     "iso": "STP",
     "year": "2010",
     "rank": 21,
-    "mmr": 162.3292,
+    "mmr": 162.329,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 9.9313
+    "matdeaths": 9.931
   },
   {
     "name": "Indonesia",
     "iso": "IDN",
     "year": "2010",
     "rank": 22,
-    "mmr": 164.9255,
+    "mmr": 164.926,
     "Region": "East Asia & Pacific",
-    "matdeaths": 8390.0332
+    "matdeaths": 8390.033
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "2010",
     "rank": 23,
-    "mmr": 165.7098,
+    "mmr": 165.71,
     "Region": "Latin America & Caribbean",
     "matdeaths": 210.7
   },
@@ -2281,133 +2281,133 @@
     "iso": "KHM",
     "year": "2010",
     "rank": 24,
-    "mmr": 201.6084,
+    "mmr": 201.608,
     "Region": "East Asia & Pacific",
-    "matdeaths": 739.8203
+    "matdeaths": 739.82
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "2010",
     "rank": 25,
-    "mmr": 204.4612,
+    "mmr": 204.461,
     "Region": "South Asia",
-    "matdeaths": 29.2666
+    "matdeaths": 29.267
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "2010",
     "rank": 26,
-    "mmr": 204.9231,
+    "mmr": 204.923,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2081.4862
+    "matdeaths": 2081.486
   },
   {
     "name": "Pakistan",
     "iso": "PAK",
     "year": "2010",
     "rank": 27,
-    "mmr": 210.5187,
+    "mmr": 210.519,
     "Region": "South Asia",
-    "matdeaths": 10827.2633
+    "matdeaths": 10827.263
   },
   {
     "name": "India",
     "iso": "IND",
     "year": "2010",
     "rank": 28,
-    "mmr": 214.8488,
+    "mmr": 214.849,
     "Region": "South Asia",
-    "matdeaths": 57076.8829
+    "matdeaths": 57076.883
   },
   {
     "name": "Papua New Guinea",
     "iso": "PNG",
     "year": "2010",
     "rank": 29,
-    "mmr": 238.2807,
+    "mmr": 238.281,
     "Region": "East Asia & Pacific",
-    "matdeaths": 493.2506
+    "matdeaths": 493.251
   },
   {
     "name": "Bangladesh",
     "iso": "BGD",
     "year": "2010",
     "rank": 30,
-    "mmr": 242.4396,
+    "mmr": 242.44,
     "Region": "South Asia",
-    "matdeaths": 7848.0994
+    "matdeaths": 7848.099
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "2010",
     "rank": 31,
-    "mmr": 253.4532,
+    "mmr": 253.453,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 641.1707
+    "matdeaths": 641.171
   },
   {
     "name": "Zambia",
     "iso": "ZMB",
     "year": "2010",
     "rank": 32,
-    "mmr": 262.3509,
+    "mmr": 262.351,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 1534.0233
+    "matdeaths": 1534.023
   },
   {
     "name": "Djibouti",
     "iso": "DJI",
     "year": "2010",
     "rank": 33,
-    "mmr": 274.9683,
+    "mmr": 274.968,
     "Region": "Middle East & North Africa",
-    "matdeaths": 60.8807
+    "matdeaths": 60.881
   },
   {
     "name": "Lao",
     "iso": "LAO",
     "year": "2010",
     "rank": 34,
-    "mmr": 293.8563,
+    "mmr": 293.856,
     "Region": "East Asia & Pacific",
-    "matdeaths": 517.6779
+    "matdeaths": 517.678
   },
   {
     "name": "Timor-Leste",
     "iso": "TLS",
     "year": "2010",
     "rank": 35,
-    "mmr": 316.8763,
+    "mmr": 316.876,
     "Region": "East Asia & Pacific",
-    "matdeaths": 135.0305
+    "matdeaths": 135.03
   },
   {
     "name": "Ghana",
     "iso": "GHA",
     "year": "2010",
     "rank": 36,
-    "mmr": 324.8625,
+    "mmr": 324.863,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 2663.7656
+    "matdeaths": 2663.766
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "2010",
     "rank": 37,
-    "mmr": 349.2449,
+    "mmr": 349.245,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4391.3043
+    "matdeaths": 4391.304
   },
   {
     "name": "Swaziland",
     "iso": "SWZ",
     "year": "2010",
     "rank": 38,
-    "mmr": 436.4172,
+    "mmr": 436.417,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 161.086
   },
@@ -2416,25 +2416,25 @@
     "iso": "COG",
     "year": "2010",
     "rank": 39,
-    "mmr": 508.7469,
+    "mmr": 508.747,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 786.0851
+    "matdeaths": 786.085
   },
   {
     "name": "Angola",
     "iso": "AGO",
     "year": "2010",
     "rank": 40,
-    "mmr": 561.3088,
+    "mmr": 561.309,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5674.8601
+    "matdeaths": 5674.86
   },
   {
     "name": "Lesotho",
     "iso": "LSO",
     "year": "2010",
     "rank": 41,
-    "mmr": 586.5114,
+    "mmr": 586.511,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 338.898
   },
@@ -2443,97 +2443,97 @@
     "iso": "KEN",
     "year": "2010",
     "rank": 42,
-    "mmr": 605.3097,
+    "mmr": 605.31,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 9001.4448
+    "matdeaths": 9001.445
   },
   {
     "name": "Cameroon",
     "iso": "CMR",
     "year": "2010",
     "rank": 43,
-    "mmr": 675.5649,
+    "mmr": 675.565,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5384.4079
+    "matdeaths": 5384.408
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "2010",
     "rank": 44,
-    "mmr": 716.7483,
+    "mmr": 716.748,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5487.7762
+    "matdeaths": 5487.776
   },
   {
     "name": "Mauritania",
     "iso": "MRT",
     "year": "2010",
     "rank": 45,
-    "mmr": 722.8495,
+    "mmr": 722.85,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 910.6531
+    "matdeaths": 910.653
   },
   {
     "name": "Nigeria",
     "iso": "NGA",
     "year": "2010",
     "rank": 46,
-    "mmr": 866.7404,
+    "mmr": 866.74,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 56974.2114
+    "matdeaths": 56974.211
   },
   {
     "name": "Republic of Moldova",
     "iso": "MDA",
     "year": "2015",
     "rank": 1,
-    "mmr": 22.9096,
+    "mmr": 22.91,
     "Region": "Europe & Central Asia",
-    "matdeaths": 9.8316
+    "matdeaths": 9.832
   },
   {
     "name": "Ukraine",
     "iso": "UKR",
     "year": "2015",
     "rank": 2,
-    "mmr": 24.4514,
+    "mmr": 24.451,
     "Region": "Europe & Central Asia",
-    "matdeaths": 118.4407
+    "matdeaths": 118.441
   },
   {
     "name": "Sri Lanka",
     "iso": "LKA",
     "year": "2015",
     "rank": 3,
-    "mmr": 30.2936,
+    "mmr": 30.294,
     "Region": "South Asia",
-    "matdeaths": 97.9286
+    "matdeaths": 97.929
   },
   {
     "name": "Egypt",
     "iso": "EGY",
     "year": "2015",
     "rank": 4,
-    "mmr": 33.0396,
+    "mmr": 33.04,
     "Region": "Middle East & North Africa",
-    "matdeaths": 822.0046
+    "matdeaths": 822.005
   },
   {
     "name": "Uzbekistan",
     "iso": "UZB",
     "year": "2015",
     "rank": 5,
-    "mmr": 35.9338,
+    "mmr": 35.934,
     "Region": "Europe & Central Asia",
-    "matdeaths": 239.8281
+    "matdeaths": 239.828
   },
   {
     "name": "Georgia",
     "iso": "GEO",
     "year": "2015",
     "rank": 6,
-    "mmr": 36.0558,
+    "mmr": 36.056,
     "Region": "Europe & Central Asia",
     "matdeaths": 19.468
   },
@@ -2542,18 +2542,18 @@
     "iso": "CPV",
     "year": "2015",
     "rank": 7,
-    "mmr": 42.3483,
+    "mmr": 42.348,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4.6532
+    "matdeaths": 4.653
   },
   {
     "name": "Mongolia",
     "iso": "MNG",
     "year": "2015",
     "rank": 8,
-    "mmr": 43.9547,
+    "mmr": 43.955,
     "Region": "East Asia & Pacific",
-    "matdeaths": 30.3604
+    "matdeaths": 30.36
   },
   {
     "name": "Occupied Palestinian Territory",
@@ -2562,86 +2562,86 @@
     "rank": 9,
     "mmr": 45.498,
     "Region": "Middle East & North Africa",
-    "matdeaths": 68.8444
+    "matdeaths": 68.844
   },
   {
     "name": "El Salvador",
     "iso": "SLV",
     "year": "2015",
     "rank": 10,
-    "mmr": 54.0803,
+    "mmr": 54.08,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 56.9476
+    "matdeaths": 56.948
   },
   {
     "name": "Viet Nam",
     "iso": "VNM",
     "year": "2015",
     "rank": 11,
-    "mmr": 54.1131,
+    "mmr": 54.113,
     "Region": "East Asia & Pacific",
-    "matdeaths": 855.8942
+    "matdeaths": 855.894
   },
   {
     "name": "Tunisia",
     "iso": "TUN",
     "year": "2015",
     "rank": 12,
-    "mmr": 62.0202,
+    "mmr": 62.02,
     "Region": "Middle East & North Africa",
-    "matdeaths": 125.0836
+    "matdeaths": 125.084
   },
   {
     "name": "Kyrgyzstan",
     "iso": "KGZ",
     "year": "2015",
     "rank": 13,
-    "mmr": 75.5075,
+    "mmr": 75.508,
     "Region": "Europe & Central Asia",
-    "matdeaths": 116.2642
+    "matdeaths": 116.264
   },
   {
     "name": "Vanuatu",
     "iso": "VUT",
     "year": "2015",
     "rank": 14,
-    "mmr": 78.4103,
+    "mmr": 78.41,
     "Region": "East Asia & Pacific",
-    "matdeaths": 5.4338
+    "matdeaths": 5.434
   },
   {
     "name": "Kiribati",
     "iso": "KIR",
     "year": "2015",
     "rank": 15,
-    "mmr": 89.7881,
+    "mmr": 89.788,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2.8795
+    "matdeaths": 2.88
   },
   {
     "name": "Micronesia",
     "iso": "FSM",
     "year": "2015",
     "rank": 16,
-    "mmr": 99.5741,
+    "mmr": 99.574,
     "Region": "East Asia & Pacific",
-    "matdeaths": 2.4575
+    "matdeaths": 2.457
   },
   {
     "name": "Solomon Islands",
     "iso": "SLB",
     "year": "2015",
     "rank": 17,
-    "mmr": 113.9993,
+    "mmr": 113.999,
     "Region": "East Asia & Pacific",
-    "matdeaths": 19.4882
+    "matdeaths": 19.488
   },
   {
     "name": "Philippines",
     "iso": "PHL",
     "year": "2015",
     "rank": 18,
-    "mmr": 114.1477,
+    "mmr": 114.148,
     "Region": "East Asia & Pacific",
     "matdeaths": 2681.088
   },
@@ -2650,54 +2650,54 @@
     "iso": "MAR",
     "year": "2015",
     "rank": 19,
-    "mmr": 121.3173,
+    "mmr": 121.317,
     "Region": "Middle East & North Africa",
-    "matdeaths": 848.2625
+    "matdeaths": 848.263
   },
   {
     "name": "Indonesia",
     "iso": "IDN",
     "year": "2015",
     "rank": 20,
-    "mmr": 126.1863,
+    "mmr": 126.186,
     "Region": "East Asia & Pacific",
-    "matdeaths": 6355.5932
+    "matdeaths": 6355.593
   },
   {
     "name": "Honduras",
     "iso": "HND",
     "year": "2015",
     "rank": 21,
-    "mmr": 129.3125,
+    "mmr": 129.312,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 218.4165
+    "matdeaths": 218.417
   },
   {
     "name": "Bhutan",
     "iso": "BTN",
     "year": "2015",
     "rank": 22,
-    "mmr": 147.8948,
+    "mmr": 147.895,
     "Region": "South Asia",
-    "matdeaths": 19.9451
+    "matdeaths": 19.945
   },
   {
     "name": "Nicaragua",
     "iso": "NIC",
     "year": "2015",
     "rank": 23,
-    "mmr": 149.7722,
+    "mmr": 149.772,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 181.5794
+    "matdeaths": 181.579
   },
   {
     "name": "Sao Tome and Principe",
     "iso": "STP",
     "year": "2015",
     "rank": 24,
-    "mmr": 156.1115,
+    "mmr": 156.112,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 9.9677
+    "matdeaths": 9.968
   },
   {
     "name": "Cambodia",
@@ -2706,23 +2706,23 @@
     "rank": 25,
     "mmr": 160.538,
     "Region": "East Asia & Pacific",
-    "matdeaths": 594.9778
+    "matdeaths": 594.978
   },
   {
     "name": "India",
     "iso": "IND",
     "year": "2015",
     "rank": 26,
-    "mmr": 174.3311,
+    "mmr": 174.331,
     "Region": "South Asia",
-    "matdeaths": 44966.4051
+    "matdeaths": 44966.405
   },
   {
     "name": "Bangladesh",
     "iso": "BGD",
     "year": "2015",
     "rank": 27,
-    "mmr": 176.1376,
+    "mmr": 176.138,
     "Region": "South Asia",
     "matdeaths": 5520.903
   },
@@ -2731,90 +2731,90 @@
     "iso": "PAK",
     "year": "2015",
     "rank": 28,
-    "mmr": 177.9448,
+    "mmr": 177.945,
     "Region": "South Asia",
-    "matdeaths": 9699.9324
+    "matdeaths": 9699.932
   },
   {
     "name": "Myanmar",
     "iso": "MMR",
     "year": "2015",
     "rank": 29,
-    "mmr": 178.4995,
+    "mmr": 178.5,
     "Region": "East Asia & Pacific",
-    "matdeaths": 1684.1965
+    "matdeaths": 1684.197
   },
   {
     "name": "Lao",
     "iso": "LAO",
     "year": "2015",
     "rank": 30,
-    "mmr": 197.3987,
+    "mmr": 197.399,
     "Region": "East Asia & Pacific",
-    "matdeaths": 353.4266
+    "matdeaths": 353.427
   },
   {
     "name": "Bolivia",
     "iso": "BOL",
     "year": "2015",
     "rank": 31,
-    "mmr": 206.2129,
+    "mmr": 206.213,
     "Region": "Latin America & Caribbean",
-    "matdeaths": 522.2237
+    "matdeaths": 522.224
   },
   {
     "name": "Timor-Leste",
     "iso": "TLS",
     "year": "2015",
     "rank": 32,
-    "mmr": 214.6423,
+    "mmr": 214.642,
     "Region": "East Asia & Pacific",
-    "matdeaths": 94.1486
+    "matdeaths": 94.149
   },
   {
     "name": "Papua New Guinea",
     "iso": "PNG",
     "year": "2015",
     "rank": 33,
-    "mmr": 214.7991,
+    "mmr": 214.799,
     "Region": "East Asia & Pacific",
-    "matdeaths": 461.1393
+    "matdeaths": 461.139
   },
   {
     "name": "Zambia",
     "iso": "ZMB",
     "year": "2015",
     "rank": 34,
-    "mmr": 224.2364,
+    "mmr": 224.236,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 1446.2623
+    "matdeaths": 1446.262
   },
   {
     "name": "Djibouti",
     "iso": "DJI",
     "year": "2015",
     "rank": 35,
-    "mmr": 229.1775,
+    "mmr": 229.177,
     "Region": "Middle East & North Africa",
-    "matdeaths": 50.3274
+    "matdeaths": 50.327
   },
   {
     "name": "Sudan",
     "iso": "SDN",
     "year": "2015",
     "rank": 36,
-    "mmr": 310.8528,
+    "mmr": 310.853,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 4100.3407
+    "matdeaths": 4100.341
   },
   {
     "name": "Ghana",
     "iso": "GHA",
     "year": "2015",
     "rank": 37,
-    "mmr": 319.4761,
+    "mmr": 319.476,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 2823.1685
+    "matdeaths": 2823.169
   },
   {
     "name": "Swaziland",
@@ -2823,32 +2823,32 @@
     "rank": 38,
     "mmr": 389.055,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 146.8021
+    "matdeaths": 146.802
   },
   {
     "name": "Congo",
     "iso": "COG",
     "year": "2015",
     "rank": 39,
-    "mmr": 441.9968,
+    "mmr": 441.997,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 737.4717
+    "matdeaths": 737.472
   },
   {
     "name": "Angola",
     "iso": "AGO",
     "year": "2015",
     "rank": 40,
-    "mmr": 476.9781,
+    "mmr": 476.978,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5379.9693
+    "matdeaths": 5379.969
   },
   {
     "name": "Lesotho",
     "iso": "LSO",
     "year": "2015",
     "rank": 41,
-    "mmr": 487.1718,
+    "mmr": 487.172,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 295.801
   },
@@ -2857,34 +2857,34 @@
     "iso": "KEN",
     "year": "2015",
     "rank": 42,
-    "mmr": 509.5178,
+    "mmr": 509.518,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 8004.6884
+    "matdeaths": 8004.688
   },
   {
     "name": "Cameroon",
     "iso": "CMR",
     "year": "2015",
     "rank": 43,
-    "mmr": 596.4439,
+    "mmr": 596.444,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 5050.6868
+    "matdeaths": 5050.687
   },
   {
     "name": "Mauritania",
     "iso": "MRT",
     "year": "2015",
     "rank": 44,
-    "mmr": 601.5852,
+    "mmr": 601.585,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 808.3259
+    "matdeaths": 808.326
   },
   {
     "name": "Cote d'Ivoire",
     "iso": "CIV",
     "year": "2015",
     "rank": 45,
-    "mmr": 644.9901,
+    "mmr": 644.99,
     "Region": "Sub-Saharan Africa",
     "matdeaths": 5407.965
   },
@@ -2893,8 +2893,8 @@
     "iso": "NGA",
     "year": "2015",
     "rank": 46,
-    "mmr": 813.9774,
+    "mmr": 813.977,
     "Region": "Sub-Saharan Africa",
-    "matdeaths": 58058.2601
+    "matdeaths": 58058.26
   }
 ]

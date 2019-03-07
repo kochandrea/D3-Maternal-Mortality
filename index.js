@@ -156,7 +156,7 @@ function myVis(data) {
         .attr("class", function(d){ return d.iso })
         .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
         .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-        .attr("x", -60) // shift the text a bit more right
+        .attr("x", -40) // shift the text a bit more right
         .text(function(d) { return d.iso; })
         .style("font-size", 15)
 
