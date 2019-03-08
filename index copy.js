@@ -1,7 +1,6 @@
 
 // Citation for building the bumpchart:  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
 // Citation for building focus:  https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
-// Citation for dropdown menue:  https://bl.ocks.org/ProQuestionAsker/b8f8c2ab12c4f21e882aeb68728216c2
 
 document.addEventListener('DOMContentLoaded', () => {
   // this uses a structure called a promise to asyncronously get the data set
@@ -24,25 +23,15 @@ function myVis(data) {
 
   var [high_income, upper_mid_income, lower_mid_income, low_income] = data;
 
-  // //button
-  // d3.select("#button_high_income")
-  //   .on("click", function(d,i){
-  //     generate_bumpchart(high_income)});
-  //
-  // d3.select("#button_low_income")
-  //   .on("click", function(d,i){
-  //     generate_bumpchart(low_income)});
+  //button
+  d3.select("#button_high_income")
+    .on("click", function(d,i){
+      generate_bumpchart(high_income)});
 
+  d3.select("#button_low_income")
+    .on("click", function(d,i){
+      generate_bumpchart(low_income)});
 
-  // Create dropdown and dictionary
-  var dropdownDict = [{"income_level": "high_income", "dataset": high_income},
-                      {"income_level": "upper_mid_income", "dataset": upper_mid_income},
-                      {"income_level": "lower_mid_income", "dataset": lower_mid_income},
-                      {"income_level": "low_income", "dataset": low_income}
-                    ];
-
-
-  console.log(dropdownDict);
 
   // Format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
   function generate_bumpchart(selected_data){
@@ -97,34 +86,6 @@ function myVis(data) {
         svg.append("g")
           .call(d3.axisLeft(y));
 
-        // create the dropdown menu
-        var dropdownMenu = d3.select("#dropdownMenu")
-
-        dropdownMenu
-        	.append("select")
-        	.selectAll("option")
-              .data(dropdownDict)
-              .enter()
-              .append("option")
-              .attr("value", function(d){
-                  return d.income_level;
-              })
-              .text(function(d){
-                  return d.income_level;
-              });
-
-            dropdownMenu.on('change', function(){
-              	// Find which fruit was selected from the dropdown
-              	var selected_income = d3.select(this)
-                  .select("select")
-                  .property("value")
-
-                console.log(selected_income)
-
-                dropdownDict.dataset // where income_level == selected_income
-
-              });
-
         // create line generator
         var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
             .x( d => x(+d.year) )
@@ -141,6 +102,7 @@ function myVis(data) {
             .attr("stroke-width", 3)
             .attr("stroke", "black")
             .attr("fill", "none")
+
 
         // Add the points
         svg
@@ -160,6 +122,7 @@ function myVis(data) {
             .attr("cy", d => y(d.rank))
             // .attr("x", d => x(d.year) - 10 / 2 )
             // .attr("y", d => y(d.rank) - 10 / 2 )
+
             .attr("r", 5)
             // .attr("width", 10)
             // .attr("height", 10)
@@ -216,47 +179,26 @@ function myVis(data) {
               .text(function(d) { return d.iso; })
               .attr("font-size", 10)
 
-      };
 
-    // Create the initial graph
-    generate_bumpchart(low_income)
-
-    // Update the data
-   	var updateGraph = function(dataset){
-
- 		// Filter the data to include only fruit of interest
- 		var selectFruit = dataReady.filter(function(d){
-                return d.key == dataset;
-              })
-
- 		// Select all of the grouped elements and update the data
-	    var selectFruitGroups = svg.selectAll(".fruitGroups")
-		    .data(selectFruit)
-		    .each(function(d){
-                y.domain([0, d.value.max])
-            });
-
-		    // Select all the lines and transition to new positions
-            selectFruitGroups.selectAll("path.line")
-               .data(function(d) { return d.value.year; },
-               		function(d){ return d.key; })
-               .transition()
-                  .duration(1000)
-                  .attr("d", function(d){
-                    return valueLine(d.values)
-                  })
-
-        // Update the Y-axis
-            d3.select(".y")
-                    .transition()
-                    .duration(1500)
-                    .call(d3.axisLeft(y)
-                      .ticks(5)
-                      .tickSizeInner(0)
-                      .tickPadding(6)
-                      .tickSize(0, 0));
+  // // Add a legend (interactive)
+  // svg
+  //   .selectAll(".legend")
+  //   .data(dataReady)
+  //   .enter()
+  //     .append('g')
+  //     .append("text")
+  //       .attr('x', function(d,i){ return 30 + i*60})
+  //       .attr('y', 30)
+  //       .text(function(d) { return d.iso; })
+  //       .style("font-size", 15)
+  //     .on("click", function(d){
+  //       // is the element currently visible ?
+  //       currentOpacity = d3.selectAll("." + d.iso).style("opacity")
+  //       // Change the opacity: from 0 to 1 or from 1 to 0
+  //       d3.selectAll("." + d.iso).transition().style("opacity", currentOpacity == 1 ? 0:1)
+  //
+  //     });
 
 
- 	}
-
+  };
 };
