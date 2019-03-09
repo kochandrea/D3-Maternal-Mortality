@@ -24,6 +24,18 @@ function myVis(data) {
 
   var [high_income, upper_mid_income, lower_mid_income, low_income] = data;
 
+  // set the dimensions and margins of the graph
+  var margin = {top: 50, right: 50, bottom: 50, left: 50},
+      width = 900 - margin.left - margin.right,
+      height = 900 - margin.top - margin.bottom;
+
+  // Create the svg object and append to the body of the page
+  var svg = d3.select(".bumpchart_svg")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
   // //button
   // d3.select("#button_high_income")
@@ -34,15 +46,16 @@ function myVis(data) {
   //   .on("click", function(d,i){
   //     generate_bumpchart(low_income)});
 
-  // Create dropdown and dictionary
-  var dropdownDict = [{"income_level": "High income countries", "dataset": high_income},
-                      {"income_level": "Upper middle income countries", "dataset": upper_mid_income},
-                      {"income_level": "Lower middle income countries", "dataset": lower_mid_income},
-                      {"income_level": "Low income countries", "dataset": low_income}
+  // Create dropdown and selection dictionary
+  var dropdownDict = [{"selector_name": "High income countries", "dataset": high_income},
+                      {"selector_name": "Upper middle income countries", "dataset": upper_mid_income},
+                      {"selector_name": "Lower middle income countries", "dataset": lower_mid_income},
+                      {"selector_name": "Low income countries", "dataset": low_income}
                     ];
 
 
-  console.log(dropdownDict);
+
+
 
   // create the dropdown menu
   var dropdownMenu = d3.select("#dropdownMenu")
@@ -54,23 +67,26 @@ function myVis(data) {
         .enter()
         .append("option")
         .attr("value", function(d){
-            return d.income_level;
+            return d.selector_name;
         })
         .text(function(d){
-            return d.income_level;
+            return d.selector_name;
         });
 
   dropdownMenu
         .on('change', function(){
         // Find which fruit was selected from the dropdown
-        var selected_income = d3.select(this)
+        var selector = d3.select(this)
         .select("select")
         .property("value")
 
-        console.log(selected_income)
+        console.log(selector)
         // generate_bumpchart(selected_income)
-        // where income_level == selected_income
-        // dropdownDict.dataset ==
+        // where selector_name == selected_income
+        // dropdownDict.dataset == dropdownDict.selector_name[]
+        // how to access the dataset: https://stackoverflow.com/questions/37654345/returning-value-for-given-key-in-js-and-d3-do-i-have-to-loop
+        var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
+        console.log(indexed.get(selector).dataset);
 
         });
 
@@ -80,20 +96,6 @@ function myVis(data) {
   // Format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
   function generate_bumpchart(selected_data){
 
-        console.log(high_income);
-        // set the dimensions and margins of the graph
-        var margin = {top: 50, right: 50, bottom: 50, left: 50},
-            width = 900 - margin.left - margin.right,
-            height = 900 - margin.top - margin.bottom;
-
-        // Create the svg object and append to the body of the page
-        // var svg = d3.select(".my_dataviz")
-        var svg = d3.select(".bumpchart_svg")
-          .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-          .append("g")
-            .attr("transform","translate(" + margin.left + "," + margin.top + ")");
         //format the data
         var dataReadyx = d3.nest()
           .key(function(d) { return d.iso; })
@@ -243,43 +245,5 @@ function myVis(data) {
       };
 
 
-
-    // Update the data
-   	var updateGraph = function(dataset){
-
- 		// Filter the data to include only fruit of interest
- 		var selectFruit = dataReady.filter(function(d){
-                return d.key == dataset;
-              })
-
- 		// Select all of the grouped elements and update the data
-	    var selectFruitGroups = svg.selectAll(".fruitGroups")
-		    .data(selectFruit)
-		    .each(function(d){
-                y.domain([0, d.value.max])
-            });
-
-		    // Select all the lines and transition to new positions
-            selectFruitGroups.selectAll("path.line")
-               .data(function(d) { return d.value.year; },
-               		function(d){ return d.key; })
-               .transition()
-                  .duration(1000)
-                  .attr("d", function(d){
-                    return valueLine(d.values)
-                  })
-
-        // Update the Y-axis
-            d3.select(".y")
-                    .transition()
-                    .duration(1500)
-                    .call(d3.axisLeft(y)
-                      .ticks(5)
-                      .tickSizeInner(0)
-                      .tickPadding(6)
-                      .tickSize(0, 0));
-
-
- 	}
 
 };
