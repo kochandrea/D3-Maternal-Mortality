@@ -84,6 +84,7 @@ function myVis(data) {
         // generate_bumpchart(selected_income)
         // where selector_name == selected_income
         // dropdownDict.dataset == dropdownDict.selector_name[]
+
         // how to access the dataset: https://stackoverflow.com/questions/37654345/returning-value-for-given-key-in-js-and-d3-do-i-have-to-loop
         var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
         console.log(indexed.get(selector).dataset);
@@ -91,7 +92,7 @@ function myVis(data) {
         });
 
   // Create the initial graph
-  generate_bumpchart(high_income)
+  generate_bumpchart(low_income);
 
   // Format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
   function generate_bumpchart(selected_data){
@@ -126,8 +127,9 @@ function myVis(data) {
 
         // y-axis
         var size = Object.keys(dataReady).length; // Y-axis as large as selection
+
         var y = d3.scaleLinear()
-          .domain( [1, size])
+          .domain([1, size])
           .range([ margin.top, height ]);
         svg.append("g")
           .call(d3.axisLeft(y));
@@ -176,7 +178,7 @@ function myVis(data) {
             .append('g')
             .attr("class", function(d){ return d.iso })
           // Second we need to enter in the 'values' part of this group
-          .selectAll(".point-rect")
+          .selectAll(".point")
           .data( d => d.values)
           .enter()
           .append("circle")
@@ -193,8 +195,10 @@ function myVis(data) {
               focus.attr("transform","translate(" + xPosition + "," + yPosition + ")")
 
               focus.select("text")
-                    .text("rank: " + d.rank + " year: " + d.year)
+                    .text(d.rank)
                     .attr("fill", "black")
+              // focus.select("circle")
+              //       .attr("stroke", function(d, i) { return color[i % 8];})
             });
 
       //the focus tooltip (also part of the point generator)
@@ -206,10 +210,10 @@ function myVis(data) {
             .attr("r", 5)
             .attr("fill", "#F4F4F4")
             .attr("stroke-width", "4px")
-            .attr("stroke", function(d, i) { return color[i % 8];});
+            .attr("stroke", "pink");
 
         focus.append("text")
-          .attr("x", 15)
+          .attr("x", 10)
         	.attr("dy", ".31em");
 
         // Add a label at the beginning of each line
