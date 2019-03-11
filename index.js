@@ -1,7 +1,10 @@
 
-// Citation for building the bumpchart:  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
-// Citation for building focus:  https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
-// Citation for dropdown menue:  https://bl.ocks.org/ProQuestionAsker/b8f8c2ab12c4f21e882aeb68728216c2
+// Reference 1 (inspiration/citation for building the bumpchart):  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
+// Reference 2 (inspiration/citation for building focus):  https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
+// Reference 3 (inspiration/citation for dropdown menu):  https://bl.ocks.org/ProQuestionAsker/b8f8c2ab12c4f21e882aeb68728216c2
+// Reference 4 (inspiration/citation for formatting data):  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234
+// Reference 5 (inspiration/citation for focus/tooltip):  https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
+// Reference 6 (inspiration/citation for indexing): https://stackoverflow.com/questions/37654345/returning-value-for-given-key-in-js-and-d3-do-i-have-to-loop
 
 document.addEventListener('DOMContentLoaded', () => {
   // this uses a structure called a promise to asyncronously get the data set
@@ -46,7 +49,7 @@ function myVis(data) {
                     ];
 
 
-  // create the dropdown menu
+  // create the dropdown menu (see Reference 3)
   var dropdownMenu = d3.select("#dropdownMenu")
 
   dropdownMenu
@@ -64,14 +67,14 @@ function myVis(data) {
 
   dropdownMenu
         .on('change', function(){
-        // Find which fruit was selected from the dropdown
+        // Find which option was selected from the dropdown
         var selector = d3.select(this)
         .select("select")
         .property("value")
 
         console.log(selector)
 
-        // how to access the dataset: https://stackoverflow.com/questions/37654345/returning-value-for-given-key-in-js-and-d3-do-i-have-to-loop
+        // (see Reference 6)
         var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
         var graph_dataset = indexed.get(selector).dataset
         var graph_title = indexed.get(selector).graph_title
@@ -79,11 +82,10 @@ function myVis(data) {
         generate_bumpchart(graph_dataset, graph_title)
         });
 
-  // initialize bumpchart
+  // Initialize bumpchart
   generate_bumpchart(high_income, "High Income");
 
-  // Auxilary function to format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
-  // later called within
+  // Auxilary function to format data (see Reference 4)
   function format_data(someDataset){
         var prepData1 = d3.nest()
           .key(function(d) { return d.iso; })
@@ -102,7 +104,7 @@ function myVis(data) {
         };
 
 
-  //function to generate a chart (calls on the auxiliary function to )
+  // Chart generator
   function generate_bumpchart(graph_dataset, graph_title) {
 
         var dataReady = format_data(graph_dataset);
@@ -133,17 +135,17 @@ function myVis(data) {
             .y( d => y(+d.rank) );
 
 
-        // var color = ['#13394A', //dark blue
-        //         '#E3DD44', //yellow
-        //         '#357797', //mid blue
-        //         '#D4626F', //salmon
-        //         '#948E00', //green
-        //         '#CC149B', //fuschia
-        //         '#7102FA', //purple
-        //         '#E48023' //orange
-        //       ];
+        var color = ['#13394A', //dark blue
+                '#E3DD44', //yellow
+                '#357797', //mid blue
+                '#D4626F', //salmon
+                '#948E00', //green
+                '#CC149B', //fuschia
+                '#7102FA', //purple
+                '#E48023' //orange
+              ];
 
-        var color = ["#E3DD44", "#C6A671", "#AA6F9F", "#8D38CC", "#7102FA"] //yellow to purple
+        // var color = ["#E3DD44", "#C6A671", "#AA6F9F", "#8D38CC", "#7102FA"] //yellow to purple
 
         var chartTitle = svg
             .selectAll(".chart_title")
@@ -160,7 +162,7 @@ function myVis(data) {
             .text(d => d);
 
 
-        // generate lines
+        // generate lines (see Reference 1)
         var lines = svg
           .selectAll(".country-line")
           .data(dataReady);
@@ -173,10 +175,10 @@ function myVis(data) {
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
-            .attr("stroke", function(d, i) { return color[i % 5];})
+            .attr("stroke", function(d, i) { return color[i % 8];})
 
 
-        // Add the points
+        // Add the points (see Reference 1, 5)
         var countryRanking = svg
           .selectAll(".eachCountry")
           .data(dataReady.reduce((acc, row) => acc.concat(row.values), []));
@@ -201,7 +203,7 @@ function myVis(data) {
             });
 
 
-        //the focus tooltip (also part of the point generator)
+        // the focus/tooltip (see Reference 5)
         var focus = svg.append("g")
             .attr("class", "focus")
             .style("display", "none");
@@ -210,7 +212,7 @@ function myVis(data) {
         	.attr("dy", ".31em");
 
 
-        // Add a label at the beginning of each line
+        // Add a label at the beginning of each line (see Reference 1)
         var leftLabel = svg
           .selectAll(".left-label")
           .data(dataReady);
@@ -218,15 +220,15 @@ function myVis(data) {
           .enter()
           .append("text")
               .attr("class", "left-label")
-              .attr("x", -30) // shift the text a bit more right
+              .attr("x", -30) // shift the text a bit more left
               .attr("font-size", 10)
               .merge(leftLabel)
-              .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
+              .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the first value
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 5];})
+              .attr("stroke", function(d, i) { return color[i % 8];})
 
-        // Add a label at the end of each line
+        // Add a label at the end of each line (see Reference 1)
         var rightLabel = svg
           .selectAll(".right-label")
           .data(dataReady);
@@ -237,10 +239,10 @@ function myVis(data) {
               .attr("x", 12) // shift the text a bit more right
               .attr("font-size", 10)
               .merge(rightLabel)
-              .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
+              .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 5];})
+              .attr("stroke", function(d, i) { return color[i % 8];})
 
       };
 
