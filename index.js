@@ -181,11 +181,8 @@ function myVis(data) {
 
         // Add the points
         var countryRanking = svg
-          // First we need to enter in a group
           .selectAll(".eachCountry")
           .data(dataReady.reduce((acc, row) => acc.concat(row.values), []));
-
-
         countryRanking
           .enter()
           .append("circle")
@@ -193,17 +190,16 @@ function myVis(data) {
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
-            .attr("r", 5)
-            .attr("stroke", "white")
+            .attr("r", 1)
+            .attr("stroke", "none")
             .attr("fill", "red")
             .on("mouseover", function() { focus.style("display", null); })
-            // .on("mouseout", function() { focus.style("display", "none"); })
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
               focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
               focus.select("text")
-                    .text("Country: " + d.iso + "rank: " + d.rank + " year: " + d.year)
+                    .text("rank: " + d.rank + " year: " + d.year)
                     .attr("fill", "black")
             });
 
@@ -212,8 +208,6 @@ function myVis(data) {
         var focus = svg.append("g")
             .attr("class", "focus")
             .style("display", "none");
-
-
         focus.append("text")
           .attr("x", 10)
         	.attr("dy", ".31em");
