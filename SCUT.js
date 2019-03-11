@@ -45,6 +45,27 @@
 
 
 
+    isoCodes = [];
+    dataReady.forEach(function(d, i) {
+      isoCodes[i] = d.values[0].rank % 8;
+    });
+    console.log("ISO CODES");
+    console.log(isoCodes);
+
+
+
+    //button
+    d3.select("#button_high_income")
+      .on("click", function(d,i){
+        generate_bumpchart(high_income)});
+
+    d3.select("#button_low_income")
+      .on("click", function(d,i){
+        generate_bumpchart(low_income)});
+
+
+
+
     const data1 = d3.nest()
       .key( d => d.iso)
       .key( d => d.year)

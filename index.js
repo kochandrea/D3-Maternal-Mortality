@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function myVis(data) {
-
   var [high_income, upper_mid_income, lower_mid_income, low_income] = data;
 
   // set the dimensions and margins of the graph
@@ -37,24 +36,14 @@ function myVis(data) {
     .append("g")
       .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
-  // //button
-  // d3.select("#button_high_income")
-  //   .on("click", function(d,i){
-  //     generate_bumpchart(high_income)});
-  //
-  // d3.select("#button_low_income")
-  //   .on("click", function(d,i){
-  //     generate_bumpchart(low_income)});
+
 
   // Create dropdown and selection dictionary
-  var dropdownDict = [{"selector_name": "High income countries", "dataset": high_income},
-                      {"selector_name": "Upper middle income countries", "dataset": upper_mid_income},
-                      {"selector_name": "Lower middle income countries", "dataset": lower_mid_income},
-                      {"selector_name": "Low income countries", "dataset": low_income}
+  var dropdownDict = [{"selector_name": "High income countries", "dataset": high_income, "graph_title": "MMR Ranking of High Income Countries"},
+                      {"selector_name": "Upper middle income countries", "dataset": upper_mid_income, "graph_title": "MMR Ranking of Upper Middle Income Countries"},
+                      {"selector_name": "Lower middle income countries", "dataset": lower_mid_income, "graph_title": "MMR Ranking of Lower Middle Income Countries"},
+                      {"selector_name": "Low income countries", "dataset": low_income, "graph_title": "MMR Ranking of Low Income Countries"}
                     ];
-
-
-
 
 
   // create the dropdown menu
@@ -87,23 +76,26 @@ function myVis(data) {
 
         // how to access the dataset: https://stackoverflow.com/questions/37654345/returning-value-for-given-key-in-js-and-d3-do-i-have-to-loop
         var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
-        console.log(indexed.get(selector).dataset);
+        var graph_dataset = indexed.get(selector).dataset
+        var graph_title = indexed.get(selector).graph_title
+        console.log(graph_dataset);
+        console.log(graph_title);
 
+        generate_bumpchart(graph_dataset)
         });
 
-  // Create the initial graph
-  generate_bumpchart(low_income);
+  // initialize bumpchart
+  generate_bumpchart(high_income);
 
-  // Format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
-  function generate_bumpchart(selected_data){
-
-        //format the data
-        var dataReadyx = d3.nest()
+  // Auxilary function to format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
+  // later called within
+  function format_data(someDataset){
+        var prepData1 = d3.nest()
           .key(function(d) { return d.iso; })
           .key(function(d) { return d.year; })
           .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
-          .object(selected_data);
-        var dataReady = Object.entries(dataReadyx).map(([countryCode, yearDict]) => {
+          .object(someDataset);
+        var prepData2 = Object.entries(prepData1).map(([countryCode, yearDict]) => {
           return {
             iso: countryCode,
             values: Object.entries(yearDict).map(([year, rank]) => {
@@ -111,10 +103,14 @@ function myVis(data) {
             })
           };
         });
-        console.log('dataReadyx');
-        console.log(dataReadyx);
-        console.log('dataReady');
-        console.log(dataReady);
+        return prepData2
+        };
+
+
+  //function to generate a chart (calls on the auxiliary function to )
+  function generate_bumpchart(graph_dataset) {
+
+        var dataReady = format_data(graph_dataset);
 
 
         // x-axis
@@ -125,6 +121,7 @@ function myVis(data) {
           .attr("transform", "translate(0," + height + ")")
           .call(d3.axisBottom(x));
 
+
         // y-axis
         var size = Object.keys(dataReady).length; // Y-axis as large as selection
 
@@ -134,17 +131,11 @@ function myVis(data) {
         svg.append("g")
           .call(d3.axisLeft(y));
 
+
         // create line generator
         var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
             .x( d => x(+d.year) )
             .y( d => y(+d.rank) );
-
-        // isoCodes = [];
-        // dataReady.forEach(function(d, i) {
-        //   isoCodes[i] = d.values[0].rank % 8;
-        // });
-        // console.log("ISO CODES");
-        // console.log(isoCodes);
 
 
         var color = ['#13394A', //dark blue
@@ -157,23 +148,42 @@ function myVis(data) {
                 '#E48023' //orange
               ];
 
+
+        svg.selectAll(".chart_title")
+                .data(dataReady)
+                .enter()
+                .append("text")
+                .text("TITLE CHANGE HERE")
+                .attr("class", "title")
+                .attr("x", width/2)
+                .attr("y", margin.top/2)
+                .attr("text-anchor", "middle")
+                .style("font-size", "20px");
+
+
         // generate lines
-        svg
+        var lines = svg
           .selectAll(".country-line")
-          .data(dataReady)
+          .data(dataReady);
+        lines
           .enter()
           .append("path")
             .attr("class", d => `country-line ${d.iso}` )
-            .attr("d", d => lineGenerator(d.values) )
             .attr("stroke-width", 3)
-            .attr("stroke", function(d, i) { return color[i % 8];})
+            .style("opacity", 0.5)
             .attr("fill", "none")
+            .merge(lines)
+            .attr("d", d => lineGenerator(d.values) )
+            .attr("stroke", function(d, i) { return color[i % 8];})
+
+
 
         // Add the points
-        svg
+        var countryPoints = svg
           // First we need to enter in a group
           .selectAll(".eachCountry")
-          .data(dataReady)
+          .data(dataReady);
+        countryPoints
           .enter()
             .append('g')
             .attr("class", function(d){ return d.iso })
@@ -185,7 +195,7 @@ function myVis(data) {
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
             .attr("r", 1)
-            .attr("stroke", "white")
+            .attr("stroke", "red")
             .attr("fill", "none")
             .on("mouseover", function() { focus.style("display", null); })
             .on("mousemove", function(d) {
@@ -201,7 +211,24 @@ function myVis(data) {
               //       .attr("stroke", function(d, i) { return color[i % 8];})
             });
 
-      //the focus tooltip (also part of the point generator)
+            // // generate lines
+            // var lines = svg
+            //   .selectAll(".country-line")
+            //   .data(dataReady);
+            // lines
+            //   .enter()
+            //   .append("path")
+            //     .attr("class", d => `country-line ${d.iso}` )
+            //     .attr("stroke-width", 3)
+            //     .style("opacity", 0.5)
+            //     .attr("fill", "none")
+            //     .merge(lines)
+            //     .attr("d", d => lineGenerator(d.values) )
+            //     .attr("stroke", function(d, i) { return color[i % 8];})
+
+
+
+        //the focus tooltip (also part of the point generator)
         var focus = svg.append("g")
             .attr("class", "focus")
             .style("display", "none");
@@ -215,6 +242,7 @@ function myVis(data) {
         focus.append("text")
           .attr("x", 10)
         	.attr("dy", ".31em");
+
 
         // Add a label at the beginning of each line
         svg
@@ -239,15 +267,14 @@ function myVis(data) {
             .append('g')
             .append("text")
               .attr("class", function(d){ return d.iso })
-              .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
-              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
               .attr("x", 12) // shift the text a bit more right
-              .text(function(d) { return d.iso; })
               .attr("font-size", 10)
+              .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
+              .text(function(d) { return d.iso; })
+              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
               .attr("stroke", function(d, i) { return color[i % 8];})
 
       };
-
 
 
 };
