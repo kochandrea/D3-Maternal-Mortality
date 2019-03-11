@@ -31,3 +31,10 @@ body {
   stroke: #6F257F;
   stroke-width: 5px;
 }
+
+.eachCountry:hover {
+  r: 5;
+  fill: #F4F4F4;
+  stroke-width: 4px;
+  stroke: pink;
+}

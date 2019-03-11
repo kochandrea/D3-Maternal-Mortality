@@ -70,22 +70,17 @@ function myVis(data) {
         .property("value")
 
         console.log(selector)
-        // generate_bumpchart(selected_income)
-        // where selector_name == selected_income
-        // dropdownDict.dataset == dropdownDict.selector_name[]
 
         // how to access the dataset: https://stackoverflow.com/questions/37654345/returning-value-for-given-key-in-js-and-d3-do-i-have-to-loop
         var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
         var graph_dataset = indexed.get(selector).dataset
         var graph_title = indexed.get(selector).graph_title
-        console.log(graph_dataset);
-        console.log(graph_title);
 
-        generate_bumpchart(graph_dataset)
+        generate_bumpchart(graph_dataset, graph_title)
         });
 
   // initialize bumpchart
-  generate_bumpchart(high_income);
+  generate_bumpchart(high_income, "High Income");
 
   // Auxilary function to format data (citation:  https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234)
   // later called within
@@ -108,7 +103,11 @@ function myVis(data) {
 
 
   //function to generate a chart (calls on the auxiliary function to )
-  function generate_bumpchart(graph_dataset) {
+  function generate_bumpchart(graph_dataset, graph_title) {
+        console.log('GRAPH_DATASET');
+        console.log(graph_dataset);
+        console.log('GRAPH TITLE as passed to generage_bumpch');
+        console.log(graph_title);
 
         var dataReady = format_data(graph_dataset);
 
@@ -131,6 +130,20 @@ function myVis(data) {
         svg.append("g")
           .call(d3.axisLeft(y));
 
+          // generate lines
+          // var lines = svg
+          //   .selectAll(".country-line")
+          //   .data(dataReady);
+          // lines
+          //   .enter()
+          //   .append("path")
+          //     .attr("class", d => `country-line ${d.iso}` )
+          //     .attr("stroke-width", 3)
+          //     .style("opacity", 0.5)
+          //     .attr("fill", "none")
+          //     .merge(lines)
+          //     .attr("d", d => lineGenerator(d.values) )
+          //     .attr("stroke", function(d, i) { return color[i % 8];})
 
         // create line generator
         var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
@@ -149,16 +162,19 @@ function myVis(data) {
               ];
 
 
-        svg.selectAll(".chart_title")
-                .data(dataReady)
-                .enter()
-                .append("text")
-                .text("TITLE CHANGE HERE")
-                .attr("class", "title")
-                .attr("x", width/2)
-                .attr("y", margin.top/2)
-                .attr("text-anchor", "middle")
-                .style("font-size", "20px");
+        var chartTitle = svg
+            .selectAll(".chart_title")
+            .data([graph_title]);
+        chartTitle
+          .enter()
+          .append("text")
+            .attr("class", "chart_title")
+            .attr("x", width/2)
+            .attr("y", margin.top/2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .merge(chartTitle)
+            .text(d => d);
 
 
         // generate lines
@@ -177,55 +193,44 @@ function myVis(data) {
             .attr("stroke", function(d, i) { return color[i % 8];})
 
 
-
         // Add the points
-        var countryPoints = svg
+        var countryRanking = svg
           // First we need to enter in a group
           .selectAll(".eachCountry")
-          .data(dataReady);
-        countryPoints
-          .enter()
-            .append('g')
-            .attr("class", function(d){ return d.iso })
-          // Second we need to enter in the 'values' part of this group
-          .selectAll(".point")
-          .data( d => d.values)
+          .data(dataReady.reduce((acc, row) => acc.concat(row.values), []));
+
+        // var countryRankingEnter = countryRanking
+        //   .enter()
+        //     .append('g')
+        //     .attr("class", function(d){ return d.iso })
+        //   // Second we need to enter in the 'values' part of this group
+        //   .selectAll(".point-rect")
+        //   .data( d => d.values);
+
+        countryRanking
           .enter()
           .append("circle")
+            .attr('class', 'eachCountry')
+            .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
-            .attr("r", 1)
-            .attr("stroke", "red")
-            .attr("fill", "none")
+            // .attr("x", d => x(d.year) - 10 / 2 )
+            // .attr("y", d => y(d.rank) - 10 / 2 )
+            .attr("r", 5)
+            // .attr("width", 10)
+            // .attr("height", 10)
+            .attr("stroke", "white")
+            .attr("fill", "red")
             .on("mouseover", function() { focus.style("display", null); })
+            // .on("mouseout", function() { focus.style("display", "none"); })
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
-
-              focus.attr("transform","translate(" + xPosition + "," + yPosition + ")")
-
+              focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
               focus.select("text")
-                    .text(d.rank)
+                    .text("Country: " + d.iso + "rank: " + d.rank + " year: " + d.year)
                     .attr("fill", "black")
-              // focus.select("circle")
-              //       .attr("stroke", function(d, i) { return color[i % 8];})
             });
-
-            // // generate lines
-            // var lines = svg
-            //   .selectAll(".country-line")
-            //   .data(dataReady);
-            // lines
-            //   .enter()
-            //   .append("path")
-            //     .attr("class", d => `country-line ${d.iso}` )
-            //     .attr("stroke-width", 3)
-            //     .style("opacity", 0.5)
-            //     .attr("fill", "none")
-            //     .merge(lines)
-            //     .attr("d", d => lineGenerator(d.values) )
-            //     .attr("stroke", function(d, i) { return color[i % 8];})
-
 
 
         //the focus tooltip (also part of the point generator)
@@ -233,11 +238,11 @@ function myVis(data) {
             .attr("class", "focus")
             .style("display", "none");
 
-        focus.append("circle")
-            .attr("r", 5)
-            .attr("fill", "#F4F4F4")
-            .attr("stroke-width", "4px")
-            .attr("stroke", "pink");
+        // focus.append("circle")
+        //     .attr("r", 5)
+        //     .attr("fill", "#F4F4F4")
+        //     .attr("stroke-width", "4px")
+        //     .attr("stroke", "pink");
 
         focus.append("text")
           .attr("x", 10)
