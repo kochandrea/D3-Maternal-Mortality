@@ -130,20 +130,6 @@ function myVis(data) {
         svg.append("g")
           .call(d3.axisLeft(y));
 
-          // generate lines
-          // var lines = svg
-          //   .selectAll(".country-line")
-          //   .data(dataReady);
-          // lines
-          //   .enter()
-          //   .append("path")
-          //     .attr("class", d => `country-line ${d.iso}` )
-          //     .attr("stroke-width", 3)
-          //     .style("opacity", 0.5)
-          //     .attr("fill", "none")
-          //     .merge(lines)
-          //     .attr("d", d => lineGenerator(d.values) )
-          //     .attr("stroke", function(d, i) { return color[i % 8];})
 
         // create line generator
         var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
@@ -199,13 +185,6 @@ function myVis(data) {
           .selectAll(".eachCountry")
           .data(dataReady.reduce((acc, row) => acc.concat(row.values), []));
 
-        // var countryRankingEnter = countryRanking
-        //   .enter()
-        //     .append('g')
-        //     .attr("class", function(d){ return d.iso })
-        //   // Second we need to enter in the 'values' part of this group
-        //   .selectAll(".point-rect")
-        //   .data( d => d.values);
 
         countryRanking
           .enter()
@@ -214,11 +193,7 @@ function myVis(data) {
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
-            // .attr("x", d => x(d.year) - 10 / 2 )
-            // .attr("y", d => y(d.rank) - 10 / 2 )
             .attr("r", 5)
-            // .attr("width", 10)
-            // .attr("height", 10)
             .attr("stroke", "white")
             .attr("fill", "red")
             .on("mouseover", function() { focus.style("display", null); })
@@ -238,11 +213,6 @@ function myVis(data) {
             .attr("class", "focus")
             .style("display", "none");
 
-        // focus.append("circle")
-        //     .attr("r", 5)
-        //     .attr("fill", "#F4F4F4")
-        //     .attr("stroke-width", "4px")
-        //     .attr("stroke", "pink");
 
         focus.append("text")
           .attr("x", 10)
