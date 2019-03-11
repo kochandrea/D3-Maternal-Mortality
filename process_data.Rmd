@@ -196,21 +196,7 @@ low_income_all_data$matdeaths <- round(low_income_all_data$matdeaths, 3)
 # my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/low_income_matmort.json")
 
 
-#NEW all high income data
-my_json <- toJSON(upper_income_all_data, pretty=TRUE)
-my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/high_income.json")
 
-#NEW all upper middle income data
-my_json <- toJSON(mid_upper_income_all_data, pretty=TRUE)
-my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/upper_mid_income.json")
-
-#NEW all lower middle income data
-my_json <- toJSON(mid_lower_income_all_data, pretty=TRUE)
-my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/lower_mid_income.json")
-
-#NEW all low income data
-my_json <- toJSON(low_income_all_data, pretty=TRUE)
-my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/low_income.json")
 
 
 
@@ -236,4 +222,21 @@ my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data
 
 ```
 
+```{r}
+#NEW all high income data
+my_json <- toJSON(upper_income_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/high_income.json")
+
+#NEW all upper middle income data
+my_json <- toJSON(mid_upper_income_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/upper_mid_income.json")
+
+#NEW all lower middle income data
+my_json <- toJSON(mid_lower_income_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/lower_mid_income.json")
+
+#NEW all low income data
+my_json <- toJSON(low_income_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/low_income.json")
+```
 

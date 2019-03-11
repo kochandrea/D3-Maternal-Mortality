@@ -133,16 +133,17 @@ function myVis(data) {
             .y( d => y(+d.rank) );
 
 
-        var color = ['#13394A', //dark blue
-                '#E3DD44', //yellow
-                '#357797', //mid blue
-                '#D4626F', //salmon
-                '#948E00', //green
-                '#CC149B', //fuschia
-                '#7102FA', //purple
-                '#E48023' //orange
-              ];
+        // var color = ['#13394A', //dark blue
+        //         '#E3DD44', //yellow
+        //         '#357797', //mid blue
+        //         '#D4626F', //salmon
+        //         '#948E00', //green
+        //         '#CC149B', //fuschia
+        //         '#7102FA', //purple
+        //         '#E48023' //orange
+        //       ];
 
+        var color = ["#E3DD44", "#C6A671", "#AA6F9F", "#8D38CC", "#7102FA"] //yellow to purple
 
         var chartTitle = svg
             .selectAll(".chart_title")
@@ -168,11 +169,11 @@ function myVis(data) {
           .append("path")
             .attr("class", d => `country-line ${d.iso}` )
             .attr("stroke-width", 3)
-            .style("opacity", 0.5)
+            .style("opacity", 1)
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
-            .attr("stroke", function(d, i) { return color[i % 8];})
+            .attr("stroke", function(d, i) { return color[i % 5];})
 
 
         // Add the points
@@ -186,7 +187,7 @@ function myVis(data) {
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
-            .attr("r", 1)
+            .attr("r", 3)
             .attr("stroke", "none")
             .attr("fill", "red")
             .on("mouseover", function() { focus.style("display", null); })
@@ -208,19 +209,6 @@ function myVis(data) {
           .attr("x", 10)
         	.attr("dy", ".31em");
 
-          // var chartTitle = svg
-          //     .selectAll(".chart_title")
-          //     .data([graph_title]);
-          // chartTitle
-          //   .enter()
-          //   .append("text")
-          //     .attr("class", "chart_title")
-          //     .attr("x", width/2)
-          //     .attr("y", margin.top/2)
-          //     .attr("text-anchor", "middle")
-          //     .style("font-size", "20px")
-          //     .merge(chartTitle)
-          //     .text(d => d);
 
         // Add a label at the beginning of each line
         var leftLabel = svg
@@ -236,7 +224,7 @@ function myVis(data) {
               .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 8];})
+              .attr("stroke", function(d, i) { return color[i % 5];})
 
         // Add a label at the end of each line
         var rightLabel = svg
@@ -252,7 +240,7 @@ function myVis(data) {
               .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 8];})
+              .attr("stroke", function(d, i) { return color[i % 5];})
 
       };
 
