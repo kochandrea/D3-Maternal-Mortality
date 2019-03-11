@@ -104,10 +104,6 @@ function myVis(data) {
 
   //function to generate a chart (calls on the auxiliary function to )
   function generate_bumpchart(graph_dataset, graph_title) {
-        console.log('GRAPH_DATASET');
-        console.log(graph_dataset);
-        console.log('GRAPH TITLE as passed to generage_bumpch');
-        console.log(graph_title);
 
         var dataReady = format_data(graph_dataset);
 
@@ -212,32 +208,47 @@ function myVis(data) {
           .attr("x", 10)
         	.attr("dy", ".31em");
 
+          // var chartTitle = svg
+          //     .selectAll(".chart_title")
+          //     .data([graph_title]);
+          // chartTitle
+          //   .enter()
+          //   .append("text")
+          //     .attr("class", "chart_title")
+          //     .attr("x", width/2)
+          //     .attr("y", margin.top/2)
+          //     .attr("text-anchor", "middle")
+          //     .style("font-size", "20px")
+          //     .merge(chartTitle)
+          //     .text(d => d);
 
         // Add a label at the beginning of each line
-        svg
+        var leftLabel = svg
           .selectAll(".left-label")
-          .data(dataReady)
+          .data(dataReady);
+        leftLabel
           .enter()
-            .append('g')
-            .append("text")
-              .attr("class", function(d){ return d.iso })
-              .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
-              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+          .append("text")
+              .attr("class", "left-label")
               .attr("x", -30) // shift the text a bit more right
-              .text(function(d) { return d.iso; })
               .attr("font-size", 10)
+              .merge(leftLabel)
+              .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the last value of each time sery
+              .text(function(d) { return d.iso; })
+              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
               .attr("stroke", function(d, i) { return color[i % 8];})
 
         // Add a label at the end of each line
-        svg
+        var rightLabel = svg
           .selectAll(".right-label")
-          .data(dataReady)
+          .data(dataReady);
+        rightLabel
           .enter()
-            .append('g')
-            .append("text")
-              .attr("class", function(d){ return d.iso })
+          .append("text")
+              .attr("class", "right-label")
               .attr("x", 12) // shift the text a bit more right
               .attr("font-size", 10)
+              .merge(rightLabel)
               .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time sery
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
