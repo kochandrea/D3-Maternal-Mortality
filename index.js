@@ -79,6 +79,18 @@ function myVis(data) {
         var graph_dataset = indexed.get(selector).dataset
         var graph_title = indexed.get(selector).graph_title
 
+
+        d3.selectAll(".chart_title").remove()
+        d3.selectAll(".country-line").remove()
+        d3.selectAll(".eachCountry").remove()
+        d3.selectAll(".left-label").remove()
+        d3.selectAll(".right-label").remove()
+
+
+
+
+
+
         generate_bumpchart(graph_dataset, graph_title)
         });
 
