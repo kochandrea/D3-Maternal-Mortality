@@ -37,7 +37,7 @@ function myVis(data) {
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
       width = 900 - margin.left - margin.right,
-      height = 900 - margin.top - margin.bottom;
+      height = 1000 - margin.top - margin.bottom;
 
   // Create the svg object and append to the body of the page
   var svg = d3.select(".bumpchart_svg")
@@ -60,7 +60,6 @@ function myVis(data) {
                       {"selector_name": "American & Caribbean countries", "dataset": na_lam_carribean, "graph_title": "MMR Ranking of American and Caribbean Countries"},
                       {"selector_name": "Middle East and North African countries", "dataset": middleEast_northAfrica, "graph_title": "MMR Ranking of Middle East and North African Countries"},
                       {"selector_name": "Sub-Sahara African countries", "dataset": subsaharanAfrica, "graph_title": "MMR Ranking of Sub-Sahara African Countries"}
-
                     ];
 
 
@@ -112,6 +111,7 @@ function myVis(data) {
 
 
         });
+
 
 
   // Initialize bumpchart
@@ -167,16 +167,16 @@ function myVis(data) {
             .x( d => x(+d.year) )
             .y( d => y(+d.rank) );
 
-        var color = ["#E3DD44", "#BD9840", "#7102FA"]; //Yellow to Purple 4 gradient scale
-        // var color = ['#13394A', //dark blue
-        //         '#E3DD44', //yellow
-        //         '#357797', //mid blue
-        //         '#D4626F', //salmon
-        //         '#948E00', //green
-        //         '#CC149B', //fuschia
-        //         '#7102FA', //purple
-        //         '#E48023' //orange
-        //       ];
+        // var color = ["#E3DD44", "#BD9840", "#7102FA"]; //Yellow to Purple 4 gradient scale
+        var color = ['#13394A', //dark blue
+                '#E3DD44', //yellow
+                '#357797', //mid blue
+                '#D4626F', //salmon
+                '#948E00', //green
+                '#CC149B', //fuschia
+                '#7102FA', //purple
+                '#E48023' //orange
+              ];
 
         // var color = ["#E3DD44", "#C6A671", "#AA6F9F", "#8D38CC", "#7102FA"] //yellow to purple
 
@@ -203,12 +203,21 @@ function myVis(data) {
           .enter()
           .append("path")
             .attr("class", d => `country-line ${d.iso}` )
-            .attr("stroke-width", 3)
+            // .attr("stroke-width", 3)
             .style("opacity", 1)
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
-            .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+            // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+            .classed("highlight-off", true)
+            .on("click", function(d) {
+              d3.selectAll(`.${d.iso}`).classed('highlight-on', !d3.selectAll(`.${d.iso}`).classed('highlight-on'));
+            })
+            .on("mousemove", function(d) {
+              d3.selectAll(`.${d.iso}`).classed('highlight-hover', true); })
+            .on("mouseout", function(d) {
+              d3.selectAll(`.${d.iso}`).classed('highlight-hover', false); })
+
 
 
         // Add the points (see Reference 1, 5)
@@ -241,17 +250,17 @@ function myVis(data) {
         var focus = svg.append("g")
             .attr("class", "focus")
             .style("display", "none");
-        // focus.append("text")
-        //   .attr("x", 10)
-        // 	.attr("dy", ".31em");
-        focus
-          .enter()
-          .append("text")
-            .attr("x", 10)
-            .attr("dy", ".31em")
-            .merge(focus)
-            .data(graph_dataset);
-            // .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name);
+        focus.append("text")
+          .attr("x", 10)
+        	.attr("dy", ".31em");
+        // focus
+        //   .enter()
+        //   .append("text")
+        //     .attr("x", 10)
+        //     .attr("dy", ".31em")
+        //     .merge(focus)
+        //     .data(graph_dataset);
+        //     // .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name);
 
 
         // Add a label at the beginning of each line (see Reference 1)
@@ -261,14 +270,23 @@ function myVis(data) {
         leftLabel
           .enter()
           .append("text")
-              .attr("class", "left-label")
+              .attr("class", d => `left-label ${d.iso}`)
               .attr("x", -30) // shift the text a bit more left
               .attr("font-size", 10)
               .merge(leftLabel)
               .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the first value
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+              // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+              .classed("highlight-off", true)
+              .on("click", function(d) {
+                d3.selectAll(`.${d.iso}`).classed('highlight-on', !d3.selectAll(`.${d.iso}`).classed('highlight-on'));
+              })
+              .on("mousemove", function(d) {
+                d3.selectAll(`.${d.iso}`).classed('highlight-hover', true); })
+              .on("mouseout", function(d) {
+                d3.selectAll(`.${d.iso}`).classed('highlight-hover', false); })
+
 
         // Add a label at the end of each line (see Reference 1)
         var rightLabel = svg
@@ -277,14 +295,22 @@ function myVis(data) {
         rightLabel
           .enter()
           .append("text")
-              .attr("class", "right-label")
+              .attr("class", d => `right-label ${d.iso}`)
               .attr("x", 12) // shift the text a bit more right
               .attr("font-size", 10)
               .merge(rightLabel)
               .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+              // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+              .classed("highlight-off", true)
+              .on("click", function(d) {
+                d3.selectAll(`.${d.iso}`).classed('highlight-on', !d3.selectAll(`.${d.iso}`).classed('highlight-on'));
+              })
+              .on("mousemove", function(d) {
+                d3.selectAll(`.${d.iso}`).classed('highlight-hover', true); })
+              .on("mouseout", function(d) {
+                d3.selectAll(`.${d.iso}`).classed('highlight-hover', false); })
 
       };
 

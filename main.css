@@ -12,29 +12,59 @@ body {
   align-items: center;
   justify-content: center;
 }
-.tooltip {
+
+/* .tooltip {
     position: absolute;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     width:  auto;
     height: auto;
     pointer-events: none;
     background-color: white;
-}
+} */
+
 .overlay {
   fill: none;
   pointer-events: all;
 }
 
-.focus circle {
+/* think this is useless code: */
+/* .focus circle {
   fill: #F4F4F4;
   stroke: #6F257F;
-  stroke-width: 5px;
-}
+  stroke-width: 15px;
+} */
 
 .eachCountry:hover {
   r: 5;
   fill: #F4F4F4;
   stroke-width: 4px;
+  stroke: pink;
+}
+
+.country-line.highlight-off {
+  stroke: black;
+  stroke-width: 3px;
+}
+
+.country-line.highlight-on {
+  stroke: pink;
+  stroke-width: 8px;
+}
+
+.country-line.highlight-hover {
+  stroke: pink;
+  stroke-width: 8px;
+}
+
+.left-label.highlight-off, .right-label.highlight-off {
+  stroke: black;
+}
+
+.left-label.highlight-on, .right-label.highlight-on {
+  stroke: pink;
+}
+
+.left-label.highlight-hover, .right-label.highlight-hover {
   stroke: pink;
 }
