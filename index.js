@@ -140,7 +140,8 @@ function myVis(data) {
   function generate_bumpchart(graph_dataset, graph_title) {
 
         var dataReady = format_data(graph_dataset);
-
+        console.log("HERE");
+        console.log(graph_dataset);
 
         // x-axis
         var x = d3.scaleBand()
@@ -240,9 +241,17 @@ function myVis(data) {
         var focus = svg.append("g")
             .attr("class", "focus")
             .style("display", "none");
-        focus.append("text")
-          .attr("x", 10)
-        	.attr("dy", ".31em");
+        // focus.append("text")
+        //   .attr("x", 10)
+        // 	.attr("dy", ".31em");
+        focus
+          .enter()
+          .append("text")
+            .attr("x", 10)
+            .attr("dy", ".31em")
+            .merge(focus)
+            .data(graph_dataset);
+            // .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name);
 
 
         // Add a label at the beginning of each line (see Reference 1)
