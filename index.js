@@ -14,7 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
       './data/high_income.json',
       './data/upper_mid_income.json',
       './data/lower_mid_income.json',
-      './data/low_income.json'
+      './data/low_income.json',
+      './data/South_Asia.json',
+      './data/Europe_and_Central_Asia.json',
+      './data/East_Asia_and_Pacific.json',
+      './data/NA_LAM_Caribbean.json',
+      './data/Middle_East_and_North_Africa.json',
+      './data/Sub_Saharan_Africa.json'
     ].map(url => fetch(url).then(data => data.json())))
       .then(data => myVis(data))
     .catch(function(error){
@@ -24,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function myVis(data) {
-  var [high_income, upper_mid_income, lower_mid_income, low_income] = data;
+  var [high_income, upper_mid_income, lower_mid_income, low_income,
+       south_asia, europe_centralAsia, eastAsia_pacific, na_lam_carribean,
+       middleEast_northAfrica, subsaharanAfrica] = data;
 
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
@@ -45,12 +53,20 @@ function myVis(data) {
   var dropdownDict = [{"selector_name": "High income countries", "dataset": high_income, "graph_title": "MMR Ranking of High Income Countries"},
                       {"selector_name": "Upper middle income countries", "dataset": upper_mid_income, "graph_title": "MMR Ranking of Upper Middle Income Countries"},
                       {"selector_name": "Lower middle income countries", "dataset": lower_mid_income, "graph_title": "MMR Ranking of Lower Middle Income Countries"},
-                      {"selector_name": "Low income countries", "dataset": low_income, "graph_title": "MMR Ranking of Low Income Countries"}
+                      {"selector_name": "Low income countries", "dataset": low_income, "graph_title": "MMR Ranking of Low Income Countries"},
+                      {"selector_name": "South Asian countries", "dataset": south_asia, "graph_title": "MMR Ranking of South Asian Countries"},
+                      {"selector_name": "European and Central Asian countries", "dataset": europe_centralAsia, "graph_title": "MMR Ranking of European and Central Asian Countries"},
+                      {"selector_name": "East Asian and Pacific countries", "dataset": eastAsia_pacific, "graph_title": "MMR Ranking of East Asian and Pacific Countries"},
+                      {"selector_name": "American & Caribbean countries", "dataset": na_lam_carribean, "graph_title": "MMR Ranking of American and Caribbean Countries"},
+                      {"selector_name": "Middle East and North African countries", "dataset": middleEast_northAfrica, "graph_title": "MMR Ranking of Middle East and North African Countries"},
+                      {"selector_name": "Sub-Sahara African countries", "dataset": subsaharanAfrica, "graph_title": "MMR Ranking of Sub-Sahara African Countries"}
+
                     ];
 
 
   // create the dropdown menu (see Reference 3)
   var dropdownMenu = d3.select("#dropdownMenu")
+
 
   dropdownMenu
         .append("select")
@@ -67,6 +83,8 @@ function myVis(data) {
 
   dropdownMenu
         .on('change', function(){
+
+        var timeout=setTimeout(2000);
         // Find which option was selected from the dropdown
         var selector = d3.select(this)
         .select("select")
@@ -76,23 +94,25 @@ function myVis(data) {
 
         // (see Reference 6)
         var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
-        var graph_dataset = indexed.get(selector).dataset
-        var graph_title = indexed.get(selector).graph_title
-
-
-        d3.selectAll(".chart_title").remove()
-        d3.selectAll(".country-line").remove()
-        d3.selectAll(".eachCountry").remove()
-        d3.selectAll(".left-label").remove()
-        d3.selectAll(".right-label").remove()
+        var graph_dataset = indexed.get(selector).dataset;
+        var graph_title = indexed.get(selector).graph_title;
 
 
 
 
+        // remove previous chart's svg elements
+        d3.selectAll(".chart_title").remove();
+        d3.selectAll(".country-line").remove();
+        d3.selectAll(".eachCountry").remove();
+        d3.selectAll(".left-label").remove();
+        d3.selectAll(".right-label").remove();
 
 
         generate_bumpchart(graph_dataset, graph_title)
+
+
         });
+
 
   // Initialize bumpchart
   generate_bumpchart(high_income, "High Income");
@@ -146,16 +166,16 @@ function myVis(data) {
             .x( d => x(+d.year) )
             .y( d => y(+d.rank) );
 
-
-        var color = ['#13394A', //dark blue
-                '#E3DD44', //yellow
-                '#357797', //mid blue
-                '#D4626F', //salmon
-                '#948E00', //green
-                '#CC149B', //fuschia
-                '#7102FA', //purple
-                '#E48023' //orange
-              ];
+        var color = ["#E3DD44", "#BD9840", "#7102FA"]; //Yellow to Purple 4 gradient scale
+        // var color = ['#13394A', //dark blue
+        //         '#E3DD44', //yellow
+        //         '#357797', //mid blue
+        //         '#D4626F', //salmon
+        //         '#948E00', //green
+        //         '#CC149B', //fuschia
+        //         '#7102FA', //purple
+        //         '#E48023' //orange
+        //       ];
 
         // var color = ["#E3DD44", "#C6A671", "#AA6F9F", "#8D38CC", "#7102FA"] //yellow to purple
 
@@ -187,7 +207,7 @@ function myVis(data) {
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
-            .attr("stroke", function(d, i) { return color[i % 8];})
+            .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
 
 
         // Add the points (see Reference 1, 5)
@@ -203,14 +223,15 @@ function myVis(data) {
             .attr("cy", d => y(d.rank))
             .attr("r", 3)
             .attr("stroke", "none")
-            .attr("fill", "red")
+            .attr("fill", "black")
             .on("mouseover", function() { focus.style("display", null); })
+            .on("mouseout", function() {focus.style("display", "none"); })
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
               focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
               focus.select("text")
-                    .text("rank: " + d.rank + " year: " + d.year)
+                    .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name)
                     .attr("fill", "black")
             });
 
@@ -238,7 +259,7 @@ function myVis(data) {
               .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the first value
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 8];})
+              .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
 
         // Add a label at the end of each line (see Reference 1)
         var rightLabel = svg
@@ -254,7 +275,7 @@ function myVis(data) {
               .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value
               .text(function(d) { return d.iso; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
-              .attr("stroke", function(d, i) { return color[i % 8];})
+              .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
 
       };
 

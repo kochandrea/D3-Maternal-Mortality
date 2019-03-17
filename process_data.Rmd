@@ -240,3 +240,41 @@ my_json <- toJSON(low_income_all_data, pretty=TRUE)
 my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/low_income.json")
 ```
 
+
+
+```{r}
+# Create subsets by region, then rank countries by maternal mortality ratio (mmr):
+# 
+# [1] "South Asia"                 "Europe & Central Asia"      "Middle East & North Africa"
+# [4] "Sub-Saharan Africa"         "Latin America & Caribbean"  "East Asia & Pacific"       
+# [7] "North America" 
+
+
+# SOUTH ASIA
+South_Asia <- filter(merge_data3, Region == "South Asia")
+ranked_mmr_South_Asia <- filter(South_Asia, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_South_Asia)[names(ranked_mmr_South_Asia) == "value"] <- "mmr"
+ranked_mmr_South_Asia <- subset(ranked_mmr_South_Asia, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_South_Asia <- filter(South_Asia, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_South_Asia)[names(matdeaths_South_Asia) == "value"] <- "matdeaths"
+matdeaths_South_Asia <- subset(matdeaths_South_Asia, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+South_Asia_all_data <- left_join(ranked_mmr_South_Asia, matdeaths_South_Asia, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+South_Asia_all_data$year <- as.character(South_Asia_all_data$year)
+South_Asia_all_data <- subset(South_Asia_all_data, year %in% show_years)
+South_Asia_all_data$mmr <- round(South_Asia_all_data$mmr, 3)
+South_Asia_all_data$matdeaths <- round(South_Asia_all_data$matdeaths, 3)
+
+```
+
