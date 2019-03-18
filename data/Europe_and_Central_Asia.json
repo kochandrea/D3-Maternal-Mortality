@@ -120,7 +120,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "1985",
     "rank": 13,
@@ -191,7 +191,7 @@
     "matdeaths": 0.57
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "1985",
     "rank": 20,
@@ -213,7 +213,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "1985",
     "rank": 22,
@@ -323,7 +323,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "1985",
     "rank": 32,
@@ -389,7 +389,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "1985",
     "rank": 38,
@@ -420,7 +420,7 @@
     "matdeaths": 67.598
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "1985",
     "rank": 41,
@@ -626,7 +626,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "1990",
     "rank": 13,
@@ -719,7 +719,7 @@
     "Staff_pct_attended": 98.4
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "1990",
     "rank": 22,
@@ -730,7 +730,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "1990",
     "rank": 23,
@@ -807,7 +807,7 @@
     "Staff_pct_attended": 99.7
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "1990",
     "rank": 30,
@@ -884,7 +884,7 @@
     "Staff_pct_attended": 98.1
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "1990",
     "rank": 37,
@@ -917,7 +917,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "1990",
     "rank": 40,
@@ -1143,7 +1143,7 @@
     "Staff_pct_attended": 99.7
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "1995",
     "rank": 14,
@@ -1154,7 +1154,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "1995",
     "rank": 15,
@@ -1207,7 +1207,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "1995",
     "rank": 20,
@@ -1302,7 +1302,7 @@
     "Staff_pct_attended": 99.2
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "1995",
     "rank": 29,
@@ -1421,7 +1421,7 @@
     "Staff_pct_attended": 98.1
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "1995",
     "rank": 40,
@@ -1452,7 +1452,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "1995",
     "rank": 43,
@@ -1607,7 +1607,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2000",
     "rank": 10,
@@ -1704,7 +1704,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2000",
     "rank": 19,
@@ -1713,7 +1713,7 @@
     "matdeaths": 80.356
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2000",
     "rank": 20,
@@ -1819,7 +1819,7 @@
     "Staff_pct_attended": 98.4
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2000",
     "rank": 30,
@@ -1938,7 +1938,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2000",
     "rank": 41,
@@ -1960,7 +1960,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2000",
     "rank": 43,
@@ -2104,7 +2104,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2005",
     "rank": 9,
@@ -2199,7 +2199,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2005",
     "rank": 18,
@@ -2263,7 +2263,7 @@
     "Staff_pct_attended": 97.4
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2005",
     "rank": 24,
@@ -2325,7 +2325,7 @@
     "Staff_pct_attended": 99.2
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2005",
     "rank": 30,
@@ -2433,7 +2433,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2005",
     "rank": 40,
@@ -2466,7 +2466,7 @@
     "Staff_pct_attended": 100
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2005",
     "rank": 43,
@@ -2601,7 +2601,7 @@
     "matdeaths": 4.863
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2010",
     "rank": 8,
@@ -2725,7 +2725,7 @@
     "matdeaths": 9.773
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2010",
     "rank": 20,
@@ -2791,7 +2791,7 @@
     "Staff_pct_attended": 100
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2010",
     "rank": 26,
@@ -2842,7 +2842,7 @@
     "matdeaths": 0.654
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2010",
     "rank": 31,
@@ -2930,7 +2930,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2010",
     "rank": 39,
@@ -2972,7 +2972,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2010",
     "rank": 43,
@@ -3118,7 +3118,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2015",
     "rank": 9,
@@ -3231,7 +3231,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2015",
     "rank": 20,
@@ -3286,7 +3286,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2015",
     "rank": 25,
@@ -3348,7 +3348,7 @@
     "Staff_pct_attended": 99.7
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2015",
     "rank": 31,
@@ -3414,7 +3414,7 @@
     "Staff_pct_attended": 98.1
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2015",
     "rank": 37,
@@ -3436,7 +3436,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2015",
     "rank": 39,

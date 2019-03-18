@@ -1,6 +1,6 @@
 [
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "1985",
     "rank": 1,
@@ -18,7 +18,7 @@
     "matdeaths": 256.553
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "1985",
     "rank": 3,
@@ -108,7 +108,7 @@
     "matdeaths": 3515.641
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "1985",
     "rank": 13,
@@ -117,7 +117,7 @@
     "matdeaths": 3032.717
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "1985",
     "rank": 14,
@@ -198,7 +198,7 @@
     "matdeaths": 4645.246
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "1985",
     "rank": 23,
@@ -279,7 +279,7 @@
     "matdeaths": 9635.026
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "1985",
     "rank": 32,
@@ -297,7 +297,7 @@
     "matdeaths": 2532.295
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "1985",
     "rank": 34,
@@ -306,7 +306,7 @@
     "matdeaths": 3852.869
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "1990",
     "rank": 1,
@@ -324,7 +324,7 @@
     "matdeaths": 227.35
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "1990",
     "rank": 3,
@@ -405,7 +405,7 @@
     "matdeaths": 5947.88
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "1990",
     "rank": 12,
@@ -432,7 +432,7 @@
     "matdeaths": 3829.887
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "1990",
     "rank": 15,
@@ -531,7 +531,7 @@
     "matdeaths": 28598.113
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "1990",
     "rank": 26,
@@ -594,7 +594,7 @@
     "matdeaths": 2094.211
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "1990",
     "rank": 33,
@@ -603,7 +603,7 @@
     "matdeaths": 4614.104
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "1990",
     "rank": 34,
@@ -612,7 +612,7 @@
     "matdeaths": 4654.407
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "1995",
     "rank": 1,
@@ -621,7 +621,7 @@
     "matdeaths": 351.487
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "1995",
     "rank": 2,
@@ -702,7 +702,7 @@
     "matdeaths": 106.598
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "1995",
     "rank": 11,
@@ -765,7 +765,7 @@
     "matdeaths": 4272.303
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "1995",
     "rank": 18,
@@ -873,7 +873,7 @@
     "matdeaths": 10122.42
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "1995",
     "rank": 30,
@@ -891,7 +891,7 @@
     "matdeaths": 5160.197
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "1995",
     "rank": 32,
@@ -909,7 +909,7 @@
     "matdeaths": 1766.322
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "1995",
     "rank": 34,
@@ -927,7 +927,7 @@
     "matdeaths": 129.949
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "2000",
     "rank": 2,
@@ -936,7 +936,7 @@
     "matdeaths": 362.405
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2000",
     "rank": 3,
@@ -999,7 +999,7 @@
     "matdeaths": 3470.242
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2000",
     "rank": 10,
@@ -1089,7 +1089,7 @@
     "matdeaths": 12042.603
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2000",
     "rank": 20,
@@ -1179,7 +1179,7 @@
     "matdeaths": 10666.797
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2000",
     "rank": 30,
@@ -1197,7 +1197,7 @@
     "matdeaths": 1504.189
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2000",
     "rank": 32,
@@ -1215,7 +1215,7 @@
     "matdeaths": 5861.872
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2000",
     "rank": 34,
@@ -1233,7 +1233,7 @@
     "matdeaths": 90.512
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "2005",
     "rank": 2,
@@ -1242,7 +1242,7 @@
     "matdeaths": 295.7
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2005",
     "rank": 3,
@@ -1305,7 +1305,7 @@
     "matdeaths": 1222.521
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2005",
     "rank": 10,
@@ -1431,7 +1431,7 @@
     "matdeaths": 6944.493
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2005",
     "rank": 24,
@@ -1494,7 +1494,7 @@
     "matdeaths": 1373.231
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2005",
     "rank": 31,
@@ -1503,7 +1503,7 @@
     "matdeaths": 1590.028
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2005",
     "rank": 32,
@@ -1521,7 +1521,7 @@
     "matdeaths": 5812.037
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2005",
     "rank": 34,
@@ -1539,7 +1539,7 @@
     "matdeaths": 81.883
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "2010",
     "rank": 2,
@@ -1548,7 +1548,7 @@
     "matdeaths": 245.338
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2010",
     "rank": 3,
@@ -1620,7 +1620,7 @@
     "matdeaths": 3392.527
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2010",
     "rank": 11,
@@ -1764,7 +1764,7 @@
     "matdeaths": 554.327
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2010",
     "rank": 27,
@@ -1800,7 +1800,7 @@
     "matdeaths": 3534.016
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2010",
     "rank": 31,
@@ -1809,7 +1809,7 @@
     "matdeaths": 3394.49
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2010",
     "rank": 32,
@@ -1827,7 +1827,7 @@
     "matdeaths": 5843.643
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2010",
     "rank": 34,
@@ -1845,7 +1845,7 @@
     "matdeaths": 81.971
   },
   {
-    "name": "Syrian Arab Republic",
+    "name": "Syrian_Arab_Republic",
     "iso": "SYR",
     "year": "2015",
     "rank": 2,
@@ -1854,7 +1854,7 @@
     "matdeaths": 296.047
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2015",
     "rank": 3,
@@ -1944,7 +1944,7 @@
     "matdeaths": 944.442
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2015",
     "rank": 13,
@@ -2061,7 +2061,7 @@
     "matdeaths": 3120.456
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2015",
     "rank": 26,
@@ -2106,7 +2106,7 @@
     "matdeaths": 3446.258
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2015",
     "rank": 31,
@@ -2124,7 +2124,7 @@
     "matdeaths": 5395.743
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2015",
     "rank": 33,
@@ -2133,7 +2133,7 @@
     "matdeaths": 1447.399
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2015",
     "rank": 34,

@@ -36,7 +36,7 @@ function myVis(data) {
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
       width = 900 - margin.left - margin.right,
-      height = 1200 - margin.top - margin.bottom;
+      height = 1300 - margin.top - margin.bottom;
 
 
   // the focus/tooltip (see Reference 5)
@@ -199,7 +199,7 @@ function myVis(data) {
         var color = ['#13394A', //dark blue
                 '#E3DD44', //yellow
                 '#357797', //mid blue
-                '#D4626F', //salmon
+                // '#D4626F', //salmon
                 '#948E00', //green
                 '#CC149B', //fuschia
                 '#7102FA', //purple
@@ -234,7 +234,7 @@ function myVis(data) {
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
-            // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+            .attr("stroke", function(d, i) { return color[i % 7];}) //mod by the number of colors
             .classed("highlight-off", true)
             .on("click", function(d) {
               d3.selectAll(`.${d.name}`).classed('highlight-on', !d3.selectAll(`.${d.name}`).classed('highlight-on'));
@@ -264,18 +264,15 @@ function myVis(data) {
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
-              // focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
-              focus
+               focus
                 .style("left", `${xPosition + 120}px`)
                 .style("top", `${yPosition - 35}px`)
                 .style("display", "flex");
               focus.select("p")
-                    .html("rank: " + d.info.rank
-                           + " year: " + d.year
-                           + " Country: " + d.info.name
-                           + " MMR: " + d.info.mmr
-                           + " Total Deaths: " + d.info.matdeath)
-                    .attr("fill", "red")
+                    .html("Year: " + d.year +
+                          " Rank: " + d.info.rank +
+                          " MMR: " + d.info.mmr +
+                          " Total Deaths: " + d.info.matdeath)
             });
 
 
@@ -288,14 +285,15 @@ function myVis(data) {
           .enter()
           .append("text")
               .attr("class", d => `left-label ${d.name}`)
-              .attr("x", -30)
-              .attr("y", +3)
+              .attr("text-anchor", "end")
+              .attr("x", -10)
+              .attr("y", +5)
               .attr("font-size", 10)
               .merge(leftLabel)
               .datum(function(d) { return {name: d.name, value: d.values[0]}; }) // keep only the first value
               .text(function(d) { return d.name; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.info.rank) + ")"; }) // Put the text at the position of the last point
-              // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+              .attr("fill", function(d, i) { return color[i % 7];}) //mod by the number of colors
               .classed("highlight-off", true)
               .on("click", function(d) {
                 d3.selectAll(`.${d.name}`).classed('highlight-on', !d3.selectAll(`.${d.name}`).classed('highlight-on'));
@@ -314,20 +312,21 @@ function myVis(data) {
           .enter()
           .append("text")
               .attr("class", d => `right-label ${d.name}`)
+              .attr("text-anchor", "start")
 
               // .attr("class", function(d){ return "right-label " + d.name.replace(" ","")
               //   string = d.name.replace(" ","")
               //   return 'right-label ${}'
               // }
               // d => `right-label ${d.name}`)
-              .attr("x", 12)
-              .attr("y", +3)
+              .attr("x", 10)
+              .attr("y", +5)
               .attr("font-size", 10)
               .merge(rightLabel)
               .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; }) // keep only the last value
               .text(function(d) { return d.name; })
               .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.info.rank) + ")"; }) // Put the text at the position of the last point
-              // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
+              .attr("fill", function(d, i) { return color[i % 7];}) //mod by the number of colors
               .classed("highlight-off", true)
               .on("click", function(d) {
                 d3.selectAll(`.${d.name}`).classed('highlight-on', !d3.selectAll(`.${d.name}`).classed('highlight-on'));

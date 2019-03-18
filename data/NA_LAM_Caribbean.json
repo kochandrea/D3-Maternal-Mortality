@@ -11,7 +11,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "1985",
     "rank": 2,
@@ -22,7 +22,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "1985",
     "rank": 3,
@@ -31,7 +31,7 @@
     "matdeaths": 19.116
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "1985",
     "rank": 4,
@@ -64,7 +64,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "1985",
     "rank": 7,
@@ -130,7 +130,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "1985",
     "rank": 13,
@@ -163,7 +163,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "1985",
     "rank": 16,
@@ -262,7 +262,7 @@
     "Staff_pct_attended": 88
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "1985",
     "rank": 25,
@@ -295,7 +295,7 @@
     "Staff_pct_attended": 65.5
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "1985",
     "rank": 28,
@@ -372,7 +372,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "1990",
     "rank": 2,
@@ -383,7 +383,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "1990",
     "rank": 3,
@@ -414,7 +414,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "1990",
     "rank": 6,
@@ -425,7 +425,7 @@
     "Staff_pct_attended": 99.2
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "1990",
     "rank": 7,
@@ -491,7 +491,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "1990",
     "rank": 13,
@@ -535,7 +535,7 @@
     "Staff_pct_attended": 95.6
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "1990",
     "rank": 17,
@@ -612,7 +612,7 @@
     "Staff_pct_attended": 95.7
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "1990",
     "rank": 24,
@@ -656,7 +656,7 @@
     "Staff_pct_attended": 96.3
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "1990",
     "rank": 28,
@@ -733,7 +733,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "1995",
     "rank": 2,
@@ -744,7 +744,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "1995",
     "rank": 3,
@@ -786,7 +786,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "1995",
     "rank": 7,
@@ -797,7 +797,7 @@
     "Staff_pct_attended": 98.7
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "1995",
     "rank": 8,
@@ -863,7 +863,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "1995",
     "rank": 14,
@@ -885,7 +885,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "1995",
     "rank": 16,
@@ -951,7 +951,7 @@
     "Staff_pct_attended": 95.9
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "1995",
     "rank": 22,
@@ -1017,7 +1017,7 @@
     "Staff_pct_attended": 90
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "1995",
     "rank": 28,
@@ -1094,7 +1094,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2000",
     "rank": 2,
@@ -1105,7 +1105,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2000",
     "rank": 3,
@@ -1147,7 +1147,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2000",
     "rank": 7,
@@ -1191,7 +1191,7 @@
     "Staff_pct_attended": 94.2
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2000",
     "rank": 11,
@@ -1224,7 +1224,7 @@
     "Staff_pct_attended": 98
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2000",
     "rank": 14,
@@ -1246,7 +1246,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2000",
     "rank": 16,
@@ -1268,7 +1268,7 @@
     "Staff_pct_attended": 95.6
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2000",
     "rank": 18,
@@ -1290,7 +1290,7 @@
     "Staff_pct_attended": 93.9
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2000",
     "rank": 20,
@@ -1455,7 +1455,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2005",
     "rank": 2,
@@ -1466,7 +1466,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2005",
     "rank": 3,
@@ -1508,7 +1508,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2005",
     "rank": 7,
@@ -1541,7 +1541,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2005",
     "rank": 10,
@@ -1585,7 +1585,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2005",
     "rank": 14,
@@ -1596,7 +1596,7 @@
     "Staff_pct_attended": 100
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2005",
     "rank": 15,
@@ -1607,7 +1607,7 @@
     "Staff_pct_attended": 97.7
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2005",
     "rank": 16,
@@ -1629,7 +1629,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2005",
     "rank": 18,
@@ -1816,7 +1816,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2010",
     "rank": 2,
@@ -1827,7 +1827,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2010",
     "rank": 3,
@@ -1869,7 +1869,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2010",
     "rank": 7,
@@ -1924,7 +1924,7 @@
     "Staff_pct_attended": 95.6
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2010",
     "rank": 12,
@@ -1935,7 +1935,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2010",
     "rank": 13,
@@ -1957,7 +1957,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2010",
     "rank": 15,
@@ -1968,7 +1968,7 @@
     "Staff_pct_attended": 98
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2010",
     "rank": 16,
@@ -2012,7 +2012,7 @@
     "Staff_pct_attended": 96.3
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2010",
     "rank": 20,
@@ -2177,7 +2177,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2015",
     "rank": 2,
@@ -2188,7 +2188,7 @@
     "Staff_pct_attended": 98.5
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2015",
     "rank": 3,
@@ -2219,7 +2219,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2015",
     "rank": 6,
@@ -2296,7 +2296,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2015",
     "rank": 13,
@@ -2307,7 +2307,7 @@
     "Staff_pct_attended": 99
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2015",
     "rank": 14,
@@ -2329,7 +2329,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2015",
     "rank": 16,
@@ -2340,7 +2340,7 @@
     "Staff_pct_attended": 98
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2015",
     "rank": 17,
@@ -2417,7 +2417,7 @@
     "Staff_pct_attended": 99.1
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2015",
     "rank": 24,

@@ -33,7 +33,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "1985",
     "rank": 4,
@@ -44,7 +44,7 @@
     "Staff_pct_attended": 96.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "1985",
     "rank": 5,
@@ -55,7 +55,7 @@
     "Staff_pct_attended": 100
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "1985",
     "rank": 6,
@@ -99,7 +99,7 @@
     "Staff_pct_attended": 95.5
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "1985",
     "rank": 10,
@@ -130,7 +130,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "1985",
     "rank": 13,
@@ -139,7 +139,7 @@
     "matdeaths": 500.259
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "1985",
     "rank": 14,
@@ -214,7 +214,7 @@
     "Staff_pct_attended": 98.3
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "1985",
     "rank": 21,
@@ -234,7 +234,7 @@
     "Staff_pct_attended": 52.1
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "1985",
     "rank": 23,
@@ -397,7 +397,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "1990",
     "rank": 4,
@@ -408,7 +408,7 @@
     "Staff_pct_attended": 96.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "1990",
     "rank": 5,
@@ -419,7 +419,7 @@
     "Staff_pct_attended": 100
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "1990",
     "rank": 6,
@@ -452,7 +452,7 @@
     "Staff_pct_attended": 98.8
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "1990",
     "rank": 9,
@@ -472,7 +472,7 @@
     "Staff_pct_attended": 95.5
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "1990",
     "rank": 11,
@@ -503,7 +503,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "1990",
     "rank": 14,
@@ -578,7 +578,7 @@
     "Staff_pct_attended": 98.3
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "1990",
     "rank": 21,
@@ -620,7 +620,7 @@
     "Staff_pct_attended": 60.2
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "1990",
     "rank": 25,
@@ -761,7 +761,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "1995",
     "rank": 4,
@@ -772,7 +772,7 @@
     "Staff_pct_attended": 96.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "1995",
     "rank": 5,
@@ -794,7 +794,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "1995",
     "rank": 7,
@@ -827,7 +827,7 @@
     "Staff_pct_attended": 98.97
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "1995",
     "rank": 10,
@@ -847,7 +847,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "1995",
     "rank": 12,
@@ -867,7 +867,7 @@
     "Staff_pct_attended": 95.5
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "1995",
     "rank": 14,
@@ -942,7 +942,7 @@
     "Staff_pct_attended": 98.3
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "1995",
     "rank": 21,
@@ -995,7 +995,7 @@
     "Staff_pct_attended": 60.2
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "1995",
     "rank": 26,
@@ -1114,7 +1114,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2000",
     "rank": 3,
@@ -1125,7 +1125,7 @@
     "Staff_pct_attended": 96.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2000",
     "rank": 4,
@@ -1158,7 +1158,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2000",
     "rank": 7,
@@ -1180,7 +1180,7 @@
     "Staff_pct_attended": 98.8
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2000",
     "rank": 9,
@@ -1211,7 +1211,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2000",
     "rank": 12,
@@ -1255,7 +1255,7 @@
     "Staff_pct_attended": 72.8
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2000",
     "rank": 16,
@@ -1317,7 +1317,7 @@
     "Staff_pct_attended": 98.3
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2000",
     "rank": 22,
@@ -1359,7 +1359,7 @@
     "Staff_pct_attended": 60.2
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2000",
     "rank": 26,
@@ -1478,7 +1478,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2005",
     "rank": 3,
@@ -1489,7 +1489,7 @@
     "Staff_pct_attended": 96.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2005",
     "rank": 4,
@@ -1522,7 +1522,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2005",
     "rank": 7,
@@ -1544,7 +1544,7 @@
     "Staff_pct_attended": 98.8
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2005",
     "rank": 9,
@@ -1575,7 +1575,7 @@
     "Staff_pct_attended": 98.97
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2005",
     "rank": 12,
@@ -1619,7 +1619,7 @@
     "Staff_pct_attended": 95.5
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2005",
     "rank": 16,
@@ -1681,7 +1681,7 @@
     "Staff_pct_attended": 98.3
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2005",
     "rank": 22,
@@ -1723,7 +1723,7 @@
     "Staff_pct_attended": 52.1
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2005",
     "rank": 26,
@@ -1853,7 +1853,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2010",
     "rank": 4,
@@ -1864,7 +1864,7 @@
     "Staff_pct_attended": 96.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2010",
     "rank": 5,
@@ -1886,7 +1886,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2010",
     "rank": 7,
@@ -1908,7 +1908,7 @@
     "Staff_pct_attended": 98.8
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2010",
     "rank": 9,
@@ -1939,7 +1939,7 @@
     "Staff_pct_attended": 98.97
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2010",
     "rank": 12,
@@ -1994,7 +1994,7 @@
     "Staff_pct_attended": 89.4
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2010",
     "rank": 17,
@@ -2045,7 +2045,7 @@
     "Staff_pct_attended": 95.5
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2010",
     "rank": 22,
@@ -2120,7 +2120,7 @@
     "Staff_pct_attended": 81.4
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2010",
     "rank": 29,
@@ -2217,7 +2217,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2015",
     "rank": 4,
@@ -2228,7 +2228,7 @@
     "Staff_pct_attended": 100
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2015",
     "rank": 5,
@@ -2250,7 +2250,7 @@
     "Staff_pct_attended": 99.6
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2015",
     "rank": 7,
@@ -2283,7 +2283,7 @@
     "Staff_pct_attended": 98.8
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2015",
     "rank": 10,
@@ -2325,7 +2325,7 @@
     "Staff_pct_attended": 82.5
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2015",
     "rank": 14,
@@ -2358,7 +2358,7 @@
     "Staff_pct_attended": 89.4
   },
   {
-    "name": "Democratic People's Republic of Korea",
+    "name": "Democratic_Peoples_Republic_of_Korea",
     "iso": "PRK",
     "year": "2015",
     "rank": 17,
@@ -2387,7 +2387,7 @@
     "matdeaths": 2.457
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2015",
     "rank": 20,
@@ -2517,7 +2517,7 @@
     "Staff_pct_attended": 29.3
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2015",
     "rank": 32,

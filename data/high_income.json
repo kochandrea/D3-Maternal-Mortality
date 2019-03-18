@@ -126,7 +126,7 @@
     "matdeaths": 6.229
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "1985",
     "rank": 15,
@@ -153,7 +153,7 @@
     "matdeaths": 20.268
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "1985",
     "rank": 18,
@@ -234,7 +234,7 @@
     "matdeaths": 3.986
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "1985",
     "rank": 27,
@@ -270,7 +270,7 @@
     "matdeaths": 274.028
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "1985",
     "rank": 31,
@@ -279,7 +279,7 @@
     "matdeaths": 10.248
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "1985",
     "rank": 32,
@@ -315,7 +315,7 @@
     "matdeaths": 33.835
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "1985",
     "rank": 36,
@@ -333,7 +333,7 @@
     "matdeaths": 2.928
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "1985",
     "rank": 38,
@@ -396,7 +396,7 @@
     "matdeaths": 3.106
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "1985",
     "rank": 45,
@@ -423,7 +423,7 @@
     "matdeaths": 13.541
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "1985",
     "rank": 48,
@@ -450,7 +450,7 @@
     "matdeaths": 534.933
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "1985",
     "rank": 51,
@@ -594,7 +594,7 @@
     "matdeaths": 5.254
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "1990",
     "rank": 15,
@@ -666,7 +666,7 @@
     "matdeaths": 2.592
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "1990",
     "rank": 23,
@@ -711,7 +711,7 @@
     "matdeaths": 172.928
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "1990",
     "rank": 28,
@@ -747,7 +747,7 @@
     "matdeaths": 96.582
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "1990",
     "rank": 32,
@@ -765,7 +765,7 @@
     "matdeaths": 19.575
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "1990",
     "rank": 34,
@@ -774,7 +774,7 @@
     "matdeaths": 10.327
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "1990",
     "rank": 35,
@@ -801,7 +801,7 @@
     "matdeaths": 3.718
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "1990",
     "rank": 38,
@@ -837,7 +837,7 @@
     "matdeaths": 21.131
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "1990",
     "rank": 42,
@@ -873,7 +873,7 @@
     "matdeaths": 2.813
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "1990",
     "rank": 46,
@@ -918,7 +918,7 @@
     "matdeaths": 513.01
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "1990",
     "rank": 51,
@@ -1089,7 +1089,7 @@
     "matdeaths": 4.965
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "1995",
     "rank": 18,
@@ -1098,7 +1098,7 @@
     "matdeaths": 10.258
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "1995",
     "rank": 19,
@@ -1125,7 +1125,7 @@
     "matdeaths": 7.749
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "1995",
     "rank": 22,
@@ -1134,7 +1134,7 @@
     "matdeaths": 5.538
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "1995",
     "rank": 23,
@@ -1224,7 +1224,7 @@
     "matdeaths": 16.453
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "1995",
     "rank": 33,
@@ -1242,7 +1242,7 @@
     "matdeaths": 2.407
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "1995",
     "rank": 35,
@@ -1278,7 +1278,7 @@
     "matdeaths": 3.081
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "1995",
     "rank": 39,
@@ -1305,7 +1305,7 @@
     "matdeaths": 12.424
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "1995",
     "rank": 42,
@@ -1314,7 +1314,7 @@
     "matdeaths": 193.803
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "1995",
     "rank": 43,
@@ -1386,7 +1386,7 @@
     "matdeaths": 448.918
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "1995",
     "rank": 51,
@@ -1494,7 +1494,7 @@
     "matdeaths": 3.075
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2000",
     "rank": 11,
@@ -1539,7 +1539,7 @@
     "matdeaths": 30.619
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "2000",
     "rank": 16,
@@ -1611,7 +1611,7 @@
     "matdeaths": 4.955
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2000",
     "rank": 24,
@@ -1629,7 +1629,7 @@
     "matdeaths": 89.111
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2000",
     "rank": 26,
@@ -1647,7 +1647,7 @@
     "matdeaths": 2.149
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2000",
     "rank": 28,
@@ -1710,7 +1710,7 @@
     "matdeaths": 1.935
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2000",
     "rank": 35,
@@ -1755,7 +1755,7 @@
     "matdeaths": 3.082
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2000",
     "rank": 40,
@@ -1764,7 +1764,7 @@
     "matdeaths": 11.983
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "2000",
     "rank": 41,
@@ -1818,7 +1818,7 @@
     "matdeaths": 16.798
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2000",
     "rank": 47,
@@ -1854,7 +1854,7 @@
     "matdeaths": 3.22
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2000",
     "rank": 51,
@@ -1953,7 +1953,7 @@
     "matdeaths": 3.043
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2005",
     "rank": 10,
@@ -1962,7 +1962,7 @@
     "matdeaths": 6.285
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "2005",
     "rank": 11,
@@ -2115,7 +2115,7 @@
     "matdeaths": 1.457
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2005",
     "rank": 28,
@@ -2160,7 +2160,7 @@
     "matdeaths": 0.467
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2005",
     "rank": 33,
@@ -2169,7 +2169,7 @@
     "matdeaths": 555.491
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2005",
     "rank": 34,
@@ -2187,7 +2187,7 @@
     "matdeaths": 13.578
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2005",
     "rank": 36,
@@ -2214,7 +2214,7 @@
     "matdeaths": 7.552
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "2005",
     "rank": 39,
@@ -2223,7 +2223,7 @@
     "matdeaths": 102.546
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2005",
     "rank": 40,
@@ -2286,7 +2286,7 @@
     "matdeaths": 66.602
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2005",
     "rank": 47,
@@ -2313,7 +2313,7 @@
     "matdeaths": 430.514
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2005",
     "rank": 50,
@@ -2403,7 +2403,7 @@
     "matdeaths": 4.863
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2010",
     "rank": 8,
@@ -2466,7 +2466,7 @@
     "matdeaths": 9.071
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "2010",
     "rank": 15,
@@ -2592,7 +2592,7 @@
     "matdeaths": 2.903
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2010",
     "rank": 29,
@@ -2646,7 +2646,7 @@
     "matdeaths": 5.599
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2010",
     "rank": 35,
@@ -2655,7 +2655,7 @@
     "matdeaths": 8.043
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "2010",
     "rank": 36,
@@ -2664,7 +2664,7 @@
     "matdeaths": 83.812
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2010",
     "rank": 37,
@@ -2673,7 +2673,7 @@
     "matdeaths": 584.79
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2010",
     "rank": 38,
@@ -2700,7 +2700,7 @@
     "matdeaths": 3.17
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2010",
     "rank": 41,
@@ -2754,7 +2754,7 @@
     "matdeaths": 61.647
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2010",
     "rank": 47,
@@ -2781,7 +2781,7 @@
     "matdeaths": 432.916
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2010",
     "rank": 50,
@@ -2880,7 +2880,7 @@
     "matdeaths": 3.083
   },
   {
-    "name": "Czech Republic",
+    "name": "Czech_Republic",
     "iso": "CZE",
     "year": "2015",
     "rank": 9,
@@ -2952,7 +2952,7 @@
     "matdeaths": 18.896
   },
   {
-    "name": "United Arab Emirates",
+    "name": "United_Arab_Emirates",
     "iso": "ARE",
     "year": "2015",
     "rank": 17,
@@ -3060,7 +3060,7 @@
     "matdeaths": 0.328
   },
   {
-    "name": "United Kingdom",
+    "name": "United_Kingdom",
     "iso": "GBR",
     "year": "2015",
     "rank": 29,
@@ -3114,7 +3114,7 @@
     "matdeaths": 8.396
   },
   {
-    "name": "Republic of Korea",
+    "name": "Republic_of_Korea",
     "iso": "KOR",
     "year": "2015",
     "rank": 35,
@@ -3123,7 +3123,7 @@
     "matdeaths": 50.324
   },
   {
-    "name": "New Zealand",
+    "name": "New_Zealand",
     "iso": "NZL",
     "year": "2015",
     "rank": 36,
@@ -3132,7 +3132,7 @@
     "matdeaths": 6.736
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Saudi_Arabia",
     "iso": "SAU",
     "year": "2015",
     "rank": 37,
@@ -3150,7 +3150,7 @@
     "matdeaths": 3.307
   },
   {
-    "name": "United States of America",
+    "name": "United_States_of_America",
     "iso": "USA",
     "year": "2015",
     "rank": 39,
@@ -3159,7 +3159,7 @@
     "matdeaths": 553.351
   },
   {
-    "name": "Puerto Rico",
+    "name": "Puerto_Rico",
     "iso": "PRI",
     "year": "2015",
     "rank": 40,
@@ -3222,7 +3222,7 @@
     "matdeaths": 51.783
   },
   {
-    "name": "Brunei Darussalam",
+    "name": "Brunei_Darussalam",
     "iso": "BRN",
     "year": "2015",
     "rank": 47,
@@ -3249,7 +3249,7 @@
     "matdeaths": 394.704
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad_and_Tobago",
     "iso": "TTO",
     "year": "2015",
     "rank": 50,

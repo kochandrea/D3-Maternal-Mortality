@@ -11,7 +11,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "1985",
     "rank": 2,
@@ -31,7 +31,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "1985",
     "rank": 4,
@@ -53,7 +53,7 @@
     "Staff_pct_attended": 88.2
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "1985",
     "rank": 6,
@@ -218,7 +218,7 @@
     "Staff_pct_attended": 77.7
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "1985",
     "rank": 21,
@@ -251,7 +251,7 @@
     "Staff_pct_attended": 77.9
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "1985",
     "rank": 24,
@@ -262,7 +262,7 @@
     "Staff_pct_attended": 59.4
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "1985",
     "rank": 25,
@@ -361,7 +361,7 @@
     "Staff_pct_attended": 58.6
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "1985",
     "rank": 34,
@@ -412,7 +412,7 @@
     "Staff_pct_attended": 61.1
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "1985",
     "rank": 39,
@@ -478,7 +478,7 @@
     "Staff_pct_attended": 20.2
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "1985",
     "rank": 45,
@@ -500,7 +500,7 @@
     "Staff_pct_attended": 34.1
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "1985",
     "rank": 47,
@@ -522,7 +522,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "1990",
     "rank": 2,
@@ -542,7 +542,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "1990",
     "rank": 4,
@@ -553,7 +553,7 @@
     "Staff_pct_attended": 92.3
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "1990",
     "rank": 5,
@@ -718,7 +718,7 @@
     "Staff_pct_attended": 61.8
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "1990",
     "rank": 20,
@@ -751,7 +751,7 @@
     "Staff_pct_attended": 77.7
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "1990",
     "rank": 23,
@@ -795,7 +795,7 @@
     "Staff_pct_attended": 39.7
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "1990",
     "rank": 27,
@@ -912,7 +912,7 @@
     "Staff_pct_attended": 27.7
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "1990",
     "rank": 38,
@@ -934,7 +934,7 @@
     "Staff_pct_attended": 90.7
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "1990",
     "rank": 40,
@@ -1000,7 +1000,7 @@
     "Staff_pct_attended": 34.1
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "1990",
     "rank": 46,
@@ -1011,7 +1011,7 @@
     "Staff_pct_attended": 19.4
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "1990",
     "rank": 47,
@@ -1033,7 +1033,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "1995",
     "rank": 2,
@@ -1042,7 +1042,7 @@
     "matdeaths": 669.174
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "1995",
     "rank": 3,
@@ -1064,7 +1064,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "1995",
     "rank": 5,
@@ -1207,7 +1207,7 @@
     "Staff_pct_attended": 94.4
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "1995",
     "rank": 18,
@@ -1262,7 +1262,7 @@
     "Staff_pct_attended": 61.8
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "1995",
     "rank": 23,
@@ -1328,7 +1328,7 @@
     "Staff_pct_attended": 58.6
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "1995",
     "rank": 29,
@@ -1383,7 +1383,7 @@
     "Staff_pct_attended": 57.2
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "1995",
     "rank": 34,
@@ -1478,7 +1478,7 @@
     "Staff_pct_attended": 90.7
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "1995",
     "rank": 43,
@@ -1500,7 +1500,7 @@
     "Staff_pct_attended": 20.2
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "1995",
     "rank": 45,
@@ -1522,7 +1522,7 @@
     "Staff_pct_attended": 61.1
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "1995",
     "rank": 47,
@@ -1544,7 +1544,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2000",
     "rank": 2,
@@ -1555,7 +1555,7 @@
     "Staff_pct_attended": 92.3
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2000",
     "rank": 3,
@@ -1564,7 +1564,7 @@
     "matdeaths": 929.505
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2000",
     "rank": 4,
@@ -1685,7 +1685,7 @@
     "Staff_pct_attended": 77.7
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2000",
     "rank": 15,
@@ -1762,7 +1762,7 @@
     "Staff_pct_attended": 94.4
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2000",
     "rank": 22,
@@ -1773,7 +1773,7 @@
     "Staff_pct_attended": 59.4
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2000",
     "rank": 23,
@@ -1872,7 +1872,7 @@
     "Staff_pct_attended": 63.7
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2000",
     "rank": 32,
@@ -1989,7 +1989,7 @@
     "Staff_pct_attended": 35.2
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2000",
     "rank": 43,
@@ -2011,7 +2011,7 @@
     "Staff_pct_attended": 61.1
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2000",
     "rank": 45,
@@ -2033,7 +2033,7 @@
     "Staff_pct_attended": 20.2
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2000",
     "rank": 47,
@@ -2055,7 +2055,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2005",
     "rank": 2,
@@ -2066,7 +2066,7 @@
     "Staff_pct_attended": 92.3
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2005",
     "rank": 3,
@@ -2075,7 +2075,7 @@
     "matdeaths": 1251.301
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2005",
     "rank": 4,
@@ -2185,7 +2185,7 @@
     "Staff_pct_attended": 77.7
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2005",
     "rank": 14,
@@ -2196,7 +2196,7 @@
     "Staff_pct_attended": 65.9
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2005",
     "rank": 15,
@@ -2381,7 +2381,7 @@
     "Staff_pct_attended": 64.7
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2005",
     "rank": 32,
@@ -2436,7 +2436,7 @@
     "Staff_pct_attended": 54.3
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2005",
     "rank": 37,
@@ -2511,7 +2511,7 @@
     "Staff_pct_attended": 61.1
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2005",
     "rank": 44,
@@ -2522,7 +2522,7 @@
     "Staff_pct_attended": 40
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2005",
     "rank": 45,
@@ -2544,7 +2544,7 @@
     "Staff_pct_attended": 20.2
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2005",
     "rank": 47,
@@ -2555,7 +2555,7 @@
     "Staff_pct_attended": 59.7
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2010",
     "rank": 1,
@@ -2577,7 +2577,7 @@
     "Staff_pct_attended": 99.8
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2010",
     "rank": 3,
@@ -2586,7 +2586,7 @@
     "matdeaths": 1709.653
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2010",
     "rank": 4,
@@ -2674,7 +2674,7 @@
     "Staff_pct_attended": 53.2
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2010",
     "rank": 12,
@@ -2718,7 +2718,7 @@
     "Staff_pct_attended": 44.6
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2010",
     "rank": 16,
@@ -2925,7 +2925,7 @@
     "Staff_pct_attended": 64.7
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2010",
     "rank": 35,
@@ -2969,7 +2969,7 @@
     "Staff_pct_attended": 57.2
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2010",
     "rank": 39,
@@ -3022,7 +3022,7 @@
     "Staff_pct_attended": 35.2
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2010",
     "rank": 44,
@@ -3033,7 +3033,7 @@
     "Staff_pct_attended": 19.4
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2010",
     "rank": 45,
@@ -3055,7 +3055,7 @@
     "Staff_pct_attended": 20.2
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2010",
     "rank": 47,
@@ -3066,7 +3066,7 @@
     "Staff_pct_attended": 59.7
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2015",
     "rank": 1,
@@ -3099,7 +3099,7 @@
     "Staff_pct_attended": 99.9
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2015",
     "rank": 4,
@@ -3108,7 +3108,7 @@
     "matdeaths": 1533.531
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2015",
     "rank": 5,
@@ -3207,7 +3207,7 @@
     "Staff_pct_attended": 82.2
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2015",
     "rank": 14,
@@ -3262,7 +3262,7 @@
     "Staff_pct_attended": 44.6
   },
   {
-    "name": "Burkina Faso",
+    "name": "Burkina_Faso",
     "iso": "BFA",
     "year": "2015",
     "rank": 19,
@@ -3447,7 +3447,7 @@
     "Staff_pct_attended": 89.8
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2015",
     "rank": 36,
@@ -3469,7 +3469,7 @@
     "Staff_pct_attended": 45.3
   },
   {
-    "name": "Democratic Republic of the Congo",
+    "name": "Democratic_Republic_of_the_Congo",
     "iso": "COD",
     "year": "2015",
     "rank": 38,
@@ -3522,7 +3522,7 @@
     "matdeaths": 3446.258
   },
   {
-    "name": "South Sudan",
+    "name": "South_Sudan",
     "iso": "SSD",
     "year": "2015",
     "rank": 43,
@@ -3555,7 +3555,7 @@
     "Staff_pct_attended": 20.2
   },
   {
-    "name": "Central African Republic",
+    "name": "Central_African_Republic",
     "iso": "CAF",
     "year": "2015",
     "rank": 46,
@@ -3566,7 +3566,7 @@
     "Staff_pct_attended": 40
   },
   {
-    "name": "Sierra Leone",
+    "name": "Sierra_Leone",
     "iso": "SLE",
     "year": "2015",
     "rank": 47,

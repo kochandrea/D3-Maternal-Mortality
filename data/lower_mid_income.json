@@ -18,7 +18,7 @@
     "matdeaths": 467.751
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "1985",
     "rank": 3,
@@ -27,7 +27,7 @@
     "matdeaths": 65.298
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "1985",
     "rank": 4,
@@ -63,7 +63,7 @@
     "matdeaths": 2502.514
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "1985",
     "rank": 8,
@@ -81,7 +81,7 @@
     "matdeaths": 368.308
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "1985",
     "rank": 10,
@@ -99,7 +99,7 @@
     "matdeaths": 275.919
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "1985",
     "rank": 12,
@@ -153,7 +153,7 @@
     "matdeaths": 6.245
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "1985",
     "rank": 18,
@@ -162,7 +162,7 @@
     "matdeaths": 41.015
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "1985",
     "rank": 19,
@@ -180,7 +180,7 @@
     "matdeaths": 654.866
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "1985",
     "rank": 21,
@@ -216,7 +216,7 @@
     "matdeaths": 20638.462
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "1985",
     "rank": 25,
@@ -342,7 +342,7 @@
     "matdeaths": 453.846
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "1985",
     "rank": 39,
@@ -432,7 +432,7 @@
     "matdeaths": 293.581
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "1990",
     "rank": 3,
@@ -450,7 +450,7 @@
     "matdeaths": 376.442
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "1990",
     "rank": 5,
@@ -477,7 +477,7 @@
     "matdeaths": 1991.368
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "1990",
     "rank": 8,
@@ -495,7 +495,7 @@
     "matdeaths": 280.585
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "1990",
     "rank": 10,
@@ -513,7 +513,7 @@
     "matdeaths": 3100.13
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "1990",
     "rank": 12,
@@ -567,7 +567,7 @@
     "matdeaths": 6.164
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "1990",
     "rank": 18,
@@ -594,7 +594,7 @@
     "matdeaths": 2323.093
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "1990",
     "rank": 21,
@@ -603,7 +603,7 @@
     "matdeaths": 14.857
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "1990",
     "rank": 22,
@@ -648,7 +648,7 @@
     "matdeaths": 5127.283
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "1990",
     "rank": 27,
@@ -756,7 +756,7 @@
     "matdeaths": 6328.958
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "1990",
     "rank": 39,
@@ -855,7 +855,7 @@
     "matdeaths": 257.566
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "1995",
     "rank": 4,
@@ -864,7 +864,7 @@
     "matdeaths": 40.101
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "1995",
     "rank": 5,
@@ -891,7 +891,7 @@
     "matdeaths": 114.725
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "1995",
     "rank": 8,
@@ -900,7 +900,7 @@
     "matdeaths": 109.846
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "1995",
     "rank": 9,
@@ -918,7 +918,7 @@
     "matdeaths": 209.115
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "1995",
     "rank": 11,
@@ -936,7 +936,7 @@
     "matdeaths": 2648.387
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "1995",
     "rank": 13,
@@ -1008,7 +1008,7 @@
     "matdeaths": 1756.092
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "1995",
     "rank": 21,
@@ -1017,7 +1017,7 @@
     "matdeaths": 12.985
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "1995",
     "rank": 22,
@@ -1053,7 +1053,7 @@
     "matdeaths": 4164.96
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "1995",
     "rank": 26,
@@ -1179,7 +1179,7 @@
     "matdeaths": 7324.25
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "1995",
     "rank": 40,
@@ -1269,7 +1269,7 @@
     "matdeaths": 20.949
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2000",
     "rank": 4,
@@ -1278,7 +1278,7 @@
     "matdeaths": 23.565
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2000",
     "rank": 5,
@@ -1296,7 +1296,7 @@
     "matdeaths": 1076.151
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "2000",
     "rank": 7,
@@ -1314,7 +1314,7 @@
     "matdeaths": 79.464
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2000",
     "rank": 9,
@@ -1323,7 +1323,7 @@
     "matdeaths": 1136.112
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2000",
     "rank": 10,
@@ -1341,7 +1341,7 @@
     "matdeaths": 141.317
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2000",
     "rank": 12,
@@ -1413,7 +1413,7 @@
     "matdeaths": 272.623
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2000",
     "rank": 20,
@@ -1431,7 +1431,7 @@
     "matdeaths": 1376.063
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2000",
     "rank": 22,
@@ -1476,7 +1476,7 @@
     "matdeaths": 862.075
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2000",
     "rank": 27,
@@ -1593,7 +1593,7 @@
     "matdeaths": 787.219
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2000",
     "rank": 40,
@@ -1674,7 +1674,7 @@
     "matdeaths": 21.103
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2005",
     "rank": 3,
@@ -1692,7 +1692,7 @@
     "matdeaths": 237.807
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2005",
     "rank": 5,
@@ -1710,7 +1710,7 @@
     "matdeaths": 967.245
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2005",
     "rank": 7,
@@ -1719,7 +1719,7 @@
     "matdeaths": 6.069
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2005",
     "rank": 8,
@@ -1728,7 +1728,7 @@
     "matdeaths": 870.991
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "2005",
     "rank": 9,
@@ -1737,7 +1737,7 @@
     "matdeaths": 78.13
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2005",
     "rank": 10,
@@ -1818,7 +1818,7 @@
     "matdeaths": 280.653
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2005",
     "rank": 19,
@@ -1827,7 +1827,7 @@
     "matdeaths": 26.712
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2005",
     "rank": 20,
@@ -1881,7 +1881,7 @@
     "matdeaths": 11497.229
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2005",
     "rank": 26,
@@ -2034,7 +2034,7 @@
     "matdeaths": 5343.786
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2005",
     "rank": 43,
@@ -2079,7 +2079,7 @@
     "matdeaths": 126.771
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2010",
     "rank": 2,
@@ -2088,7 +2088,7 @@
     "matdeaths": 15.224
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2010",
     "rank": 3,
@@ -2124,7 +2124,7 @@
     "matdeaths": 909.516
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2010",
     "rank": 7,
@@ -2133,7 +2133,7 @@
     "matdeaths": 5.626
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "2010",
     "rank": 8,
@@ -2142,7 +2142,7 @@
     "matdeaths": 74.154
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2010",
     "rank": 9,
@@ -2151,7 +2151,7 @@
     "matdeaths": 904.23
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2010",
     "rank": 10,
@@ -2223,7 +2223,7 @@
     "matdeaths": 2958.618
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2010",
     "rank": 18,
@@ -2250,7 +2250,7 @@
     "matdeaths": 269.783
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2010",
     "rank": 21,
@@ -2322,7 +2322,7 @@
     "matdeaths": 57076.883
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2010",
     "rank": 29,
@@ -2457,7 +2457,7 @@
     "matdeaths": 5384.408
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2010",
     "rank": 44,
@@ -2484,7 +2484,7 @@
     "matdeaths": 56974.211
   },
   {
-    "name": "Republic of Moldova",
+    "name": "Republic_of_Moldova",
     "iso": "MDA",
     "year": "2015",
     "rank": 1,
@@ -2502,7 +2502,7 @@
     "matdeaths": 118.441
   },
   {
-    "name": "Sri Lanka",
+    "name": "Sri_Lanka",
     "iso": "LKA",
     "year": "2015",
     "rank": 3,
@@ -2538,7 +2538,7 @@
     "matdeaths": 19.468
   },
   {
-    "name": "Cabo Verde",
+    "name": "Cabo_Verde",
     "iso": "CPV",
     "year": "2015",
     "rank": 7,
@@ -2556,7 +2556,7 @@
     "matdeaths": 30.36
   },
   {
-    "name": "Occupied Palestinian Territory",
+    "name": "Occupied_Palestinian_Territory",
     "iso": "PSE",
     "year": "2015",
     "rank": 9,
@@ -2565,7 +2565,7 @@
     "matdeaths": 68.844
   },
   {
-    "name": "El Salvador",
+    "name": "El_Salvador",
     "iso": "SLV",
     "year": "2015",
     "rank": 10,
@@ -2574,7 +2574,7 @@
     "matdeaths": 56.948
   },
   {
-    "name": "Viet Nam",
+    "name": "Viet_Nam",
     "iso": "VNM",
     "year": "2015",
     "rank": 11,
@@ -2628,7 +2628,7 @@
     "matdeaths": 2.457
   },
   {
-    "name": "Solomon Islands",
+    "name": "Solomon_Islands",
     "iso": "SLB",
     "year": "2015",
     "rank": 17,
@@ -2691,7 +2691,7 @@
     "matdeaths": 181.579
   },
   {
-    "name": "Sao Tome and Principe",
+    "name": "Sao_Tome_and_Principe",
     "iso": "STP",
     "year": "2015",
     "rank": 24,
@@ -2772,7 +2772,7 @@
     "matdeaths": 94.149
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua_New_Guinea",
     "iso": "PNG",
     "year": "2015",
     "rank": 33,
@@ -2880,7 +2880,7 @@
     "matdeaths": 808.326
   },
   {
-    "name": "Cote d'Ivoire",
+    "name": "Cote_dIvoire",
     "iso": "CIV",
     "year": "2015",
     "rank": 45,

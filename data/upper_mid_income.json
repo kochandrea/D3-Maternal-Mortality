@@ -9,7 +9,7 @@
     "matdeaths": 1.047
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "1985",
     "rank": 2,
@@ -45,7 +45,7 @@
     "matdeaths": 60.236
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "1985",
     "rank": 6,
@@ -54,7 +54,7 @@
     "matdeaths": 29.991
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "1985",
     "rank": 7,
@@ -72,7 +72,7 @@
     "matdeaths": 1.457
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "1985",
     "rank": 9,
@@ -117,7 +117,7 @@
     "matdeaths": 119.952
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "1985",
     "rank": 14,
@@ -171,7 +171,7 @@
     "matdeaths": 67.598
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "1985",
     "rank": 20,
@@ -306,7 +306,7 @@
     "matdeaths": 17.301
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "1985",
     "rank": 35,
@@ -378,7 +378,7 @@
     "matdeaths": 826.932
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "1985",
     "rank": 43,
@@ -450,7 +450,7 @@
     "matdeaths": 92.241
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "1985",
     "rank": 51,
@@ -477,7 +477,7 @@
     "matdeaths": 19.481
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "1990",
     "rank": 3,
@@ -495,7 +495,7 @@
     "matdeaths": 25.929
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "1990",
     "rank": 5,
@@ -540,7 +540,7 @@
     "matdeaths": 1.133
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "1990",
     "rank": 10,
@@ -549,7 +549,7 @@
     "matdeaths": 35.617
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "1990",
     "rank": 11,
@@ -585,7 +585,7 @@
     "matdeaths": 102.879
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "1990",
     "rank": 15,
@@ -594,7 +594,7 @@
     "matdeaths": 1.551
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "1990",
     "rank": 16,
@@ -747,7 +747,7 @@
     "matdeaths": 707.136
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "1990",
     "rank": 33,
@@ -837,7 +837,7 @@
     "matdeaths": 569.706
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "1990",
     "rank": 43,
@@ -909,7 +909,7 @@
     "matdeaths": 61.882
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "1990",
     "rank": 51,
@@ -927,7 +927,7 @@
     "matdeaths": 1.095
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "1995",
     "rank": 2,
@@ -945,7 +945,7 @@
     "matdeaths": 20.348
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "1995",
     "rank": 4,
@@ -999,7 +999,7 @@
     "matdeaths": 0.816
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "1995",
     "rank": 10,
@@ -1008,7 +1008,7 @@
     "matdeaths": 1.519
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "1995",
     "rank": 11,
@@ -1080,7 +1080,7 @@
     "matdeaths": 12.959
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "1995",
     "rank": 19,
@@ -1143,7 +1143,7 @@
     "matdeaths": 48.231
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "1995",
     "rank": 26,
@@ -1152,7 +1152,7 @@
     "matdeaths": 1.998
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "1995",
     "rank": 27,
@@ -1305,7 +1305,7 @@
     "matdeaths": 1377.859
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "1995",
     "rank": 44,
@@ -1368,7 +1368,7 @@
     "matdeaths": 155.822
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "1995",
     "rank": 51,
@@ -1386,7 +1386,7 @@
     "matdeaths": 0.952
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2000",
     "rank": 2,
@@ -1413,7 +1413,7 @@
     "matdeaths": 19.7
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2000",
     "rank": 5,
@@ -1458,7 +1458,7 @@
     "matdeaths": 0.567
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2000",
     "rank": 10,
@@ -1557,7 +1557,7 @@
     "matdeaths": 3.879
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2000",
     "rank": 21,
@@ -1566,7 +1566,7 @@
     "matdeaths": 1.655
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2000",
     "rank": 22,
@@ -1629,7 +1629,7 @@
     "matdeaths": 2413.858
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2000",
     "rank": 29,
@@ -1656,7 +1656,7 @@
     "matdeaths": 114.635
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2000",
     "rank": 32,
@@ -1674,7 +1674,7 @@
     "matdeaths": 1083.128
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2000",
     "rank": 34,
@@ -1827,7 +1827,7 @@
     "matdeaths": 165.492
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2000",
     "rank": 51,
@@ -1845,7 +1845,7 @@
     "matdeaths": 0.772
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2005",
     "rank": 2,
@@ -1872,7 +1872,7 @@
     "matdeaths": 12.39
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2005",
     "rank": 5,
@@ -1935,7 +1935,7 @@
     "matdeaths": 11.354
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2005",
     "rank": 12,
@@ -2007,7 +2007,7 @@
     "matdeaths": 54.743
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2005",
     "rank": 20,
@@ -2034,7 +2034,7 @@
     "matdeaths": 7483.711
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2005",
     "rank": 23,
@@ -2106,7 +2106,7 @@
     "matdeaths": 99.586
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2005",
     "rank": 31,
@@ -2115,7 +2115,7 @@
     "matdeaths": 141.49
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2005",
     "rank": 32,
@@ -2187,7 +2187,7 @@
     "matdeaths": 6.363
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2005",
     "rank": 40,
@@ -2286,7 +2286,7 @@
     "matdeaths": 235.487
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2005",
     "rank": 51,
@@ -2304,7 +2304,7 @@
     "matdeaths": 5.567
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2010",
     "rank": 2,
@@ -2340,7 +2340,7 @@
     "matdeaths": 8.045
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2010",
     "rank": 6,
@@ -2421,7 +2421,7 @@
     "matdeaths": 53.69
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2010",
     "rank": 15,
@@ -2430,7 +2430,7 @@
     "matdeaths": 500.679
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2010",
     "rank": 16,
@@ -2529,7 +2529,7 @@
     "matdeaths": 227.887
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2010",
     "rank": 27,
@@ -2547,7 +2547,7 @@
     "matdeaths": 567.449
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2010",
     "rank": 29,
@@ -2610,7 +2610,7 @@
     "matdeaths": 244.925
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2010",
     "rank": 36,
@@ -2691,7 +2691,7 @@
     "matdeaths": 1315.129
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2010",
     "rank": 45,
@@ -2745,7 +2745,7 @@
     "matdeaths": 156.007
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2010",
     "rank": 51,
@@ -2772,7 +2772,7 @@
     "matdeaths": 0.512
   },
   {
-    "name": "TFYR Macedonia",
+    "name": "TFYR_Macedonia",
     "iso": "MKD",
     "year": "2015",
     "rank": 3,
@@ -2799,7 +2799,7 @@
     "matdeaths": 7.332
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia_and_Herzegovina",
     "iso": "BIH",
     "year": "2015",
     "rank": 6,
@@ -2853,7 +2853,7 @@
     "matdeaths": 144.974
   },
   {
-    "name": "Russian Federation",
+    "name": "Russian_Federation",
     "iso": "RUS",
     "year": "2015",
     "rank": 12,
@@ -2871,7 +2871,7 @@
     "matdeaths": 48.474
   },
   {
-    "name": "Costa Rica",
+    "name": "Costa_Rica",
     "iso": "CRI",
     "year": "2015",
     "rank": 14,
@@ -2997,7 +2997,7 @@
     "matdeaths": 1316.972
   },
   {
-    "name": "St Vincent and the Grenadines",
+    "name": "St_Vincent_and_the_Grenadines",
     "iso": "VCT",
     "year": "2015",
     "rank": 28,
@@ -3006,7 +3006,7 @@
     "matdeaths": 0.775
   },
   {
-    "name": "Saint Lucia",
+    "name": "Saint_Lucia",
     "iso": "LCA",
     "year": "2015",
     "rank": 29,
@@ -3105,7 +3105,7 @@
     "matdeaths": 42.641
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican_Republic",
     "iso": "DOM",
     "year": "2015",
     "rank": 40,
@@ -3150,7 +3150,7 @@
     "matdeaths": 185.228
   },
   {
-    "name": "South Africa",
+    "name": "South_Africa",
     "iso": "ZAF",
     "year": "2015",
     "rank": 45,
@@ -3204,7 +3204,7 @@
     "matdeaths": 149.03
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Equatorial_Guinea",
     "iso": "GNQ",
     "year": "2015",
     "rank": 51,

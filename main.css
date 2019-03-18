@@ -43,6 +43,7 @@ dropdownMenu text {
 }
 .left-label, .right-label {
   font-family: 'PT Mono', monospace;
+  font-size: 15px;
 }
 
 .eachCountry {
@@ -58,18 +59,21 @@ dropdownMenu text {
 }
 
 .country-line.highlight-off {
-  stroke: #C8C8C8;
+  /* stroke: #C8C8C8; */
   stroke-width: 1px;
+  opacity: 0.3;
 }
 
 .country-line.highlight-on {
-  stroke: black;
+  /* stroke: black; */
   stroke-width: 4px;
+  opacity: 1;
 }
 
 .country-line.highlight-hover {
-  stroke: black;
+  /* stroke: black; */
   stroke-width: 4px;
+  opacity: 1;
 }
 
 
