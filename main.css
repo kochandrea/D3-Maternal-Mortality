@@ -37,6 +37,12 @@ p1 {
 }
 /* Citation (how to remove tick lines):  https://stackoverflow.com/questions/36641788/remove-tick-marks-in-d3-dimple */
 
+/* TRYING TO CHANGE FONT OF DROP DOWN MENU */
+dropdownMenu text {
+  font-family: 'PT Mono', monospace;
+  font-size: 10px;
+}
+
 .overlay {
   fill: none;
   pointer-events: all;
