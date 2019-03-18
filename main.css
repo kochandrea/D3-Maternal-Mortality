@@ -13,21 +13,11 @@ body {
   justify-content: center;
 }
 
-/* .tooltip {
-    position: absolute;
-    text-align: center;
-    font-size: 10px;
-    width:  auto;
-    height: auto;
-    pointer-events: none;
-    background-color: white;
-} */
-
 h1 {
   font-family: 'Raleway', sans-serif;
 }
 
-p1 {
+p {
   font-family: 'PT Mono', monospace;
   font-size: 10px;
 }
@@ -84,15 +74,15 @@ dropdownMenu text {
 
 
 .left-label.highlight-off, .right-label.highlight-off {
-  stroke: #C8C8C8;
+  fill: #C8C8C8;
 }
 
 .left-label.highlight-on, .right-label.highlight-on {
-  stroke: black;
+  fill: black;
 }
 
 .left-label.highlight-hover, .right-label.highlight-hover {
-  stroke: black;
+  fill: black;
 }
 
 .tooltip-container {
@@ -108,4 +98,9 @@ dropdownMenu text {
   font-family: 'PT Mono', monospace;
   background-color:  pink;
   font-size:  10px;
+}
+
+.axes-labels {
+  font-family: 'PT Mono', monospace;
+  font-size: 15px;
 }

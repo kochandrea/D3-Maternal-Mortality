@@ -36,7 +36,7 @@ function myVis(data) {
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
       width = 900 - margin.left - margin.right,
-      height = 1000 - margin.top - margin.bottom;
+      height = 1200 - margin.top - margin.bottom;
 
 
   // the focus/tooltip (see Reference 5)
@@ -60,6 +60,13 @@ function myVis(data) {
     .append("g")
       .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
+  svg.append("text")
+        .attr("class", "axes-labels")
+        .attr("transform",
+              "translate(" + (width/2) + " ," +
+                             (height + margin.bottom) + ")")
+        .style("text-anchor", "middle")
+        .text("Year");
 
 
   // Create dropdown and selection dictionary
@@ -131,19 +138,28 @@ function myVis(data) {
   // Auxilary function to format data (see Reference 4)
   function format_data(someDataset){
         var prepData1 = d3.nest()
-          .key(function(d) { return d.iso; })
+          .key(function(d) { return d.name; })
           .key(function(d) { return d.year; })
-          .rollup(function(v) { return d3.sum(v, function(d) { return d.rank }); })
+          .rollup(function(d) {
+            return {
+              rank: d3.sum(d, function(e) {return e.rank}),
+              iso: d3.sum(d, function(e) {return e.iso}),
+              matdeath: d3.sum(d, function(e) {return e.matdeaths}),
+              mmr: d3.sum(d, function(e) {return e.mmr})
+            }
+          })
+          // .rollup(function(v) { return d3.sum(v, function(d) { return d.rank }); })
           .object(someDataset);
         var prepData2 = Object.entries(prepData1).map(([countryCode, yearDict]) => {
           return {
-            iso: countryCode,
-            values: Object.entries(yearDict).map(([year, rank]) => {
-              return {year, rank};
+            name: countryCode,
+            values: Object.entries(yearDict).map(([year, info]) => {
+              return {year, info};
             })
           };
         });
         return prepData2
+        console.log(prepData2)
         };
 
 
@@ -159,10 +175,9 @@ function myVis(data) {
           .domain([1985, 1990, 1995, 2000, 2005, 2010, 2015])
           .range([ margin.left, width ]);
         svg.append("g")
-          .attr("transform", "translate(0," + height + ")")
+          .attr("transform", "translate(0," + (height) + ")")
           .call(d3.axisBottom(x))
           .call(g => g.select(".domain").remove()); // Citation to remove domain on x-axis:  https://github.com/d3/d3-axis/issues/48
-
 
 
         // y-axis
@@ -178,7 +193,7 @@ function myVis(data) {
         // create line generator
         var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
             .x( d => x(+d.year) )
-            .y( d => y(+d.rank) );
+            .y( d => y(+d.info.rank) );
 
         // var color = ["#E3DD44", "#BD9840", "#7102FA"]; //Yellow to Purple 4 gradient scale
         var color = ['#13394A', //dark blue
@@ -215,19 +230,19 @@ function myVis(data) {
         lines
           .enter()
           .append("path")
-            .attr("class", d => `country-line ${d.iso}` )
+            .attr("class", d => `country-line ${d.name}` )
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
             // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
             .classed("highlight-off", true)
             .on("click", function(d) {
-              d3.selectAll(`.${d.iso}`).classed('highlight-on', !d3.selectAll(`.${d.iso}`).classed('highlight-on'));
+              d3.selectAll(`.${d.name}`).classed('highlight-on', !d3.selectAll(`.${d.name}`).classed('highlight-on'));
             })
             .on("mousemove", function(d) {
-              d3.selectAll(`.${d.iso}`).classed('highlight-hover', true); })
+              d3.selectAll(`.${d.name}`).classed('highlight-hover', true); })
             .on("mouseout", function(d) {
-              d3.selectAll(`.${d.iso}`).classed('highlight-hover', false); })
+              d3.selectAll(`.${d.name}`).classed('highlight-hover', false); })
 
 
 
@@ -241,7 +256,7 @@ function myVis(data) {
             .attr('class', 'eachCountry')
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
-            .attr("cy", d => y(d.rank))
+            .attr("cy", d => y(d.info.rank))
             .on("mouseover", function() {
               focus.style("display", null);
             })
@@ -252,10 +267,14 @@ function myVis(data) {
               // focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
               focus
                 .style("left", `${xPosition + 120}px`)
-                .style("top", `${yPosition - 30}px`)
+                .style("top", `${yPosition - 35}px`)
                 .style("display", "flex");
               focus.select("p")
-                    .html("rank: " + d.rank + " year: " + d.year + " Country: " + d.name)
+                    .html("rank: " + d.info.rank
+                           + " year: " + d.year
+                           + " Country: " + d.info.name
+                           + " MMR: " + d.info.mmr
+                           + " Total Deaths: " + d.info.matdeath)
                     .attr("fill", "red")
             });
 
@@ -264,26 +283,27 @@ function myVis(data) {
         var leftLabel = svg
           .selectAll(".left-label")
           .data(dataReady);
+
         leftLabel
           .enter()
           .append("text")
-              .attr("class", d => `left-label ${d.iso}`)
+              .attr("class", d => `left-label ${d.name}`)
               .attr("x", -30)
               .attr("y", +3)
               .attr("font-size", 10)
               .merge(leftLabel)
-              .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the first value
-              .text(function(d) { return d.iso; })
-              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+              .datum(function(d) { return {name: d.name, value: d.values[0]}; }) // keep only the first value
+              .text(function(d) { return d.name; })
+              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.info.rank) + ")"; }) // Put the text at the position of the last point
               // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
               .classed("highlight-off", true)
               .on("click", function(d) {
-                d3.selectAll(`.${d.iso}`).classed('highlight-on', !d3.selectAll(`.${d.iso}`).classed('highlight-on'));
+                d3.selectAll(`.${d.name}`).classed('highlight-on', !d3.selectAll(`.${d.name}`).classed('highlight-on'));
               })
               .on("mousemove", function(d) {
-                d3.selectAll(`.${d.iso}`).classed('highlight-hover', true); })
+                d3.selectAll(`.${d.name}`).classed('highlight-hover', true); })
               .on("mouseout", function(d) {
-                d3.selectAll(`.${d.iso}`).classed('highlight-hover', false); })
+                d3.selectAll(`.${d.name}`).classed('highlight-hover', false); })
 
 
         // Add a label at the end of each line (see Reference 1)
@@ -293,23 +313,29 @@ function myVis(data) {
         rightLabel
           .enter()
           .append("text")
-              .attr("class", d => `right-label ${d.iso}`)
-              .attr("x", 12) 
+              .attr("class", d => `right-label ${d.name}`)
+
+              // .attr("class", function(d){ return "right-label " + d.name.replace(" ","")
+              //   string = d.name.replace(" ","")
+              //   return 'right-label ${}'
+              // }
+              // d => `right-label ${d.name}`)
+              .attr("x", 12)
               .attr("y", +3)
               .attr("font-size", 10)
               .merge(rightLabel)
-              .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value
-              .text(function(d) { return d.iso; })
-              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.rank) + ")"; }) // Put the text at the position of the last point
+              .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; }) // keep only the last value
+              .text(function(d) { return d.name; })
+              .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.info.rank) + ")"; }) // Put the text at the position of the last point
               // .attr("stroke", function(d, i) { return color[i % 3];}) //mod by the number of colors
               .classed("highlight-off", true)
               .on("click", function(d) {
-                d3.selectAll(`.${d.iso}`).classed('highlight-on', !d3.selectAll(`.${d.iso}`).classed('highlight-on'));
+                d3.selectAll(`.${d.name}`).classed('highlight-on', !d3.selectAll(`.${d.name}`).classed('highlight-on'));
               })
               .on("mousemove", function(d) {
-                d3.selectAll(`.${d.iso}`).classed('highlight-hover', true); })
+                d3.selectAll(`.${d.name}`).classed('highlight-hover', true); })
               .on("mouseout", function(d) {
-                d3.selectAll(`.${d.iso}`).classed('highlight-hover', false); })
+                d3.selectAll(`.${d.name}`).classed('highlight-hover', false); })
 
       };
 
