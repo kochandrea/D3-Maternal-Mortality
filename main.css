@@ -55,10 +55,6 @@ dropdownMenu text {
   font-family: 'PT Mono', monospace;
 }
 
-.focus {
-  font-family: 'PT Mono', monospace;
-}
-
 .eachCountry {
   stroke: 'none';
   fill: #C8C8C8;
@@ -97,4 +93,19 @@ dropdownMenu text {
 
 .left-label.highlight-hover, .right-label.highlight-hover {
   stroke: black;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.focus {
+  position: absolute;
+  pointer-events: none;
+  width: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'PT Mono', monospace;
+  background-color:  pink;
+  font-size:  10px;
 }

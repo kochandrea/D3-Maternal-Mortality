@@ -38,6 +38,20 @@ function myVis(data) {
       width = 900 - margin.left - margin.right,
       height = 1000 - margin.top - margin.bottom;
 
+
+  // the focus/tooltip (see Reference 5)
+  var focus = d3.select(".bumpchart_svg")
+      .append('div')
+      .attr('class', 'tooltip-container')
+      .append("div")
+      .attr("class", "focus")
+      .style("display", "none");
+
+      // .style("display", "none");
+  focus.append("p")
+    .attr("x", 10)
+  	.attr("dy", ".31em");
+
   // Create the svg object and append to the body of the page
   var svg = d3.select(".bumpchart_svg")
     .append("svg")
@@ -88,14 +102,10 @@ function myVis(data) {
         .select("select")
         .property("value")
 
-        console.log(selector)
-
         // (see Reference 6)
         var indexed = d3.map(dropdownDict, function(d) { return d.selector_name});
         var graph_dataset = indexed.get(selector).dataset;
         var graph_title = indexed.get(selector).graph_title;
-
-
 
 
         // remove previous chart's svg elements
@@ -123,7 +133,7 @@ function myVis(data) {
         var prepData1 = d3.nest()
           .key(function(d) { return d.iso; })
           .key(function(d) { return d.year; })
-          .rollup(function(v) { return d3.sum(v, function(d) { return d.rank; }); })
+          .rollup(function(v) { return d3.sum(v, function(d) { return d.rank }); })
           .object(someDataset);
         var prepData2 = Object.entries(prepData1).map(([countryCode, yearDict]) => {
           return {
@@ -142,7 +152,7 @@ function myVis(data) {
 
         var dataReady = format_data(graph_dataset);
         console.log("HERE");
-        console.log(graph_dataset);
+        console.log(dataReady);
 
         // x-axis
         var x = d3.scalePoint() //is there an issue that I use scalePoint instead of scaleBand?
@@ -232,34 +242,22 @@ function myVis(data) {
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
-            .on("mouseover", function() { focus.style("display", null); })
+            .on("mouseover", function() {
+              focus.style("display", null);
+            })
             .on("mouseout", function() {focus.style("display", "none"); })
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
-              focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
-              focus.select("text")
-                    .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name)
+              // focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
+              focus
+                .style("left", `${xPosition + 120}px`)
+                .style("top", `${yPosition - 30}px`)
+                .style("display", "flex");
+              focus.select("p")
+                    .html("rank: " + d.rank + " year: " + d.year + " Country: " + d.name)
                     .attr("fill", "red")
             });
-
-
-
-        // the focus/tooltip (see Reference 5)
-        var focus = svg.append("g")
-            .attr("class", "focus")
-            .style("display", "none");
-        focus.append("text")
-          .attr("x", 10)
-        	.attr("dy", ".31em");
-        // focus
-        //   .enter()
-        //   .append("text")
-        //     .attr("x", 10)
-        //     .attr("dy", ".31em")
-        //     .merge(focus)
-        //     .data(graph_dataset);
-        //     // .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name);
 
 
         // Add a label at the beginning of each line (see Reference 1)
