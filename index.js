@@ -268,7 +268,8 @@ function myVis(data) {
           .enter()
           .append("text")
               .attr("class", d => `left-label ${d.iso}`)
-              .attr("x", -30) // shift the text a bit more left
+              .attr("x", -30)
+              .attr("y", +3)
               .attr("font-size", 10)
               .merge(leftLabel)
               .datum(function(d) { return {iso: d.iso, value: d.values[0]}; }) // keep only the first value
@@ -293,7 +294,8 @@ function myVis(data) {
           .enter()
           .append("text")
               .attr("class", d => `right-label ${d.iso}`)
-              .attr("x", 12) // shift the text a bit more right
+              .attr("x", 12) 
+              .attr("y", +3)
               .attr("font-size", 10)
               .merge(rightLabel)
               .datum(function(d) { return {iso: d.iso, value: d.values[d.values.length - 1]}; }) // keep only the last value
