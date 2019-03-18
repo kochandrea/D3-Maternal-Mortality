@@ -104,6 +104,7 @@ function myVis(data) {
         d3.selectAll(".eachCountry").remove();
         d3.selectAll(".left-label").remove();
         d3.selectAll(".right-label").remove();
+        svg.selectAll("g").remove();
 
 
 
@@ -144,12 +145,13 @@ function myVis(data) {
         console.log(graph_dataset);
 
         // x-axis
-        var x = d3.scaleBand()
+        var x = d3.scalePoint()
           .domain([1985, 1990, 1995, 2000, 2005, 2010, 2015])
           .range([ margin.left, width ]);
         svg.append("g")
           .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x));
+          .call(d3.axisBottom(x))
+          .call(g => g.select(".domain").remove()); // Citation to remove domain on x-axis:  https://github.com/d3/d3-axis/issues/48
 
 
 
@@ -160,7 +162,7 @@ function myVis(data) {
           .domain([1, size])
           .range([ margin.top, height ]);
         svg.append("g")
-          .call(d3.axisLeft(y));
+          .call(d3.axisLeft(y).ticks(size));
 
 
         // create line generator

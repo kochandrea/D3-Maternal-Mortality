@@ -32,6 +32,11 @@ p1 {
   font-size: 10px;
 }
 
+.tick line{
+  visibility:hidden;
+}
+/* Citation (how to remove tick lines):  https://stackoverflow.com/questions/36641788/remove-tick-marks-in-d3-dimple */
+
 .overlay {
   fill: none;
   pointer-events: all;
