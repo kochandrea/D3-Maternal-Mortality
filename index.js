@@ -15,12 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
       './data/upper_mid_income.json',
       './data/lower_mid_income.json',
       './data/low_income.json',
-      './data/South_Asia.json',
       './data/Europe_and_Central_Asia.json',
-      './data/East_Asia_and_Pacific.json',
       './data/NA_LAM_Caribbean.json',
       './data/Middle_East_and_North_Africa.json',
-      './data/Sub_Saharan_Africa.json'
+      './data/Sub_Saharan_Africa.json',
+      './data/Asian_and_Pacific.json'
     ].map(url => fetch(url).then(data => data.json())))
       .then(data => myVis(data))
     .catch(function(error){
@@ -31,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function myVis(data) {
   var [high_income, upper_mid_income, lower_mid_income, low_income,
-       south_asia, europe_centralAsia, eastAsia_pacific, na_lam_carribean,
-       middleEast_northAfrica, subsaharanAfrica] = data;
+       europe_centralAsia, na_lam_carribean,
+       middleEast_northAfrica, subsaharanAfrica, asian_pacific] = data;
 
   // set the dimensions and margins of the graph
   var margin = {top: 50, right: 50, bottom: 50, left: 50},
@@ -54,12 +53,12 @@ function myVis(data) {
                       {"selector_name": "Upper middle income countries", "dataset": upper_mid_income, "graph_title": "MMR Ranking of Upper Middle Income Countries"},
                       {"selector_name": "Lower middle income countries", "dataset": lower_mid_income, "graph_title": "MMR Ranking of Lower Middle Income Countries"},
                       {"selector_name": "Low income countries", "dataset": low_income, "graph_title": "MMR Ranking of Low Income Countries"},
-                      {"selector_name": "South Asian countries", "dataset": south_asia, "graph_title": "MMR Ranking of South Asian Countries"},
                       {"selector_name": "European and Central Asian countries", "dataset": europe_centralAsia, "graph_title": "MMR Ranking of European and Central Asian Countries"},
-                      {"selector_name": "East Asian and Pacific countries", "dataset": eastAsia_pacific, "graph_title": "MMR Ranking of East Asian and Pacific Countries"},
                       {"selector_name": "American & Caribbean countries", "dataset": na_lam_carribean, "graph_title": "MMR Ranking of American and Caribbean Countries"},
                       {"selector_name": "Middle East and North African countries", "dataset": middleEast_northAfrica, "graph_title": "MMR Ranking of Middle East and North African Countries"},
-                      {"selector_name": "Sub-Sahara African countries", "dataset": subsaharanAfrica, "graph_title": "MMR Ranking of Sub-Sahara African Countries"}
+                      {"selector_name": "Sub-Sahara African countries", "dataset": subsaharanAfrica, "graph_title": "MMR Ranking of Sub-Sahara African Countries"},
+                      {"selector_name": "Asian and Pacific countries", "dataset": asian_pacific, "graph_title": "MMR Ranking of Asian and Pacific Countries"},
+
                     ];
 
 
@@ -107,6 +106,7 @@ function myVis(data) {
         d3.selectAll(".right-label").remove();
 
 
+
         generate_bumpchart(graph_dataset, graph_title)
 
 
@@ -115,7 +115,7 @@ function myVis(data) {
 
 
   // Initialize bumpchart
-  generate_bumpchart(high_income, "High Income");
+  generate_bumpchart(high_income, "MMR Ranking of High Income Countries");
 
   // Auxilary function to format data (see Reference 4)
   function format_data(someDataset){
@@ -150,6 +150,7 @@ function myVis(data) {
         svg.append("g")
           .attr("transform", "translate(0," + height + ")")
           .call(d3.axisBottom(x));
+
 
 
         // y-axis
@@ -203,8 +204,6 @@ function myVis(data) {
           .enter()
           .append("path")
             .attr("class", d => `country-line ${d.iso}` )
-            // .attr("stroke-width", 3)
-            .style("opacity", 1)
             .attr("fill", "none")
             .merge(lines)
             .attr("d", d => lineGenerator(d.values) )
@@ -231,9 +230,6 @@ function myVis(data) {
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.rank))
-            .attr("r", 3)
-            .attr("stroke", "none")
-            .attr("fill", "black")
             .on("mouseover", function() { focus.style("display", null); })
             .on("mouseout", function() {focus.style("display", "none"); })
             .on("mousemove", function(d) {
@@ -242,8 +238,9 @@ function myVis(data) {
               focus.attr("transform","translate(" + xPosition + "," + yPosition + ")");
               focus.select("text")
                     .text("rank: " + d.rank + " year: " + d.year + "Country: " + d.name)
-                    .attr("fill", "black")
+                    .attr("fill", "red")
             });
+
 
 
         // the focus/tooltip (see Reference 5)

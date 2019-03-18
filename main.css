@@ -23,48 +23,67 @@ body {
     background-color: white;
 } */
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p1 {
+  font-family: 'PT Mono', monospace;
+  font-size: 10px;
+}
+
 .overlay {
   fill: none;
   pointer-events: all;
 }
+.chart_title {
+  font-family: 'Raleway', sans-serif;
+  font-size:  30px;
+}
+.left-label, .right-label {
+  font-family: 'PT Mono', monospace;
+}
 
-/* think this is useless code: */
-/* .focus circle {
-  fill: #F4F4F4;
-  stroke: #6F257F;
-  stroke-width: 15px;
-} */
+.focus {
+  font-family: 'PT Mono', monospace;
+}
 
+.eachCountry {
+  stroke: 'none';
+  fill: #C8C8C8;
+  r: 3;
+}
 .eachCountry:hover {
   r: 5;
   fill: #F4F4F4;
   stroke-width: 4px;
-  stroke: pink;
+  stroke: black;
 }
 
 .country-line.highlight-off {
-  stroke: black;
-  stroke-width: 3px;
+  stroke: #C8C8C8;
+  stroke-width: 1px;
 }
 
 .country-line.highlight-on {
-  stroke: pink;
-  stroke-width: 8px;
+  stroke: black;
+  stroke-width: 4px;
 }
 
 .country-line.highlight-hover {
-  stroke: pink;
-  stroke-width: 8px;
+  stroke: black;
+  stroke-width: 4px;
 }
 
+
 .left-label.highlight-off, .right-label.highlight-off {
-  stroke: black;
+  stroke: #C8C8C8;
 }
 
 .left-label.highlight-on, .right-label.highlight-on {
-  stroke: pink;
+  stroke: black;
 }
 
 .left-label.highlight-hover, .right-label.highlight-hover {
-  stroke: pink;
+  stroke: black;
 }

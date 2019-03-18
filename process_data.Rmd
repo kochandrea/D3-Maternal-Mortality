@@ -244,10 +244,6 @@ my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data
 
 ```{r}
 # Create subsets by region, then rank countries by maternal mortality ratio (mmr):
-# 
-# [1] "South Asia"                 "Europe & Central Asia"      "Middle East & North Africa"
-# [4] "Sub-Saharan Africa"         "Latin America & Caribbean"  "East Asia & Pacific"       
-# [7] "North America" 
 
 
 # SOUTH ASIA
@@ -267,8 +263,6 @@ matdeaths_South_Asia <- subset(matdeaths_South_Asia, select =c("name", "iso", "y
 
 South_Asia_all_data <- left_join(ranked_mmr_South_Asia, matdeaths_South_Asia, c("name"="name", "iso"="iso", "year"="year", "Income group"))
 
-
-
 # Show only every 5 years:
 show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
 South_Asia_all_data$year <- as.character(South_Asia_all_data$year)
@@ -276,5 +270,197 @@ South_Asia_all_data <- subset(South_Asia_all_data, year %in% show_years)
 South_Asia_all_data$mmr <- round(South_Asia_all_data$mmr, 3)
 South_Asia_all_data$matdeaths <- round(South_Asia_all_data$matdeaths, 3)
 
+# Write to JSON
+my_json <- toJSON(South_Asia_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/South_Asia.json")
+
+```
+
+
+```{r}
+
+# North America & LAM & Caribbean
+NA_LAM_Caribbean <- filter(merge_data3, Region %in% c("North America", "Latin America & Caribbean"))
+ranked_mmr_NA_LAM_Caribbean <- filter(NA_LAM_Caribbean, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_NA_LAM_Caribbean)[names(ranked_mmr_NA_LAM_Caribbean) == "value"] <- "mmr"
+ranked_mmr_NA_LAM_Caribbean <- subset(ranked_mmr_NA_LAM_Caribbean, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_NA_LAM_Caribbean <- filter(NA_LAM_Caribbean, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_NA_LAM_Caribbean)[names(matdeaths_NA_LAM_Caribbean) == "value"] <- "matdeaths"
+matdeaths_NA_LAM_Caribbean <- subset(matdeaths_NA_LAM_Caribbean, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+NA_LAM_Caribbean_all_data <- left_join(ranked_mmr_NA_LAM_Caribbean, matdeaths_NA_LAM_Caribbean, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+NA_LAM_Caribbean_all_data$year <- as.character(NA_LAM_Caribbean_all_data$year)
+NA_LAM_Caribbean_all_data <- subset(NA_LAM_Caribbean_all_data, year %in% show_years)
+NA_LAM_Caribbean_all_data$mmr <- round(NA_LAM_Caribbean_all_data$mmr, 3)
+NA_LAM_Caribbean_all_data$matdeaths <- round(NA_LAM_Caribbean_all_data$matdeaths, 3)
+
+# Write to JSON
+my_json <- toJSON(NA_LAM_Caribbean_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/NA_LAM_Caribbean.json")
+```
+
+
+```{r}
+# South Asia, East Asia & Pacific
+Asian_and_Pacific <- filter(merge_data3, Region %in% c("South Asia","East Asia & Pacific"))
+ranked_mmr_Asian_and_Pacific <- filter(Asian_and_Pacific, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_Asian_and_Pacific)[names(ranked_mmr_Asian_and_Pacific) == "value"] <- "mmr"
+ranked_mmr_Asian_and_Pacific <- subset(ranked_mmr_Asian_and_Pacific, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_Asian_and_Pacific <- filter(Asian_and_Pacific, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_Asian_and_Pacific)[names(matdeaths_Asian_and_Pacific) == "value"] <- "matdeaths"
+matdeaths_Asian_and_Pacific <- subset(matdeaths_Asian_and_Pacific, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+Asian_and_Pacific_all_data <- left_join(ranked_mmr_Asian_and_Pacific, matdeaths_Asian_and_Pacific, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+Asian_and_Pacific_all_data$year <- as.character(Asian_and_Pacific_all_data$year)
+Asian_and_Pacific_all_data <- subset(Asian_and_Pacific_all_data, year %in% show_years)
+Asian_and_Pacific_all_data$mmr <- round(Asian_and_Pacific_all_data$mmr, 3)
+Asian_and_Pacific_all_data$matdeaths <- round(Asian_and_Pacific_all_data$matdeaths, 3)
+
+# Write to JSON
+my_json <- toJSON(Asian_and_Pacific_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/Asian_and_Pacific.json")
+```
+
+
+```{r}
+# LAM and Caribbean
+LAM_and_Caribbean <- filter(merge_data3, Region == "Latin America & Caribbean")
+ranked_mmr_LAM_and_Caribbean <- filter(LAM_and_Caribbean, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_LAM_and_Caribbean)[names(ranked_mmr_LAM_and_Caribbean) == "value"] <- "mmr"
+ranked_mmr_LAM_and_Caribbean <- subset(ranked_mmr_LAM_and_Caribbean, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_LAM_and_Caribbean <- filter(LAM_and_Caribbean, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_LAM_and_Caribbean)[names(matdeaths_LAM_and_Caribbean) == "value"] <- "matdeaths"
+matdeaths_LAM_and_Caribbean <- subset(matdeaths_LAM_and_Caribbean, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+LAM_and_Caribbean_all_data <- left_join(ranked_mmr_LAM_and_Caribbean, matdeaths_LAM_and_Caribbean, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+LAM_and_Caribbean_all_data$year <- as.character(LAM_and_Caribbean_all_data$year)
+LAM_and_Caribbean_all_data <- subset(LAM_and_Caribbean_all_data, year %in% show_years)
+LAM_and_Caribbean_all_data$mmr <- round(LAM_and_Caribbean_all_data$mmr, 3)
+LAM_and_Caribbean_all_data$matdeaths <- round(LAM_and_Caribbean_all_data$matdeaths, 3)
+
+# Write to JSON
+my_json <- toJSON(LAM_and_Caribbean_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/LAM_and_Caribbean.json")
+```
+
+
+```{r}
+# Sub-Saharan Africa
+SSAfrica <- filter(merge_data3, Region == "Sub-Saharan Africa")
+ranked_mmr_SSAfrica <- filter(SSAfrica, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_SSAfrica)[names(ranked_mmr_SSAfrica) == "value"] <- "mmr"
+ranked_mmr_SSAfrica <- subset(ranked_mmr_SSAfrica, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_SSAfrica <- filter(SSAfrica, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_SSAfrica)[names(matdeaths_SSAfrica) == "value"] <- "matdeaths"
+matdeaths_SSAfrica <- subset(matdeaths_SSAfrica, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+SSAfrica_all_data <- left_join(ranked_mmr_SSAfrica, matdeaths_SSAfrica, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+SSAfrica_all_data$year <- as.character(SSAfrica_all_data$year)
+SSAfrica_all_data <- subset(SSAfrica_all_data, year %in% show_years)
+SSAfrica_all_data$mmr <- round(SSAfrica_all_data$mmr, 3)
+SSAfrica_all_data$matdeaths <- round(SSAfrica_all_data$matdeaths, 3)
+
+# Write to JSON
+my_json <- toJSON(SSAfrica_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/Sub_Saharan_Africa.json")
+```
+
+
+```{r}
+
+# Middle East & North Africa
+ME_and_NA <- filter(merge_data3, Region == "Middle East & North Africa")
+ranked_mmr_ME_and_NA <- filter(ME_and_NA, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_ME_and_NA)[names(ranked_mmr_ME_and_NA) == "value"] <- "mmr"
+ranked_mmr_ME_and_NA <- subset(ranked_mmr_ME_and_NA, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_ME_and_NA <- filter(ME_and_NA, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_ME_and_NA)[names(matdeaths_ME_and_NA) == "value"] <- "matdeaths"
+matdeaths_ME_and_NA <- subset(matdeaths_ME_and_NA, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+ME_and_NA_all_data <- left_join(ranked_mmr_ME_and_NA, matdeaths_ME_and_NA, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+ME_and_NA_all_data$year <- as.character(ME_and_NA_all_data$year)
+ME_and_NA_all_data <- subset(ME_and_NA_all_data, year %in% show_years)
+ME_and_NA_all_data$mmr <- round(ME_and_NA_all_data$mmr, 3)
+ME_and_NA_all_data$matdeaths <- round(ME_and_NA_all_data$matdeaths, 3)
+
+# Write to JSON
+my_json <- toJSON(ME_and_NA_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/Middle_East_and_North_Africa.json")
+```
+
+
+```{r}
+# Europe & Central Asia
+Europe_and_Central_Asia <- filter(merge_data3, Region == "Europe & Central Asia")
+ranked_mmr_Europe_and_Central_Asia <- filter(Europe_and_Central_Asia, indicator == "mmr") %>%
+  arrange(year, value) %>% 
+  group_by(year) %>%              
+  mutate(rank = order(value))
+names(ranked_mmr_Europe_and_Central_Asia)[names(ranked_mmr_Europe_and_Central_Asia) == "value"] <- "mmr"
+ranked_mmr_Europe_and_Central_Asia <- subset(ranked_mmr_Europe_and_Central_Asia, select =c("name", "iso", "year", "rank", "mmr", "Income group"))
+
+matdeaths_Europe_and_Central_Asia <- filter(Europe_and_Central_Asia, indicator == "matdeaths") %>%
+  arrange(year, value) %>% 
+  group_by(year)
+names(matdeaths_Europe_and_Central_Asia)[names(matdeaths_Europe_and_Central_Asia) == "value"] <- "matdeaths"
+matdeaths_Europe_and_Central_Asia <- subset(matdeaths_Europe_and_Central_Asia, select =c("name", "iso", "year", "matdeaths", "Income group", "Staff_Year", "Staff_pct_attended"))
+
+Europe_and_Central_Asia_all_data <- left_join(ranked_mmr_Europe_and_Central_Asia, matdeaths_Europe_and_Central_Asia, c("name"="name", "iso"="iso", "year"="year", "Income group"))
+
+# Show only every 5 years:
+show_years <- c(2015, 2010, 2005, 2000, 1995, 1990, 1985)
+Europe_and_Central_Asia_all_data$year <- as.character(Europe_and_Central_Asia_all_data$year)
+Europe_and_Central_Asia_all_data <- subset(Europe_and_Central_Asia_all_data, year %in% show_years)
+Europe_and_Central_Asia_all_data$mmr <- round(Europe_and_Central_Asia_all_data$mmr, 3)
+Europe_and_Central_Asia_all_data$matdeaths <- round(Europe_and_Central_Asia_all_data$matdeaths, 3)
+
+# Write to JSON
+my_json <- toJSON(Europe_and_Central_Asia_all_data, pretty=TRUE)
+my_json %>% write_lines("~/Desktop/Data Visualization/D3-Maternal-Mortality/data/Europe_and_Central_Asia.json")
 ```
 
