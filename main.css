@@ -43,7 +43,7 @@ dropdownMenu text {
 }
 .left-label, .right-label {
   font-family: 'PT Mono', monospace;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .eachCountry {

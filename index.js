@@ -173,7 +173,7 @@ function myVis(data) {
         // x-axis
         var x = d3.scalePoint() //is there an issue that I use scalePoint instead of scaleBand?
           .domain([1985, 1990, 1995, 2000, 2005, 2010, 2015])
-          .range([ margin.left, width ]);
+          .range([ margin.left , width ]);
         svg.append("g")
           .attr("transform", "translate(0," + (height) + ")")
           .call(d3.axisBottom(x))
@@ -313,12 +313,6 @@ function myVis(data) {
           .append("text")
               .attr("class", d => `right-label ${d.name}`)
               .attr("text-anchor", "start")
-
-              // .attr("class", function(d){ return "right-label " + d.name.replace(" ","")
-              //   string = d.name.replace(" ","")
-              //   return 'right-label ${}'
-              // }
-              // d => `right-label ${d.name}`)
               .attr("x", 10)
               .attr("y", +5)
               .attr("font-size", 10)
