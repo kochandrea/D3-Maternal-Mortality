@@ -96,12 +96,13 @@ dropdownMenu text {
 .focus {
   position: absolute;
   pointer-events: none;
-  width: 70px;
+  width: 80px;
   display: flex;
   flex-wrap: wrap;
   font-family: 'PT Mono', monospace;
   background-color:  pink;
   font-size:  10px;
+  text-align: left;
 }
 
 .axes-labels {

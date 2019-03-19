@@ -47,10 +47,9 @@ function myVis(data) {
       .attr("class", "focus")
       .style("display", "none");
 
-      // .style("display", "none");
-  focus.append("p")
-    .attr("x", 10)
-  	.attr("dy", ".31em");
+  focus.append("p");
+    // .attr("x", 10)
+  	// .attr("dy", ".31em");
 
   // Create the svg object and append to the body of the page
   var svg = d3.select(".bumpchart_svg")
@@ -257,16 +256,18 @@ function myVis(data) {
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.info.rank))
-            .on("mouseover", function() {
-              focus.style("display", null);
-            })
+            // .on("mouseover", function() {
+            //   focus.style("display", null);
+            // })
             .on("mouseout", function() {focus.style("display", "none"); })
             .on("mousemove", function(d) {
               var xPosition = d3.mouse(this)[0];
               var yPosition = d3.mouse(this)[1];
                focus
-                .style("left", `${xPosition + 120}px`)
-                .style("top", `${yPosition - 35}px`)
+                 .style("left", (d3.event.pageX)+"px")
+                 .style("top", (d3.event.pageY - 130)+"px")
+                // .style("left", `${xPosition + 120}px`)
+                // .style("top", `${yPosition - 35}px`)
                 .style("display", "flex");
               focus.select("p")
                     .html("Year: " + d.year +
