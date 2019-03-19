@@ -1,4 +1,3 @@
-
 // Reference 1 (inspiration/citation for building the bumpchart):  https://www.d3-graph-gallery.com/graph/connectedscatter_legend.html
 // Reference 2 (inspiration/citation for building focus):  https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
 // Reference 3 (inspiration/citation for dropdown menu):  https://bl.ocks.org/ProQuestionAsker/b8f8c2ab12c4f21e882aeb68728216c2
@@ -34,8 +33,8 @@ function myVis(data) {
        middleEast_northAfrica, subsaharanAfrica, asian_pacific] = data;
 
   // set the dimensions and margins of the graph
-  var margin = {top: 50, right: 50, bottom: 50, left: 50},
-      width = 900 - margin.left - margin.right,
+  var margin = {top: 50, right: 200, bottom: 50, left: 120},
+      width = 1700 - margin.left - margin.right,
       height = 1300 - margin.top - margin.bottom;
 
 
@@ -185,7 +184,9 @@ function myVis(data) {
         var y = d3.scaleLinear()
           .domain([1, size])
           .range([ margin.top, height ]);
+
         svg.append("g")
+          .attr("transform","translate(155,0)") //moves the y-axis inward towards first
           .call(d3.axisLeft(y).ticks(size));
 
 
@@ -214,7 +215,7 @@ function myVis(data) {
           .enter()
           .append("text")
             .attr("class", "chart_title")
-            .attr("x", width/2)
+            .attr("x", (width + margin.left + 70)/2)
             .attr("y", margin.top/2)
             .attr("text-anchor", "middle")
             .style("font-size", "20px")
@@ -270,10 +271,10 @@ function myVis(data) {
                 // .style("top", `${yPosition - 35}px`)
                 .style("display", "flex");
               focus.select("p")
-                    .html("Year: " + d.year +
-                          " Rank: " + d.info.rank +
-                          " MMR: " + d.info.mmr +
-                          " Total Deaths: " + d.info.matdeath)
+                    .html("   Year: " + d.year +
+                          "   Rank: " + d.info.rank +
+                          "   MMR: " + d.info.mmr +
+                          "   Total Deaths: " + d.info.matdeath)
             });
 
 
@@ -287,7 +288,7 @@ function myVis(data) {
           .append("text")
               .attr("class", d => `left-label ${d.name}`)
               .attr("text-anchor", "end")
-              .attr("x", -10)
+              .attr("x", -40)
               .attr("y", +5)
               .attr("font-size", 10)
               .merge(leftLabel)
