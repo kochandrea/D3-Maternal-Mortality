@@ -48,7 +48,7 @@ function myVis(data) {
       .style("display", "none");
 
   focus.append("p");
-    // .attr("x", 10)
+    // .attr("x", 50)
   	// .attr("dy", ".31em");
 
   // Create the svg object and append to the body of the page
