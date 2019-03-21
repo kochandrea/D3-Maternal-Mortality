@@ -39,7 +39,7 @@ dropdownMenu text {
 }
 .chart_title {
   font-family: 'Raleway', sans-serif;
-  font-size:  30px;
+  font-size:  23px;
 }
 .left-label, .right-label {
   font-family: 'PT Mono', monospace;
@@ -76,9 +76,8 @@ dropdownMenu text {
   opacity: 1;
 }
 
-
 .left-label.highlight-off, .right-label.highlight-off {
-  fill: #C8C8C8;
+  fill: #C1C1C1;
 }
 
 .left-label.highlight-on, .right-label.highlight-on {
@@ -96,13 +95,15 @@ dropdownMenu text {
 .focus {
   position: absolute;
   pointer-events: none;
-  width: 80px;
+  width: 95px;
   display: flex;
   flex-wrap: wrap;
   font-family: 'PT Mono', monospace;
   background-color:  pink;
   font-size:  10px;
   text-align: left;
+  padding: 5px;
+  opacity: 0.8;
 }
 
 .axes-labels {

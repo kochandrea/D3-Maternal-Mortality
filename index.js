@@ -33,9 +33,10 @@ function myVis(data) {
        middleEast_northAfrica, subsaharanAfrica, asian_pacific] = data;
 
   // set the dimensions and margins of the graph
-  var margin = {top: 50, right: 200, bottom: 50, left: 120},
-      width = 1700 - margin.left - margin.right,
-      height = 1300 - margin.top - margin.bottom;
+  var margin = {top: 50, right: 300, bottom: 50, left: 160},
+      padding = 10,
+      width = 1250 - margin.left - margin.right,
+      height = padding + 1300 - margin.top - margin.bottom;
 
 
   // the focus/tooltip (see Reference 5)
@@ -61,7 +62,7 @@ function myVis(data) {
   svg.append("text")
         .attr("class", "axes-labels")
         .attr("transform",
-              "translate(" + (width/2) + " ," +
+              "translate(" + ((width + margin.left)/2) + " ," +
                              (height + margin.bottom) + ")")
         .style("text-anchor", "middle")
         .text("Year");
@@ -121,11 +122,7 @@ function myVis(data) {
         d3.selectAll(".right-label").remove();
         svg.selectAll("g").remove();
 
-
-
         generate_bumpchart(graph_dataset, graph_title)
-
-
         });
 
 
@@ -173,7 +170,7 @@ function myVis(data) {
           .domain([1985, 1990, 1995, 2000, 2005, 2010, 2015])
           .range([ margin.left , width ]);
         svg.append("g")
-          .attr("transform", "translate(0," + (height) + ")")
+          .attr("transform", "translate(0," + (height+padding) + ")")
           .call(d3.axisBottom(x))
           .call(g => g.select(".domain").remove()); // Citation to remove domain on x-axis:  https://github.com/d3/d3-axis/issues/48
 
@@ -184,11 +181,17 @@ function myVis(data) {
         var y = d3.scaleLinear()
           .domain([1, size])
           .range([ margin.top, height ]);
-
         svg.append("g")
-          .attr("transform","translate(155,0)") //moves the y-axis inward towards first
+          .attr("transform","translate(150,0)") //moves the y-axis inward towards first
           .call(d3.axisLeft(y).ticks(size));
 
+
+        var y2 = d3.scaleLinear()
+          .domain([1, size])
+          .range([ margin.top, height ]);
+        svg.append("g")
+          .attr("transform","translate(800,0)") //moves the y-axis inward towards first
+          .call(d3.axisRight(y2).ticks(size));
 
         // create line generator
         var lineGenerator = d3.line().curve(d3.curveMonotoneX) // D3 Curve Explorer:  http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8
@@ -215,10 +218,9 @@ function myVis(data) {
           .enter()
           .append("text")
             .attr("class", "chart_title")
-            .attr("x", (width + margin.left + 70)/2)
+            .attr("x", (width + margin.left)/2)
             .attr("y", margin.top/2)
             .attr("text-anchor", "middle")
-            .style("font-size", "20px")
             .merge(chartTitle)
             .text(d => d);
 
@@ -246,6 +248,7 @@ function myVis(data) {
 
 
 
+
         // Add the points (see Reference 1, 5)
         var countryRanking = svg
           .selectAll(".eachCountry")
@@ -253,10 +256,23 @@ function myVis(data) {
         countryRanking
           .enter()
           .append("circle")
+            // .attr("class", d => `eachCountry ${d.name}`)
             .attr('class', 'eachCountry')
             .merge(countryRanking)
             .attr("cx", d => x(d.year))
             .attr("cy", d => y(d.info.rank))
+
+            // .classed("highlight-off", true)
+            // .on("click", function(d) {
+            //   d3.selectAll(`.eachCountry .${d.name}`).classed('highlight-on', !d3.selectAll(`.eachCountry .${d.name}`).classed('highlight-on'));
+            // })
+            // .on("mousemove", function(d) {
+            //   d3.selectAll(`.eachCountry .${d.name}`).classed('highlight-hover', true); })
+            // .on("mouseout", function(d) {
+            //   d3.selectAll(`.eachCountry .${d.name}`).classed('highlight-hover', false); })
+
+
+
             // .on("mouseover", function() {
             //   focus.style("display", null);
             // })
@@ -271,10 +287,10 @@ function myVis(data) {
                 // .style("top", `${yPosition - 35}px`)
                 .style("display", "flex");
               focus.select("p")
-                    .html("   Year: " + d.year +
-                          "   Rank: " + d.info.rank +
-                          "   MMR: " + d.info.mmr +
-                          "   Total Deaths: " + d.info.matdeath)
+                    .html("Year: "  + d.year + "<br>" +
+                          "Rank: " + d.info.rank + "<br>" +
+                          "MMR: " + d.info.mmr + "<br>" +
+                          "Deaths: " + d.info.matdeath)
             });
 
 
@@ -315,7 +331,7 @@ function myVis(data) {
           .append("text")
               .attr("class", d => `right-label ${d.name}`)
               .attr("text-anchor", "start")
-              .attr("x", 10)
+              .attr("x", 40)
               .attr("y", +5)
               .attr("font-size", 10)
               .merge(rightLabel)
