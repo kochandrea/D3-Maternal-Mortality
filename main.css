@@ -110,6 +110,7 @@ dropdownMenu text {
   border: 0px;
   border-radius: 8px;
 }
+/* border and border-radius:  http://bl.ocks.org/d3noob/a22c42db65eb00d4e369 */
 
 .axes-labels {
   font-family: 'PT Mono', monospace;
