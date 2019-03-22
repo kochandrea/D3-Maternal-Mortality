@@ -154,7 +154,7 @@ function myVis(data) {
           };
         });
         return prepData2
-        console.log(prepData2)
+        // console.log(prepData2)
         };
 
 
@@ -162,8 +162,8 @@ function myVis(data) {
   function generate_bumpchart(graph_dataset, graph_title) {
 
         var dataReady = format_data(graph_dataset);
-        console.log("HERE");
-        console.log(dataReady);
+        // console.log("HERE");
+        // console.log(dataReady);
 
         // x-axis
         var x = d3.scalePoint() //is there an issue that I use scalePoint instead of scaleBand?
