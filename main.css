@@ -16,10 +16,13 @@ body {
 h1 {
   font-family: 'Raleway', sans-serif;
 }
-
+h2 {
+  font-family: 'PT Mono', monospace;
+  font-size: 15px;
+}
 p {
   font-family: 'PT Mono', monospace;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .tick line{

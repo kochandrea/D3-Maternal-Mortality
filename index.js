@@ -69,15 +69,15 @@ function myVis(data) {
 
 
   // Create dropdown and selection dictionary
-  var dropdownDict = [{"selector_name": "High income countries", "dataset": high_income, "graph_title": "MMR Ranking of High Income Countries"},
-                      {"selector_name": "Upper middle income countries", "dataset": upper_mid_income, "graph_title": "MMR Ranking of Upper Middle Income Countries"},
-                      {"selector_name": "Lower middle income countries", "dataset": lower_mid_income, "graph_title": "MMR Ranking of Lower Middle Income Countries"},
-                      {"selector_name": "Low income countries", "dataset": low_income, "graph_title": "MMR Ranking of Low Income Countries"},
-                      {"selector_name": "European and Central Asian countries", "dataset": europe_centralAsia, "graph_title": "MMR Ranking of European and Central Asian Countries"},
-                      {"selector_name": "American & Caribbean countries", "dataset": na_lam_carribean, "graph_title": "MMR Ranking of American and Caribbean Countries"},
-                      {"selector_name": "Middle East and North African countries", "dataset": middleEast_northAfrica, "graph_title": "MMR Ranking of Middle East and North African Countries"},
-                      {"selector_name": "Sub-Sahara African countries", "dataset": subsaharanAfrica, "graph_title": "MMR Ranking of Sub-Sahara African Countries"},
-                      {"selector_name": "Asian and Pacific countries", "dataset": asian_pacific, "graph_title": "MMR Ranking of Asian and Pacific Countries"},
+  var dropdownDict = [{"selector_name": "High income countries", "dataset": high_income, "graph_title": "High Income Countries"},
+                      {"selector_name": "Upper middle income countries", "dataset": upper_mid_income, "graph_title": "Upper Middle Income Countries"},
+                      {"selector_name": "Lower middle income countries", "dataset": lower_mid_income, "graph_title": "Lower Middle Income Countries"},
+                      {"selector_name": "Low income countries", "dataset": low_income, "graph_title": "Low Income Countries"},
+                      {"selector_name": "European and Central Asian countries", "dataset": europe_centralAsia, "graph_title": "European and Central Asian Countries"},
+                      {"selector_name": "American & Caribbean countries", "dataset": na_lam_carribean, "graph_title": "American and Caribbean Countries"},
+                      {"selector_name": "Middle East and North African countries", "dataset": middleEast_northAfrica, "graph_title": "Middle East and North African Countries"},
+                      {"selector_name": "Sub-Sahara African countries", "dataset": subsaharanAfrica, "graph_title": "Sub-Sahara African Countries"},
+                      {"selector_name": "Asian and Pacific countries", "dataset": asian_pacific, "graph_title": "Asian and Pacific Countries"},
 
                     ];
 
@@ -128,7 +128,7 @@ function myVis(data) {
 
 
   // Initialize bumpchart
-  generate_bumpchart(high_income, "MMR Ranking of High Income Countries");
+  generate_bumpchart(high_income, "High Income Countries");
 
   // Auxilary function to format data (see Reference 4)
   function format_data(someDataset){
@@ -222,7 +222,7 @@ function myVis(data) {
             .attr("y", margin.top/2)
             .attr("text-anchor", "middle")
             .merge(chartTitle)
-            .text(d => d);
+            .html(d => "Ranking by MMR:  " + d);
 
 
         // generate lines (see Reference 1)
