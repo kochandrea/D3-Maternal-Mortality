@@ -282,7 +282,7 @@ function myVis(data) {
               var yPosition = d3.mouse(this)[1];
                focus
                  .style("left", (d3.event.pageX)+"px")
-                 .style("top", (d3.event.pageY - 130)+"px")
+                 .style("top", (d3.event.pageY -330)+"px")
                 // .style("left", `${xPosition + 120}px`)
                 // .style("top", `${yPosition - 35}px`)
                 .style("display", "flex");
